@@ -1,8 +1,10 @@
 title: Java Docs
-description: Documentation, class notes, & project instructions for AP Computer Science: Java Programming.
+description: Course materials for AP Computer Science: Java Programming
 theme: just-the-docs
 
 url: https://javadocs.coderina.dev
 
 aux_links:
-  "Instructor Site": - "https://coderina.dev"
+  "Instructor Site": 
+    - "https://coderina.dev"
+
