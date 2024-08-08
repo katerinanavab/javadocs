@@ -9,6 +9,7 @@ aux_links:
     - "https://coderina.dev"
 
 logo: "logo-apcs.png"
+favicon_ico: "logo-apcs.png"
 
 back_to_top: true
-back_to_top_text: "Back to top"
+back_to_top_text: "⬆️ BACK TO TOP"
