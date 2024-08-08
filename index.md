@@ -1,7 +1,6 @@
 ---
 title: Home
 layout: home
-nav_order: 1
 ---
 
 # AP Computer Science: Java Programming
