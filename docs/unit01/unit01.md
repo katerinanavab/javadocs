@@ -1,5 +1,5 @@
 ---
 layout: default
-title: "1. Primitive Types"
+title: "1️⃣ Primitive Types"
 nav_order: 2
 ---
