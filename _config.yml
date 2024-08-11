@@ -4,7 +4,7 @@ theme: just-the-docs
 
 url: https://katerinanavab.github.io/javadocs
 
-logo: "assets/logo-apcs.png"
+logo: "assets/javadocs-logo.png"
 
 aux_links_new_tab: true
 aux_links:
