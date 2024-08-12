@@ -4,8 +4,8 @@ theme: just-the-docs
 
 url: https://katerinanavab.github.io/javadocs
 
-logo: "assets/javadocs-logo.png"
-favicon_ico: "assets/javadocs-favicon/favicon.ico"
+logo: "assets/logo-javadocs.png"
+favicon_ico: "favicon.ico"
 
 aux_links_new_tab: true
 aux_links:
