@@ -1,8 +1,8 @@
 ---
 layout: notes
-title: "📓1.3: Variables & Data Types" 
+title: "📓1.1: Variables & Data Types" 
 parent: "1️⃣ Primitive Types"
-nav_order: 3
+nav_order: 1
 ---
 
 ## Table of Contents
