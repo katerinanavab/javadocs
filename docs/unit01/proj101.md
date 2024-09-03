@@ -3,7 +3,7 @@ layout: project
 title: "💻 PROJECT #1.1"
 projectname: "Moon Coding"
 parent: "1️⃣ Primitive Types"
-nav_order: 3
+nav_order: 7
 ---
 
 ### Overview & Setup
