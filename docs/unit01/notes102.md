@@ -29,7 +29,8 @@ What do Android phones, Minecraft, and Netflix have in common? They're all progr
 
 Every program in Java is written as a **class**. Java is an **object-oriented language** and we'll learn more about classes and objects in Unit 2. Inside the class, there can be a **main method** that starts the program. When you ask the Java run-time to *run* a class, it will always start execution in the main method. 
 
-> The name of the **source file** must have `.java` as the extension, and it must **match the class name** defined inside the file!
+{:.highlight}
+The name of the **source file** must have `.java` as the extension, and it must **match the class name** defined inside the file!
 
 
 Here is the template for a simple Java program in a file named `MyClass.java`:
@@ -59,7 +60,7 @@ Java has two different methods to print **output** to the screen:
 #### String Literals
 {:.no_toc}
 
-The ``"Hi there!"`` is called a **string literal**, and it can have zero to many characters enclosed in starting and ending double quotes.
+The ``"Hi there!"`` in the print statement above is called a **string literal**, and it can have zero to many characters, enclosed in starting and ending double quotes.
 
 ### Syntax: the "grammar" of Java
 
@@ -78,7 +79,7 @@ Computers don't actually speak Java so we have to **compile** (translate) Java *
 
 ![](firstbug.jpg)
 
-🐞 Debugging is a normal part of coding. It can be frustrating at times, but you will get better at it with practice! Sometimes another pair of eyes really helps, so ask a friend if you get stuck or try explaining your code line by line to someone, or even a rubber duck. [Rubber duck debugging](https://rubberduckdebugging.com/) is a lot of fun!
+> 🐞 Debugging is a normal part of coding. It can be frustrating at times, but you will get better at it with practice! Sometimes another pair of eyes really helps, so ask a friend if you get stuck or try explaining your code line by line to someone, or even a rubber duck. [Rubber duck debugging](https://rubberduckdebugging.com/) is a lot of fun!
 
 ### Reading Error Messages
 {:.no_toc}
