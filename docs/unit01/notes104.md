@@ -14,6 +14,10 @@ nav_order: 4
 
 ---
 
+{:.note}
+📖 This page is a condensed version of [CSAwesome Topic 1.4](https://runestone.academy/ns/books/published/csawesome/Unit1-Getting-Started/topic-1-4-assignment.html?mode=browsing)
+
+
 ---
 
 #### Acknowledgement
