@@ -83,7 +83,7 @@ _In Codespaces, you can:_
 <div class="task" markdown="block">
 
 1. **Go to:** [GitHub Sign Up](https://github.com/signup)
-2. Enter your `@gbwl.org` **school email** and press `Continue`
+2. Enter your `@gbwl.org` **school email**
 3. Create a **password** that you'll remember 
 4. Enter a **username** that follows this pattern: `FirstName` `LastInitial` `GradYear`
     > _For example:_ `KaterinaN2014`
