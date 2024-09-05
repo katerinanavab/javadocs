@@ -87,6 +87,7 @@ _In Codespaces, you can:_
 3. Create a **password** that you'll remember 
 4. Enter a **username** that follows this pattern: `FirstName` `LastInitial` `GradYear`
     > _For example:_ `KaterinaN2014`
+    > 
     > DO NOT include your entire last name (_privacy reasons_)
 
 </div>
