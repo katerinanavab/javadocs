@@ -15,7 +15,7 @@ nav_order: 3
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 1.3](https://runestone.academy/ns/books/published/csawesome/Unit1-Getting-Started/topic-1-3-variables.html?mode=browsing). 
+📖 This page is a condensed version of [CSAwesome Topic 1.3](https://runestone.academy/ns/books/published/csawesome/Unit1-Getting-Started/topic-1-3-variables.html?mode=browsing)
 
 ## Variables and Data Types
 
@@ -51,10 +51,9 @@ The types tested on the AP CS A exam are:
 
 ### Declaring Variables in Java
 
-To create a variable, you must tell Java its data type and its name.  Creating a variable is also called **declaring a variable**.  The type is a keyword like int, double, or boolean, but you get to make up the name for the variable.  When you create a **primitive variable** Java will set aside enough bits in memory for that primitive type and associate that memory location with the name that you used.
+To create a variable, you must tell Java its **data type** and its **name**.  Creating a variable is also called **declaring a variable**. The type is a keyword like int, double, or boolean, but you get to make up the name for the variable. When you create a **primitive variable** Java will set aside enough bits in memory for that primitive type and associate that memory location with the name that you used.
 
-Computers store all values using **bits** (binary digits).  A **bit** can represent two values and we usually say that the value of a bit is either 0 or 1. When you declare a variable, you have to tell Java the type of the variable because Java needs to know how many bits to use and how to represent the value.  The 3 different primitive types
-all require different number of bits.  An integer gets 32 bits of memory, a double gets 64 bits of memory and a boolean could be represented by just one bit.
+> Computers store all values using **bits** (binary digits). A **bit** can represent two possible values: either `0` or `1`. The 3 different primitive types all require different number of bits. An integer gets 32 bits of memory, a double gets 64 bits of memory and a boolean could be represented by just one bit.
 
 ![](variables.png)
 
@@ -119,7 +118,6 @@ The capitalization convention in Java and many programming languages is to alway
 - The three primitive data types used in this course are `int` (integer numbers), `double` (decimal numbers), and `boolean` (true or false).
 - Each variable has associated memory that is used to hold its **value**.
 - The memory associated with a variable of a primitive type holds an actual primitive value.
-- When a variable is declared `final`, its value cannot be changed once it is initialized.
 
 ---
 
