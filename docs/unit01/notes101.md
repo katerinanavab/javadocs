@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓1.1: Intro to Java" 
+title: "📓1.1: Getting Started" 
 parent: "1️⃣ Primitive Types"
 nav_order: 1
 ---
@@ -34,38 +34,10 @@ careers!
 
 ---
 
-## What is Java?
-
-What do Android phones, Minecraft, and Netflix have in common? They're all programmed in `Java`! Many of the apps you use in an Android phone or tablet are written in Java. Netflix uses Java for some of its software too. Java is a **programming language** that is used worldwide to create software that we all use.
-
-### First Java Program
-{:.no_toc}
-
-Every program in Java is written as a **class**. Java is an **object-oriented language** and we'll learn more about classes and objects in Unit 2. Inside the class, there can be a **main method** that starts the program. When you ask the Java run-time to *run* a class, it will always start execution in the main method. 
-
-> The name of the **source file** must have `.java` as the extension, and it must **match the class name** defined inside the file!
-
-
-Here is the template for a simple Java program in a file named `MyClass.java`:
-
-```java
-public class MyClass
-{
-    public static void main(String[] args)
-    {
-        System.out.println("Hi there!");
-    }
-}
-```
-
-{:.highlight}
-In Java every open curly brace ``{`` must have a **matched** close curly brace ``}``.  These are used to start and end class definitions and method definitions.
-
-### Java Development Environments
+## Java Development Environments
 The tool that we use to compile a Java **source** file into a Java **class** file is called a `compiler`. Most programmers use an **Integrated Development Environment (IDE)** that has the compiler built in and helps you write, compile, run, and debug programs.
 
-#### GitHub Classroom and Codespaces
-{:.no_toc}
+### GitHub Classroom and Codespaces
 
 Github provides many free opportunities for students and teachers (_unlike Replit_). [Github Classroom](https://classroom.github.com/) allows teachers to set up a classroom group based on Github repositories. Github and `git` are widely used in the computer industry, so learning to use it is great experience for students. Github now has a cloud (online) **IDE** called [Codespaces](https://github.com/features/codespaces) which you can use completely free if you join as a school or get approved as a teacher or student. 
 
