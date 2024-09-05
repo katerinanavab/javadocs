@@ -14,11 +14,8 @@ nav_order: 2
 
 ---
 
-<div class="imp" markdown="block">
-
+{:.note}
 📖 This page is a condensed version of [CSAwesome Topic 1.2](https://runestone.academy/ns/books/published/csawesome/Unit1-Getting-Started/topic-1-2-java-intro.html?mode=browsing). 
-
-</div>
 
 ## What is Java?
 
