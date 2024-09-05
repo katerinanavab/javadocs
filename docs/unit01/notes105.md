@@ -14,6 +14,9 @@ nav_order: 5
 
 ---
 
+{:.note}
+📖 This page is a condensed version of [CSAwesome Topic 1.5](https://runestone.academy/ns/books/published/csawesome/Unit1-Getting-Started/topic-1-5-shortcutoperators.html?mode=browsing)
+
 ---
 
 #### Acknowledgement
