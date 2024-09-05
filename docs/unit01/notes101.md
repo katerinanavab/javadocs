@@ -64,7 +64,7 @@ In Java every open curly brace ``{`` must have a **matched** close curly brace `
 ### Java Development Environments
 The tool that we use to compile a Java **source** file into a Java **class** file is called a `compiler`. Most programmers use an **Integrated Development Environment (IDE)** that has the compiler built in and helps you write, compile, run, and debug programs.
 
-#### Github Classroom and Codespaces
+#### GitHub Classroom and Codespaces
 {:.no_toc}
 
 Github provides many free opportunities for students and teachers (_unlike Replit_). [Github Classroom](https://classroom.github.com/) allows teachers to set up a classroom group based on Github repositories. Github and `git` are widely used in the computer industry, so learning to use it is great experience for students. Github now has a cloud (online) **IDE** called [Codespaces](https://github.com/features/codespaces) which you can use completely free if you join as a school or get approved as a teacher or student. 
@@ -78,16 +78,17 @@ _In Codespaces, you can:_
 * See the **output** of your code in the `terminal`
 
 
-#### GITHUB ACCOUNT SETUP
+#### GitHub Account Setup
 
 <div class="task" markdown="block">
 
 1. **Go to:** [GitHub Sign Up](https://github.com/signup)
-2. Enter your **SCHOOL EMAIL ADDRESS** and press `Continue`
-3. Create a **password** that you'll remember
+2. Enter your `@gbwl.org` **school email** and press `Continue`
+3. Create a **password** that you'll remember 
 4. Enter a **username** that follows this pattern: `FirstName` `LastInitial` `GradYear`
     > _For example:_ `KaterinaN2014`
-    
+    > DO NOT include your entire last name (_privacy reasons_)
+
 </div>
 
 
