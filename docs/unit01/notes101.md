@@ -36,16 +36,47 @@ careers!
 
 ## What is Java?
 
+What do Android phones, Minecraft, and Netflix have in common? They're all programmed in `Java`! Many of the apps you use in an Android phone or tablet are written in Java. Netflix uses Java for some of its software too. Java is a **programming language** that is used worldwide to create software that we all use.
 
----
+### First Java Program
+{:.no_toc}
 
-## Java Development Environments
-The tool that we use to compile a Java source file into a Java class file is called a compiler. Most programmers use an Integrated Development Environment (IDE) that has the compiler built in and helps you write, compile, run, and debug programs.
+Every program in Java is written as a **class**. Java is an **object-oriented language** and we'll learn more about classes and objects in Unit 2. Inside the class, there can be a **main method** that starts the program. When you ask the Java run-time to *run* a class, it will always start execution in the main method. 
 
-### Github Classroom and Codespaces
-Github provides many free opportunities for students and teachers (https://docs.github.com/en/education/quickstart). Github Classroom (https://classroom.github.com/) allows teachers to set up a classroom based on github repositories. Github and git are widely used in the computer industry, so learning to use it is great experience for students. Github now has a cloud IDE called Codespaces (https://github.com/features/codespaces) which you can use for 60 hours a month for free or completely free if you join as a school or get approved as a teacher or student. In Codespaces, you can start from a blank template or a repo, open a .java file in the VSCode editor, follow prompts to install the Extension Pack for Java, click on the Run and Debug (play button), follow the prompts to install the Java debugger, and see the output of your code in the terminal. 
+> You must always name the **file** the same name as the class name with `.java` as the extension.  All code (programs) in Java must be defined inside a class in a source file, and the name of the class must match the file name.
 
-Students will need to sign up for a free Github account (https://github.com/signup) if they don’t already have one in order to use Codespaces.
+
+Here is the template for a simple Java program in a file named `MyClass.java`:
+
+```java
+public class MyClass
+{
+    public static void main(String[] args)
+    {
+        // Put your code here!
+    }
+}
+```
+
+{:.highlight}
+In Java every open curly brace ``{`` must have a **matched** close curly brace ``}``.  These are used to start and end class definitions and method definitions.
+
+### Java Development Environments
+The tool that we use to compile a Java **source** file into a Java **class** file is called a `compiler`. Most programmers use an **Integrated Development Environment (IDE)** that has the compiler built in and helps you write, compile, run, and debug programs.
+
+#### Github Classroom and Codespaces
+{:.no_toc}
+
+Github provides many free opportunities for students and teachers. [Github Classroom](https://classroom.github.com/) allows teachers to set up a classroom based on Github repositories. Github and `git` are widely used in the computer industry, so learning to use it is great experience for students. Github now has a cloud (online) **IDE** called [Codespaces](https://github.com/features/codespaces) which you can use completely free if you join as a school or get approved as a teacher or student. 
+
+_In Codespaces, you can:_
+1. Start from a **blank template** or a **repository** ("repo")
+2. Open a `.java` file in the VSCode editor
+3. Follow prompts to install the **Extension Pack** for Java
+4. Click on the `Run and Debug` (play button ▶️)
+5. Follow the prompts to install the Java **debugger**
+6. See the output of your code in the terminal
+
 
 ---
 
