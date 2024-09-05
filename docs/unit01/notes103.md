@@ -64,6 +64,8 @@ Here is an example **declaration** of a variable called `score`:
   int score;
 ```
 
+![](https://higherlogicdownload.s3.amazonaws.com/CASACT/SociousInlineImages/f93d86f6dbf14fdd85222d321e79b22d_yjvxdxcg.jpg)
+
 After declaring a variable, you can give it a value like below using an equals sign ``=`` followed by the value. This is called **assignment**.
 
 ```java
