@@ -53,7 +53,7 @@ public class MyClass
 {
     public static void main(String[] args)
     {
-        // Put your code here!
+        System.out.println("Hi there!");
     }
 }
 ```
