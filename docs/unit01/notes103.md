@@ -26,7 +26,7 @@ nav_order: 3
 
 A type is a set of **values** (a domain) and a set of possible **operations** on them. For example, you can do addition operations with ``int``\s and ``double``\s but not with ``boolean``\s and ``String``\s.
 
-There are two types of variables in Java: 
+There are two categories of variables in Java: 
   1. **Primitive variables** that hold primitive data types
   2. **Object or reference variables** that hold a _reference_ to an object of a class (more on **objects** in the next unit - they are more complex data types).
 > A reference is a way to find the object in the computer's memory (like a UPS tracking number helps you find your package).
