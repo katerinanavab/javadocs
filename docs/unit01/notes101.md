@@ -43,7 +43,7 @@ What do Android phones, Minecraft, and Netflix have in common? They're all progr
 
 Every program in Java is written as a **class**. Java is an **object-oriented language** and we'll learn more about classes and objects in Unit 2. Inside the class, there can be a **main method** that starts the program. When you ask the Java run-time to *run* a class, it will always start execution in the main method. 
 
-> You must always name the **file** the same name as the class name with `.java` as the extension.  All code (programs) in Java must be defined inside a class in a source file, and the name of the class must match the file name.
+> The name of the **source file** must have `.java` as the extension, and it must **match the class name** defined inside the file!
 
 
 Here is the template for a simple Java program in a file named `MyClass.java`:
