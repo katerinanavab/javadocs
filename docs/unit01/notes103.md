@@ -24,7 +24,7 @@ nav_order: 3
 ### Data Types
 {:.no_toc}
 
-A type is a set of **values** (a domain) and a set of possible **operations** on them. For example, you can do addition operations with ``int``\s and ``double``\s but not with ``boolean``\s and ``String``\s.
+A type is a set of **values** (a domain) and a set of possible **operations** on them. For example, you can do subtraction operations with ``int``s and ``double``s, but not with ``boolean``s and ``String``s.
 
 There are two categories of variables in Java: 
   1. **Primitive variables** that hold primitive data types
