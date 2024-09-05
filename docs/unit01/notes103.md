@@ -14,6 +14,9 @@ nav_order: 3
 
 ---
 
+{:.note}
+📖 This page is a condensed version of [CSAwesome Topic 1.3](https://runestone.academy/ns/books/published/csawesome/Unit1-Getting-Started/topic-1-3-variables.html?mode=browsing). 
+
 ## Variables and Data Types
 
 📦 A **variable** is a name associated with a memory location in the computer, where you can store a **value** that can change or vary. 
