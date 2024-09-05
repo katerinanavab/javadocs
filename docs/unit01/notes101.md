@@ -67,15 +67,28 @@ The tool that we use to compile a Java **source** file into a Java **class** fil
 #### Github Classroom and Codespaces
 {:.no_toc}
 
-Github provides many free opportunities for students and teachers. [Github Classroom](https://classroom.github.com/) allows teachers to set up a classroom based on Github repositories. Github and `git` are widely used in the computer industry, so learning to use it is great experience for students. Github now has a cloud (online) **IDE** called [Codespaces](https://github.com/features/codespaces) which you can use completely free if you join as a school or get approved as a teacher or student. 
+Github provides many free opportunities for students and teachers (_unlike Replit_). [Github Classroom](https://classroom.github.com/) allows teachers to set up a classroom group based on Github repositories. Github and `git` are widely used in the computer industry, so learning to use it is great experience for students. Github now has a cloud (online) **IDE** called [Codespaces](https://github.com/features/codespaces) which you can use completely free if you join as a school or get approved as a teacher or student. 
 
 _In Codespaces, you can:_
-1. Start from a **blank template** or a **repository** ("repo")
-2. Open a `.java` file in the VSCode editor
-3. Follow prompts to install the **Extension Pack** for Java
-4. Click on the `Run and Debug` (play button ▶️)
-5. Follow the prompts to install the Java **debugger**
-6. See the output of your code in the terminal
+* Start from a **blank template** or a **repository** ("repo")
+* Open a `.java` file in the VSCode editor
+* Follow prompts to install the **Java Extension Pack**
+* Click on the `Run and Debug` (play button ▶️)
+* Follow the prompts to install the Java **debugger**
+* See the **output** of your code in the `terminal`
+
+
+#### GITHUB ACCOUNT SETUP
+
+<div class="task" markdown="block">
+
+1. **Go to:** [GitHub Sign Up](https://github.com/signup)
+2. Enter your **SCHOOL EMAIL ADDRESS** and press `Continue`
+3. Create a **password** that you'll remember
+4. Enter a **username** that follows this pattern: `FirstName` `LastInitial` `GradYear`
+    > _For example:_ `KaterinaN2014`
+    
+</div>
 
 
 ---
