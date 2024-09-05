@@ -91,7 +91,7 @@ The name of the variable should _describe the data_ it holds.  A name like ``sco
 
 The capitalization convention in Java and many programming languages is to always start a variable name with a lower case letter and then uppercase the first letter of each additional word, for example ``gameScore``. 
 
-<div class=".imp" markdown="block">
+<div class="imp" markdown="block">
   
 * Use **meaningful** variable names!
 * Start variable names with a **lowercase** letter and use `camelCase`.
