@@ -72,7 +72,7 @@ Lines in a Java program that express a _complete action_ such as assigning a val
 ### Syntax Errors & Debugging
 Computers don't actually speak Java so we have to **compile** (translate) Java **source files** that we write into **class files**, which is code that a computer can understand and run. 
 
-![](compile.png)
+<img src="compile.png" style="text-align:center; width=50%;">
 
 **Syntax errors** are reported to you by the compiler if your Java code is not correctly written. Examples of syntax errors are a semicolon ``;`` missing or if the code has a open curly brace ``{`` or open quote ``"``, but no close curly brace ``}`` or close quote ``"``. Informally, a syntax error is called a **bug**, and the process of removing errors is called **debugging**. An early computer science pioneer [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper) documented a real bug, a moth that flew into a computer in 1947!
 
