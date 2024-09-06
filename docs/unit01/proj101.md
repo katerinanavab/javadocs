@@ -10,9 +10,7 @@ nav_order: 7
 
 <div class="setup" markdown="block">
 
-1. On [Replit](https://replit.com/~), click `+ Create Repl` on the sidebar to open a **NEW PROJECT**
-2. In the pop-up menu, select `Java` as the **TEMPLATE**
-3. Specify the **TITLE** following this pattern: `CS2_Unit1_Proj1_FirstNameLastInitial`
+1. GITHUB
 
 </div>
 
