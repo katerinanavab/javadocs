@@ -22,7 +22,7 @@ nav_order: 4
 
 **Assignment statements** initialize or change the value stored in a variable using the assignment operator ``=``.  An assignment statement always has a single variable on the left hand side. The value of the **expression** (which can contain math operators and other variables) on the right of the ``=`` sign is _stored_ in the variable on the left.
 
-![](assignment.png)
+![image](assignment.png)
 
 > Instead of saying "equals" for the `=` in an assignment statement, say "gets" or "is assigned" to remember that the **variable** gets or is assigned the **value** on the right.
 
