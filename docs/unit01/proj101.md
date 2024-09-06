@@ -26,12 +26,14 @@ Houston-based _Intuitive Machines'_ lander is now the first commercial spacecraf
 
 Try writing Java code to solve the problems below (based on [SpaceMath](https://spacemath.gsfc.nasa.gov/moon.html) problem 201 and 275). Make sure to use **COMMENTS** to organize your code, and watch out for **UNIT CONVERSIONS**!
 
-1. **Traveling to the moon with zero gravity:** If there were no gravity, spacecraft could just travel from place to place in a straight line at their highest speeds, like the Enterprise in Star Trek. If the **distance** to the Moon is **380,000 kilometers**, and the top **speed** of a rocket to the moon is **10 kilometers/sec**, how many **hours** would it take to reach the Moon?
+#### PROBLEM #1:
+**Traveling to the moon with zero gravity:** If there were no gravity, spacecraft could just travel from place to place in a straight line at their highest speeds, like the Enterprise in Star Trek. If the **distance** to the Moon is **380,000 kilometers**, and the top **speed** of a rocket to the moon is **10 kilometers/sec**, how many **hours** would it take to reach the Moon?
 
 > **Hints:** The formula you need is `time = distance/speed`. If you’re not sure how to start, first **declare variables** for the values given in the problem, then write an **assignment statement** using the formula, and then **print** the result in hours. _Don’t forget to **convert** seconds to hours!_
 
+#### PROBLEM #2:
 
-2. **Traveling to the moon using orbits:** Since gravity makes it difficult to go in a straight line to the moon, it takes many days to get to the moon, by orbiting around the earth until rising into the moon’s orbit. To enter a Lunar Transfer Orbit, a spacecraft needs enough fuel to change its speed. If it needs to make a speed change of **2000 m/sec** in the **horizontal** direction, and **3000 m/sec** in the vertical direction to enter the correct orbit, what is the **total speed change** needed?
+**Traveling to the moon using orbits:** Since gravity makes it difficult to go in a straight line to the moon, it takes many days to get to the moon, by orbiting around the earth until rising into the moon’s orbit. To enter a Lunar Transfer Orbit, a spacecraft needs enough fuel to change its speed. If it needs to make a speed change of **2000 m/sec** in the **horizontal** direction, and **3000 m/sec** in the vertical direction to enter the correct orbit, what is the **total speed change** needed?
 
 ![image](https://lh3.googleusercontent.com/0m1x-Dcj_YXi1kWBeZNRBQJ5dhR6YjxxGKy0yZV5yHUskrp2TDqYeaV3rNh8duvWd4VHd6wiPBRC5iuJZZcXhX7-WmwzZc4P-5ZXAH7mCkodnTpmPic)
 
@@ -42,8 +44,9 @@ double x = 9;
 double result = Math.sqrt(x); // result = 3
 ```                       
 
+#### PROBLEM #3:
 
-3. **Water on the Moon:** On August 23, 2023, the _Chandrayaan-3_ spacecraft launched from India was the first ever landing on the moon’s south pole! One of Chandrayaan 3’s missions is to look for water on the south pole of the moon. The Chandrayaan 1 mission measured hydroxyl molecules (which are 1 oxygen and 1 hydrogen, -OH, close to the H20 molecule for water) on 25% of the moon’s surface! Water can be harvested for life and fuel.
+**Water on the Moon:** On August 23, 2023, the _Chandrayaan-3_ spacecraft launched from India was the first ever landing on the moon’s south pole! One of Chandrayaan 3’s missions is to look for water on the south pole of the moon. The Chandrayaan 1 mission measured hydroxyl molecules (which are 1 oxygen and 1 hydrogen, -OH, close to the H20 molecule for water) on 25% of the moon’s surface! Water can be harvested for life and fuel.
 
   a. The radius of the moon is 1731 kilometers (multiply this by 1000 to get radius in meters). How many **cubic meters of surface volume** is present in a layer that is 1 millimeter thick?      
   > **Hint:** `surface area = 4 π r^2`  where you can use 3.14 for π and multiply that by 0.001 to get the volume in 1 mm.
