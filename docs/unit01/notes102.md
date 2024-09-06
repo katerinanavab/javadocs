@@ -139,7 +139,7 @@ Here are some examples of good commenting:
    Date:
 */
 
-// Keep track of the max score
+// Keep track of maximum score
 int max = 10; 
 ```
 
