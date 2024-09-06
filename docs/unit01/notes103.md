@@ -55,7 +55,7 @@ To create a variable, you must tell Java its **data type** and its **name**.  Cr
 
 > Computers store all values using **bits** (binary digits). A **bit** can represent two possible values: either `0` or `1`. The 3 different primitive types all require different number of bits. An integer gets 32 bits of memory, a double gets 64 bits of memory and a boolean could be represented by just one bit.
 
-![](variables.png)
+![image](variables.png)
 
 To **declare** (create memory space for) a variable, you specify the type, leave at least one space, then the name for the variable and end the line with a semicolon (``;``). 
 > Java uses the keyword **int** for integer, **double** for a floating point number (a double precision number), and **boolean** for a Boolean value (true or false).
@@ -66,7 +66,7 @@ Here is an example **declaration** of a variable called `score`:
   int score;
 ```
 
-![](https://higherlogicdownload.s3.amazonaws.com/CASACT/SociousInlineImages/f93d86f6dbf14fdd85222d321e79b22d_yjvxdxcg.jpg)
+![image](https://higherlogicdownload.s3.amazonaws.com/CASACT/SociousInlineImages/f93d86f6dbf14fdd85222d321e79b22d_yjvxdxcg.jpg)
 
 After declaring a variable, you can give it a value like below using an equals sign ``=`` followed by the value. This is called **assignment**.
 
