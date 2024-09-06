@@ -45,14 +45,14 @@ double result = Math.sqrt(x); // result = 3
 
 3. **Water on the Moon:** On August 23, 2023, the _Chandrayaan-3_ spacecraft launched from India was the first ever landing on the moon’s south pole! One of Chandrayaan 3’s missions is to look for water on the south pole of the moon. The Chandrayaan 1 mission measured hydroxyl molecules (which are 1 oxygen and 1 hydrogen, -OH, close to the H20 molecule for water) on 25% of the moon’s surface! Water can be harvested for life and fuel.
 
-  a. The radius of the moon is 1731 kilometers (multiply this by 1000 to get r in meters). How many **cubic meters of surface volume** is present in a layer that is 1 millimeter thick?      
-  > **Hint:** surface area is 4 π r2  where you can use 3.14 for π and multiply that by 0.001 to get the volume in 1 mm.
+  a. The radius of the moon is 1731 kilometers (multiply this by 1000 to get radius in meters). How many **cubic meters of surface volume** is present in a layer that is 1 millimeter thick?      
+  > **Hint:** `surface area = 4 π r^2`  where you can use 3.14 for π and multiply that by 0.001 to get the volume in 1 mm.
 
-  b. The density of the lunar surface (called the regolith) is about 3000 kilograms/meter3. How many **metric tons of regolith** are found in the surface volume calculated in problem (a) above? 
-  > **Hint:** using the result of problem (a), multiply by 3000 kg/m3 and then convert to metric tons by dividing by 1000.
+  b. The density of the lunar surface (called the regolith) is about 3000 kilograms/meter^3. How many **metric tons of regolith** are found in the surface volume calculated in problem (a) above? 
+  > **Hint:** using the result of problem (a), multiply by 3000 kg/m^3 and then convert to metric tons by dividing by 1000.
 
   c. How many **liters** of water could be recovered from the 1 millimeter thick surface layer if 25% of the lunar surface contains water? 
-  > **Hint:** find 25% of the result of problem (b) above which gives the density of 1 mm surface layer.
+  > **Hint:** find 25% of the result of problem (b).
 
 </div> 
 
