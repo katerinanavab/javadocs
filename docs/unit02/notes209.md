@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓2.9: " 
+title: "📓2.9: The Math Class" 
 parent: "2️⃣ Using Objects"
 nav_order: 9
 ---
@@ -15,7 +15,7 @@ nav_order: 9
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 2.9]() 
+📖 This page is a condensed version of [CSAwesome Topic 2.9](https://runestone.academy/ns/books/published/csawesome/Unit2-Using-Objects/topic-2-9-Math.html?mode=browsing) 
 
 <div class="setup" markdown="block">
 
