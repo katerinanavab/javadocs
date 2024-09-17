@@ -56,10 +56,10 @@ double result = Math.sqrt(x); // result = 3
   > **Hints:** For a sphere, `surface area = 4 * π * r^2` where you can approximate 3.14 for π. To be extra precise, use the Java property `Math.PI` in place of 3.14. The **volume** of the surface layer is the surface **area** multiplied by the **thickness** (note that `1mm = 0.001m`).
 
   b. The **density** of the lunar surface (called the _regolith_) is about 3000 kilograms/meter^3. How many **metric tons of regolith** are found in the surface volume calculated in problem (a) above? 
-  > **Hint:** `density = mass / volume`. The result of problem (a) gives you the VOLUME. You are solving for MASS. After, you'll need to convert to metric tons (note that `1 metric ton = 1000 kilograms`).
+  > **Hints:** `density = mass / volume`. The result of problem (a) gives you the VOLUME. You are solving for MASS. After, you'll need to convert to metric tons (note that `1 metric ton = 1000 kilograms`).
 
   c. How many **liters** of water could be recovered from the 1 millimeter thick surface layer if 25% of the lunar surface contains water? 
-  > **Hint:** Liters are a unit of VOLUME, which you calculated in problem (a). Find 25% of that volume, then, convert it into liters (note that `1 cubic meter = 1000 liters`). 
+  > **Hints:** Liters are a unit of VOLUME, which you calculated in problem (a). Find 25% of that volume, then, convert it into liters (note that `1 cubic meter = 1000 liters`). 
 
 </div> 
 
