@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓2.4: Object Methods with Parameters" 
+title: "📓2.4: Methods with Parameters" 
 parent: "2️⃣ Using Objects"
 nav_order: 4
 ---
