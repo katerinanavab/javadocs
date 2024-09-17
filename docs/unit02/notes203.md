@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓2.3: Calling Methods Without Parameters" 
+title: "📓2.3: Methods without Parameters" 
 parent: "2️⃣ Using Objects"
 nav_order: 3
 ---
