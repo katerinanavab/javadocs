@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓2.5: " 
+title: "📓2.5: Methods that Return Values" 
 parent: "2️⃣ Using Objects"
 nav_order: 5
 ---
@@ -15,7 +15,7 @@ nav_order: 5
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 2.5]() 
+📖 This page is a condensed version of [CSAwesome Topic 2.5](https://runestone.academy/ns/books/published/csawesome/Unit2-Using-Objects/topic-2-5-methods-return.html?mode=browsing) 
 
 <div class="setup" markdown="block">
 
