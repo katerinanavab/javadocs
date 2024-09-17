@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓2.8: " 
+title: "📓2.8: Wrapper Classes" 
 parent: "2️⃣ Using Objects"
 nav_order: 8
 ---
@@ -15,7 +15,7 @@ nav_order: 8
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 2.8]() 
+📖 This page is a condensed version of [CSAwesome Topic 2.8](https://runestone.academy/ns/books/published/csawesome/Unit2-Using-Objects/topic-2-8-IntegerDouble.html?mode=browsing) 
 
 <div class="setup" markdown="block">
 
@@ -41,7 +41,7 @@ nav_order: 8
 
 </div>
 
-## What is Java?
+## Wrapper Classes: Integer and Double
 
 
 
