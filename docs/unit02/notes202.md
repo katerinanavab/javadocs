@@ -29,21 +29,6 @@ nav_order: 2
 
 </div>
 
-<br>
-
-<div class="warn" markdown="block">
-
-🛑 When class ends, don't forget to **SAVE YOUR WORK**!
-
-1. Navigate to the `Source Control` menu on the _LEFT_ sidebar
-2. Click the <button type="button" name="button" class="btn btn-green">commit changes</button> button on the _LEFT_ menu
-3. Type a brief **commit message** at the top of the file that opens, for example: `updated Main.java`
-4. Click the small `✔️` **checkmark** in the _TOP RIGHT_ corner
-5. Click the <button type="button" name="button" class="btn btn-green">sync changes</button> button on the _LEFT_ menu
-6. _Finally you can close your Codespace!_
-
-</div>
-
 ## Constructors: Creating and Initializing Objects
 
 A Java class defines what objects of the class know (attributes) and what they can do (behaviors).  Each class has **constructors** like ``World()`` and ``Turtle(habitat)`` which are used to initialize the attributes in a newly created object.
@@ -175,6 +160,21 @@ The type of the values being passed in as arguments have to match the type of th
 - **Formal parameters** are the specification of the parameters in the constructor header.  In Java this is a list of the type and name for each parameter (``World(int width, int height``).
 
 - **Call by value** means that when you pass a value to a constructor or method it passes a copy of the value.
+
+<br>
+
+<div class="warn" markdown="block">
+
+🛑 When class ends, don't forget to **SAVE YOUR WORK**!
+
+1. Navigate to the `Source Control` menu on the _LEFT_ sidebar
+2. Click the <button type="button" name="button" class="btn btn-green">commit changes</button> button on the _LEFT_ menu
+3. Type a brief **commit message** at the top of the file that opens, for example: `updated Main.java`
+4. Click the small `✔️` **checkmark** in the _TOP RIGHT_ corner
+5. Click the <button type="button" name="button" class="btn btn-green">sync changes</button> button on the _LEFT_ menu
+6. _Finally you can close your Codespace!_
+
+</div>
 
 ---
 
