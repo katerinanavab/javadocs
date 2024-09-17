@@ -101,7 +101,7 @@ The **dot operator** `.` is used to call 📣 an object's method. You can think 
 
 The parentheses ``()`` after a method name are there in case you need to give the method **arguments** (some data) to do its job.
 
-> For example: to go forward 50 pixels instead of 100 in ``yertle.forward(50);`` 
+> _Example:_ to go forward 50 pixels instead of 100, pass the distance argument into the method: ``yertle.forward(50);`` 
 
 #### Turtle Class Diagram
 
@@ -130,10 +130,10 @@ Here is a **class diagram** that shows some of the attributes and methods in the
 - An **object** is a specific **instance** of a class with defined attributes. Objects are declared as variables of a class type.
 
 - An **attribute** or **instance variable** is data the object knows about itself.
-    - _For example:_ a Turtle object knows the direction it is facing or its color.
+    - _Example:_ a Turtle object knows the direction it is facing or its color.
 
 - A **behavior** or **method** is something that an object can do.
-    - _For example:_ a Turtle object can go forward 100 pixels.
+    - _Example:_ a Turtle object can go forward 100 pixels.
 
 ---
 
