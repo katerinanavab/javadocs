@@ -50,21 +50,133 @@ A Java class defines what objects of the class know (attributes) and what they c
 
 A new object is created with the ``new`` keyword followed by the class name (``new Class()``).  When this code executes, it creates a new object of the specified class and calls a constructor, which has the same name as the class.  For example, ``new World()`` creates and initializes a new object of the ``World`` class, and ``new Turtle(habitat)`` creates and initializes a new ``Turtle`` object in the World habitat.
 
-To create a new object and call a constructor write:
+<div class="imp" markdown="block">
+    
+🏗️ Syntax pattern to create a `new` **object** and call a **constructor**:
 
 ```java
-    // ClassName variableName = new ClassName(parameters);
-    World habitat = new World();    // create a new World object
-    Turtle t = new Turtle(habitat); // create a new Turtle object
+ClassName variableName = new ClassName(parameters);
+```
+
+</div>
+
+**Examples:**
+```java
+World habitat = new World();    // create a new World object
+Turtle t = new Turtle(habitat); // create a new Turtle object
 ```
 
 ### Overloading Constructors
 
+There can be _more than one constructor_ defined in a class. This is called **overloading** the constructor. 
+
+* There is usually a constructor that has no parameters (nothing inside the parentheses following the name of the constructor) like the ``World()`` constructor above. This is also called the **no-argument constructor**. The **no-argument** constructor usually sets the attributes of the object to default values.
+
+* There can also be other constructors that take parameters like the ``Turtle(habitat)`` constructor call above. A **parameter** (also called **actual parameter** or **argument**) is a value that is passed into a constructor. It can be used to initialize the attribute of an object.
+
+The ``World`` class actually has **2 constructors**: one doesn't take any parameters, and one takes the world's `width` and `height`.
+
+![image](figures/worldConstructors.png)
+
+### The `World` Class Constructors
+{:.no_toc}
+
+The constructor that doesn't take any parameters, ``World()``, creates a graphical window with 640x480 pixels. The ``World(int width, int height)`` constructor takes two integer parameters, and initializes the ``World`` object's width and height to them, for example ``new World(300,400)`` creates a 300x400 pixel world.
+
+```java
+World world1 = new World(); // creates a 640x480 world
+World world2 = new World(300,400); // creates a 300x400 world
+```
+
+{:.highlight}
+🗺️ The Turtle world does not use the Cartesian coordinate system with `(0,0)` in in the middle the screen. Instead: `(0,0)` is at the **top left corner** of the screen, `x` increases to the right, and `y` increases towards the bottom of the screen.
+
+![image](figures/coords.png)
+
+### The `Turtle` Class Constructors
+{:.no_toc}
+
+The ``Turtle`` class also has multiple constructors, although it always requires a world as a parameter in order to have a place to draw the turtle. The default location for the turtle is right in the middle of the world.
+
+There is another ``Turtle`` constructor that places the turtle at a certain (x,y) location in the world, for example at the coordinate (50, 100) below.
+
+```java
+Turtle t1 = new Turtle(world1);
+Turtle t2 = new Turtle(50, 100, world1);
+```
+
+{:.highlight}
+Notice that the **order** of the parameters matter. The ``Turtle`` constructor takes ``(x,y,world)`` as parameters in that order. 
+> If you mix up the order of the parameters it will cause an error, because the parameters will not be the data types that it expects. This is one reason why programming languages have data types -- to allow for error-checking.
+
+### Object Variables and References
+
+You can also declare an **object variable** and initialize it to **null** (``Turtle t1 = null;``). An object variable holds a **reference** to an object.  A **reference** is a way to find the object in memory. It is like a tracking number that you can use to track the location of a package.
+
+<a href="https://www.youtube.com/watch?v=5fpjgXAV2BU&list=PLHqz-wcqDQIEP6p1_0wOb9l9aQ0qFijrP&ab_channel=colleenlewis" target="_blank">📺 Video: Null</a>
+
+The code ``Turtle t1 = null;`` creates a variable ``t1`` that refers to a ``Turtle`` object, but the ``null`` means that it doesn't refer to an object yet. You could later create the object and set the object variable to refer to that new object (``t1 = new Turtle(world1)``).  Or more commonly, you can declare an object variable and initialize it in the same line of code (``Turtle t2 = new Turtle(world1);``).
+
+```java
+World world1 = new World();
+Turtle t1 = null;
+t1 = new Turtle(world1);
+// declare and initialize t2
+Turtle t2 = new Turtle(world1);
+```
+
+### Constructor Signatures
+
+<a href="https://www2.cs.uic.edu/~i101/doc/Turtle.html" target="_blank">📖 Turtle Class Documentation</a>
+
+When you use a class that someone has already written for you in a **library** that you can import like the ``Turtle`` class above, you can look up how to use the constructors and methods in the |turtle documentation| for that class.  The documentation will list the **signatures** (or headers) of the constructors or methods which will tell you their name and parameter list. The **parameter list**, in the **header** of a constructor, lists the **formal parameters**, declaring the variables that will be passed in as values and their data types.
+
+Constructors are **overloaded** when there are multiple constructors, but the constructors have different signatures. They can differ in the number, type, and/or order of parameters.  For example, here are two constructors for the ``Turtle`` class that take different parameters:
+
+![image](figures/TurtleClassDefn.png)
+
+### Formal vs. Actual Parameters
+
+When a constructor like ``Date(2005,9,1)`` is called, the **formal parameters**, (year, month, day), are set to copies of the  **actual parameters** (or **arguments**), which are (2005,9,1).  This is **call by value** which means that copies of the actual parameter values are passed to the constructor.  These values are used to initialize the object's attributes.
+
+![image](figures/parameterMappingDate.png)
+
+The type of the values being passed in as arguments have to match the type of the formal parameter variables. We cannot give a constructor a ``String`` object when it is expecting an ``int``. The order of the arguments also matters. If you mix up the month and the day in the ``Date`` constructor, you will get a completely different date, for example January 9th (1/9) instead of Sept. 1st (9/1).
+
+#### 💻 In-Class Activity
+{:.no_toc}
+
+<div class="task" markdown="block">
+
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit2-Using-Objects/topic-2-2-constructors.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 2.2</button></a> 
+2. Make sure you **SIGN IN**!
+3. Complete the **Programming Challenge: Custom Turtles** activity in pairs.
+
+</div>
 
 ---
 
 ## ⭐️ Summary
 
+- **Constructors** initialize the attributes in newly created objects.  They have the same name as the class.
+
+- A **constructor signature** is the constructor name followed by the parameter list which is a list of the types of the parameters and the variable names used to refer to them in the constructor.
+
+- **Overloading** is when there is more than one constructor.  They must differ in the number, type, or order of parameters.
+
+- **New** is a keyword that is used to create a new object of a class.  The syntax is ``new ClassName()``.  It creates a new object of the specified class and calls a constructor.
+
+- A **no-argument constructor** is a constructor that doesn't take any passed in values (arguments).
+
+- **Parameters** allow values to be passed to the constructor to initialize the newly created object's attributes.
+
+- The **parameter list**, in the header of a constructor, is a list of the type of the value being passed and a variable name. These variables are called the **formal parameters**.
+
+- **Actual parameters** are the values being passed to a constructor.  The formal parameters are set to a copy of the value of the actual parameters.
+
+- **Formal parameters** are the specification of the parameters in the constructor header.  In Java this is a list of the type and name for each parameter (``World(int width, int height``).
+
+- **Call by value** means that when you pass a value to a constructor or method it passes a copy of the value.
 
 ---
 
