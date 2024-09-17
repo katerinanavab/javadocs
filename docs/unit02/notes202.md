@@ -127,7 +127,7 @@ Turtle t2 = new Turtle(world1);
 
 ### Constructor Signatures
 
-<a href="https://www2.cs.uic.edu/~i101/doc/Turtle.html" target="_blank">📖 Turtle Class Documentation</a>
+<div><a href="https://www2.cs.uic.edu/~i101/doc/Turtle.html" target="_blank"><button type="button" name="button" class="btn">📖 Turtle Class Documentation</button></a></div>
 
 When you use a class that someone has already written for you in a **library** that you can import like the ``Turtle`` class above, you can look up how to use the constructors and methods in the |turtle documentation| for that class.  The documentation will list the **signatures** (or headers) of the constructors or methods which will tell you their name and parameter list. The **parameter list**, in the **header** of a constructor, lists the **formal parameters**, declaring the variables that will be passed in as values and their data types.
 
