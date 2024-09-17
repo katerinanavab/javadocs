@@ -74,7 +74,7 @@ The following picture has lots of cats (_objects_ of the type _Cat_). They are a
 
 </div>
 
-<button type="button" name="button" class="btn"><a href="https://www.youtube.com/watch?v=64DOwDu5SVo&list=PLHqz-wcqDQIEP6p1_0wOb9l9aQ0qFijrP&ab_channel=colleenlewis" target="_blank">📺 Video: Classes and Objects</a></button>
+<div><a href="https://www.youtube.com/watch?v=64DOwDu5SVo&list=PLHqz-wcqDQIEP6p1_0wOb9l9aQ0qFijrP&ab_channel=colleenlewis" target="_blank"><button type="button" name="button" class="btn">📺 Video: Classes and Objects</button></a></div>
 
 ### Intro to Objects with Turtles
 
