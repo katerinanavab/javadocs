@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓2.4: " 
+title: "📓2.4: Calling Methods With Parameters" 
 parent: "2️⃣ Using Objects"
 nav_order: 4
 ---
@@ -15,7 +15,7 @@ nav_order: 4
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 2.4]() 
+📖 This page is a condensed version of [CSAwesome Topic 2.4](https://runestone.academy/ns/books/published/csawesome/Unit2-Using-Objects/topic-2-4-methods-with-params.html?mode=browsing) 
 
 <div class="setup" markdown="block">
 
