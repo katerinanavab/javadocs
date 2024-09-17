@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓2.1: Objects and Classes" 
+title: "📓2.1: Objects" 
 parent: "2️⃣ Using Objects"
 nav_order: 1
 ---
