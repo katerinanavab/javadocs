@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓2.6: " 
+title: "📓2.6: Strings" 
 parent: "2️⃣ Using Objects"
 nav_order: 6
 ---
@@ -15,7 +15,7 @@ nav_order: 6
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 2.6]() 
+📖 This page is a condensed version of [CSAwesome Topic 2.6](https://runestone.academy/ns/books/published/csawesome/Unit2-Using-Objects/topic-2-6-strings.html?mode=browsing) 
 
 <div class="setup" markdown="block">
 
