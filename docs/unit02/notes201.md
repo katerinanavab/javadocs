@@ -36,29 +36,19 @@ nav_order: 1
 
 ## Objects are Instances of Classes
 
-Java is an **object-oriented programming** language. That means that one of the
-primary ways of organizing our programs is in terms of **objects**. Objects are
-a kind of value that combines data and the code that operates on that data into
-a single unit. Objects are defined in Java by writing **classes** which provide
-a blueprint for creating objects of a certain kind, describing the data and code
-that all **instances** of that class have.
+Java is an **object-oriented programming** language. That means that one of the primary ways of organizing our programs is in terms of **objects**. 
 
-Sometimes classes and objects are used to model things in the real world, such
-as if we made a ``Student`` class to represent students in a school. Other times
-classes are just ways of organizing different parts of our programs that may not
-correspond to anything in the world outside the computer.
+{:.important}
+**Objects** are a kind of value that combines data, and code that operates on that data, into a single _unit_. Objects are defined in Java by writing **classes** which provide a _blueprint_ for creating objects of a certain kind, describing the data and code that all **instances** of that class have.
 
-But in Java all programs are built out of classes. This is why, as you saw in
-Unit 1, every Java programs starts with ``public class``: the first thing we
-have to do when we write a Java program is define at least one class.
+Sometimes classes and objects are used to _model things in the real world_, such as if we made a ``Student`` class to represent students in a school. Other times classes are just ways of _organizing different parts of our programs_ that may not correspond to anything in the world outside the computer.
+
+{:.highlight} 
+But in Java all programs are built out of classes. This is why, as you saw in Unit 1, every Java program starts with ``public class``: the first thing we have to do when we write a Java program is **define at least one class**.
 
 ### What are Objects and Classes?
 
-**Objects** are values created by **constructing** an **instance** of a
-**class**. We used ``String`` objects in Unit 1 and variables declared of type
-``String`` such as ``String name;``. In this unit we'll work with a new class,
-``Turtle`` which creates  animated turtles. Later on, in Unit 5, you'll
-learn to write your own classes.
+**Objects** are values created by **constructing** an **instance** of a **class**. This unit focuses on _using classes_, written by other coders, to create and interact with objects of a certain type. Later on, in Unit 5, you'll learn to _write your own_ classes.
 
 When you think about making objects from a class, you can think of a class like a
 blueprint or a cookie cutter. It is used to create the cookies (objects) and can
@@ -70,7 +60,10 @@ and the behaviors are written as **methods**.
 
 ![image](figures/cookieCutterLabelled.png)
 
-You can also think of a class defining a new type. Just like you use ``int`` to
+{:.highlight}
+You can also think of a class as **defining a new, custom data type**! 
+
+Just like you use ``int`` to
 declare variables that can hold an whole number value, you can use ``Turtle`` to
 declare a variable whose value has to be an instance of the ``Turtle`` class.
 And just like the Java compiler will only let you do things with the values of
