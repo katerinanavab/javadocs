@@ -74,6 +74,8 @@ The following picture has lots of cats (_objects_ of the type _Cat_). They are a
 
 </div>
 
+<button type="button" name="button" class="btn"><a href="https://www.youtube.com/watch?v=64DOwDu5SVo&list=PLHqz-wcqDQIEP6p1_0wOb9l9aQ0qFijrP&ab_channel=colleenlewis" target="_blank">📺 Video: Classes and Objects</a></button>
+
 ### Intro to Objects with Turtles
 
 The `Turtle` class (which was written for you) is a **blueprint** for turtle objects. It defines **attributes** for graphical turtles like their `color` and `position`, and **methods** to make the turtles `move`. The Java program below creates a Turtle **object** called yertle using the Turtle **class**: 
