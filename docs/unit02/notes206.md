@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓2.6: Strings" 
+title: "📓2.6: The String Class" 
 parent: "2️⃣ Using Objects"
 nav_order: 6
 ---
