@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓2.2: " 
+title: "📓2.2: Constructors" 
 parent: "2️⃣ Using Objects"
 nav_order: 2
 ---
@@ -15,7 +15,7 @@ nav_order: 2
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 2.2]() 
+📖 This page is a condensed version of [CSAwesome Topic 2.2](https://runestone.academy/ns/books/published/csawesome/Unit2-Using-Objects/topic-2-2-constructors.html?mode=browsing) 
 
 <div class="setup" markdown="block">
 
