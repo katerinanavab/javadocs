@@ -19,18 +19,21 @@ nav_order: 2
 
 <div class="setup" markdown="block">
 
+📝 Take notes in a **Codespace** during class, coding along with the instructor.
+
 1. Go to GitHub and click on your picture in the _TOP RIGHT_ corner
 2. Select `Your repositories`
 3. Open `CS2-Unit-2-Notes`
 5. Now on your repository, click <button type="button" name="button" class="btn btn-green"> < > Code </button> and select the `Codespaces` tab
 6. Click `Create Codespace on main` (unless you already have one listed there), wait for the environment to load, _then you're ready to code_!
-7. 📝 Take notes in this Codespace during class, coding along with the instructor.
 
 </div>
 
+<br>
+
 <div class="warn" markdown="block">
 
-🛑 When class ends, don't forget to **SAVE YOUR WORK**! _There are multiple steps to saving in GitHub:_
+🛑 When class ends, don't forget to **SAVE YOUR WORK**!
 
 1. Navigate to the `Source Control` menu on the _LEFT_ sidebar
 2. Click the <button type="button" name="button" class="btn btn-green">commit changes</button> button on the _LEFT_ menu
