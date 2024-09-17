@@ -50,34 +50,18 @@ But in Java all programs are built out of classes. This is why, as you saw in Un
 
 **Objects** are values created by **constructing** an **instance** of a **class**. This unit focuses on _using classes_, written by other coders, to create and interact with objects of a certain type. Later on, in Unit 5, you'll learn to _write your own_ classes.
 
-When you think about making objects from a class, you can think of a class like a
-blueprint or a cookie cutter. It is used to create the cookies (objects) and can
-be used to create as many cookies (objects) as you want. As a blueprint, each
-class defines the **attributes** its objects have (the properties or what each
-object knows about itself) and the **behaviors** (what each object can do). In
-Java code, the attributes are written as **instance variables** in the class,
-and the behaviors are written as **methods**.
+When you think about making objects from a class, you can think of a class like a _blueprint_ or a cookie cutter. It is used to create the cookies (objects) and can be used to create as many cookies (objects) as you want. As a blueprint, each class defines the **attributes** its objects have (the properties or what each object knows about itself) and the **behaviors** (what each object can do). In Java code, the attributes are written as **instance variables** in the class, and the behaviors are written as **methods**.
 
 ![image](figures/cookieCutterLabelled.png)
 
 {:.highlight}
 You can also think of a class as **defining a new, custom data type**! 
 
-Just like you use ``int`` to
-declare variables that can hold an whole number value, you can use ``Turtle`` to
-declare a variable whose value has to be an instance of the ``Turtle`` class.
-And just like the Java compiler will only let you do things with the values of
-``int`` variables that make sense (like adding and multiplying them), it will
-only let you do things with values of a ``Turtle`` variable that make sense to do
-with turtles, namely accessing the instance variables and methods defined in the
-``Turtle`` class.
+Just like you use ``int`` to **declare variables** that can hold an whole number value, you can use ``Turtle`` to declare a variable whose value has to be an instance of the ``Turtle`` class.
 
-The following picture has lots of cats (objects of the type cat). They are all
-different, but they share the same attributes and behaviors that make up a cat.
-They are all **instances** of cat with different values for their attributes.
-Name some of the attributes and behaviors of the cats below. For example, the
-color (*attribute*) of the first cat is black (*attribute value*) and it is
-playing (*behavior*).
+> Just like the Java compiler will only let you do things with the values of ``int`` variables that make sense (like adding and multiplying them), it will only let you do things with values of a ``Turtle`` variable that make sense to do with turtles, namely accessing the **instance variables** and **methods** defined in the ``Turtle`` class.
+
+The following picture has lots of cats (_objects_ of the type _Cat_). They are all different, but they share the same attributes and behaviors that make up a cat. They are all **instances** of cat with different _values_ for their attributes.
 
 ![image](figures/catsLabelled.png)
 
