@@ -90,10 +90,10 @@ playing (*behavior*).
 
 <div class="task" markdown="block">
 
-💬 **Discuss with your class:** What are some attributes of cats? What are some behaviors of cats?
-
-* **Attributes** are often _nouns_ or _adjectives_ describing features
-* **Behaviors** are often _verbs_
+* 💬 **Discuss with your class:** What are some attributes of cats? What are some behaviors of cats?
+    > **Attributes** are often _nouns_ or _adjectives_ describing features
+    >
+    > **Behaviors** are often _verbs_
 
 </div>
 
@@ -118,7 +118,7 @@ public class TurtleTest
     }
 ```
 
-#### DOT OPERATOR `.`
+#### Dot Operator `.`
 
 The **dot operator** `.` is used to call 📣 an object's method. You can think of the `.` as _commanding_ the object to do something (execute one of its methods). For example, ``yertle.forward()`` asks the turtle ``yertle`` to go ``forward``. It doesn't tell ``yertle`` how much to go forward, so it goes forward 100 pixels by default. 
 
@@ -126,15 +126,20 @@ The parentheses ``()`` after a method name are there in case you need to give th
 
 > For example: to go forward 50 pixels instead of 100 in ``yertle.forward(50);`` 
 
-#### CLASS DIAGRAM
+#### Turtle Class Diagram
 
 Here is a **class diagram** that shows some of the attributes and methods in the class ``Turtle``:
 
 ![image](figures/turtleUMLClassDiagram.png)
 
+#### 💻 In-Class Activity
+{:.no_toc}
+
 <div class="task" markdown="block">
 
-💻 Go to [CSAwesome Topic 2.1](https://runestone.academy/ns/books/published/csawesome/Unit2-Using-Objects/topic-2-1-objects-intro-turtles.html?mode=browsing), SIGN IN, and complete the <button type="button" name="button" class="btn">Programming Challenge: Turtle Drawing</button> activity in pairs.
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit2-Using-Objects/topic-2-1-objects-intro-turtles.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 2.1</button></a> 
+2. Make sure you **SIGN IN**!
+3. Complete the **Programming Challenge: Turtle Drawing** activity in pairs.
 
 </div>
 
