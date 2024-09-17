@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓2.7: " 
+title: "📓2.7: String Methods" 
 parent: "2️⃣ Using Objects"
 nav_order: 7
 ---
@@ -15,7 +15,7 @@ nav_order: 7
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 2.7]() 
+📖 This page is a condensed version of [CSAwesome Topic 2.7](https://runestone.academy/ns/books/published/csawesome/Unit2-Using-Objects/topic-2-7-string-methods.html?mode=browsing) 
 
 <div class="setup" markdown="block">
 
