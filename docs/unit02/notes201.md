@@ -1,8 +1,8 @@
 ---
 layout: notes
-title: "📓1.2: Java Introduction" 
-parent: "1️⃣ Primitive Types"
-nav_order: 2
+title: "📓2.1: Objects and Classes" 
+parent: "2️⃣ Using Objects"
+nav_order: 1
 ---
 
 ## Table of Contents
@@ -15,33 +15,26 @@ nav_order: 2
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 2.1](https://runestone.academy/ns/books/published/csawesome/Unit1-Getting-Started/topic-1-2-java-intro.html?mode=browsing) 
+📖 This page is a condensed version of [CSAwesome Topic 2.1](https://runestone.academy/ns/books/published/csawesome/Unit2-Using-Objects/topic-2-1-objects-intro-turtles.html?mode=browsing) 
+
+#### Using a GitHub Template for class notes
+{:.no_toc}
 
 <div class="setup" markdown="block">
 
-1. Go to GitHub and click on your picture in the _TOP RIGHT_ corner
-2. Select `Your repositories`
-3. Open `CS2-Unit-2-Notes`
+1. Go to the public template **repository** for our class: [BWL-CS Java Template](https://github.com/BWL-CS/java-template)
+2. Click the <button type="button" name="button" class="btn btn-green">Use this template</button> button above the list of files then select `Create a new repository`
+3. Specify the **repository name**: `CS2-Unit-2-Notes`
+4. Click <button type="button" name="button" class="btn btn-green">Create repository</button>
+    > Now you have **your own personal copy** of this starter code that you can always access under the `Your repositories` section of GitHub! 
 5. Now on your repository, click <button type="button" name="button" class="btn btn-green"> < > Code </button> and select the `Codespaces` tab
-6. Click `Create Codespace on main` (unless you already have one listed there), wait for the environment to load, _then you're ready to code_!
+6. Click `Create Codespace on main` and wait for the environment to load, _then you're ready to code_!
 7. 📝 Take notes in this Codespace during class, coding along with the instructor.
 
 </div>
 
-<div class="warn" markdown="block">
 
-🛑 When class ends, don't forget to **SAVE YOUR WORK**! _There are multiple steps to saving in GitHub:_
-
-1. Navigate to the `Source Control` menu on the _LEFT_ sidebar
-2. Click the <button type="button" name="button" class="btn btn-green">commit changes</button> button on the _LEFT_ menu
-3. Type a brief **commit message** at the top of the file that opens, for example: `updated Main.java`
-4. Click the small `✔️` **checkmark** in the _TOP RIGHT_ corner
-5. Click the <button type="button" name="button" class="btn btn-green">sync changes</button> button on the _LEFT_ menu
-6. _Finally you can close your Codespace!_
-
-</div>
-
-## What is Java?
+## Objects are Instances of Classes
 
 
 
