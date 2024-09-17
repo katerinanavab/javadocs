@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓2.3: " 
+title: "📓2.3: Calling Methods Without Parameters" 
 parent: "2️⃣ Using Objects"
 nav_order: 3
 ---
@@ -15,7 +15,7 @@ nav_order: 3
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 2.3]() 
+📖 This page is a condensed version of [CSAwesome Topic 2.3](https://runestone.academy/ns/books/published/csawesome/Unit2-Using-Objects/topic-2-3-methods-no-params.html?mode=browsing) 
 
 <div class="setup" markdown="block">
 
