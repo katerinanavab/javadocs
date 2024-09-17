@@ -44,8 +44,21 @@ nav_order: 2
 
 </div>
 
-## What is Java?
+## Constructors: Creating and Initializing Objects
 
+A Java class defines what objects of the class know (attributes) and what they can do (behaviors).  Each class has **constructors** like ``World()`` and ``Turtle(habitat)`` which are used to initialize the attributes in a newly created object.
+
+A new object is created with the ``new`` keyword followed by the class name (``new Class()``).  When this code executes, it creates a new object of the specified class and calls a constructor, which has the same name as the class.  For example, ``new World()`` creates and initializes a new object of the ``World`` class, and ``new Turtle(habitat)`` creates and initializes a new ``Turtle`` object in the World habitat.
+
+To create a new object and call a constructor write:
+
+```java
+    // ClassName variableName = new ClassName(parameters);
+    World habitat = new World();    // create a new World object
+    Turtle t = new Turtle(habitat); // create a new Turtle object
+```
+
+### Overloading Constructors
 
 
 ---
