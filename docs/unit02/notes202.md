@@ -55,6 +55,9 @@ Turtle t = new Turtle(habitat); // create a new Turtle object
 
 There can be _more than one constructor_ defined in a class. This is called **overloading** the constructor. 
 
+{:.important}
+Constructors are **overloaded** when there are multiple constructors, but the constructors have different _signatures_. They can differ in the number, type, and/or order of parameters (_input_). Think of overloading constructors as providing different options to "set up" an object.
+
 * There is usually a constructor that has no parameters (nothing inside the parentheses following the name of the constructor) like the ``World()`` constructor above. This is also called the **no-argument constructor**. The **no-argument** constructor usually sets the attributes of the object to default values.
 
 * There can also be other constructors that take parameters like the ``Turtle(habitat)`` constructor call above. A **parameter** (also called **actual parameter** or **argument**) is a value that is passed into a constructor. It can be used to initialize the attribute of an object.
@@ -110,17 +113,20 @@ Turtle t2 = new Turtle(world1);
 
 ### Constructor Signatures
 
-<a href="https://www2.cs.uic.edu/~i101/doc/Turtle.html" target="_blank"><button type="button" name="button" class="btn btn-purple">📖 Turtle Class Documentation</button></a>
+When you use a class that someone has already written for you in a **library** that you can **import**, like the ``Turtle`` class, you can look up how to use the constructors and methods in the <a href="https://www2.cs.uic.edu/~i101/doc/Turtle.html" target="_blank"><button type="button" name="button" class="btn btn-purple">📖 Turtle Class Documentation</button></a>. 
 
-When you use a class that someone has already written for you in a **library** that you can import like the ``Turtle`` class above, you can look up how to use the constructors and methods in the |turtle documentation| for that class.  The documentation will list the **signatures** (or headers) of the constructors or methods which will tell you their name and parameter list. The **parameter list**, in the **header** of a constructor, lists the **formal parameters**, declaring the variables that will be passed in as values and their data types.
+> The documentation will list the **signatures** (or headers) of the constructors or methods which will tell you their name and parameter list. The **parameter list**, in the **header** of a constructor, lists the **formal parameters**, declaring the variables that will be passed in as values and their data types.
 
-Constructors are **overloaded** when there are multiple constructors, but the constructors have different signatures. They can differ in the number, type, and/or order of parameters.  For example, here are two constructors for the ``Turtle`` class that take different parameters:
+For example, here are the **overloaded** constructors for the ``Turtle`` class, which take different parameters:
 
 ![image](figures/TurtleClassDefn.png)
 
 ### Formal vs. Actual Parameters
 
-When a constructor like ``Date(2005,9,1)`` is called, the **formal parameters**, (year, month, day), are set to copies of the  **actual parameters** (or **arguments**), which are (2005,9,1).  This is **call by value** which means that copies of the actual parameter values are passed to the constructor.  These values are used to initialize the object's attributes.
+When a constructor like ``Date(2005,9,1)`` is called, the 👔 **formal parameters**, (year, month, day), are set to copies of the **actual parameters** (or **arguments**), which are (2005,9,1).  
+
+{:.highlight}
+This is **call by value**, which means that _copies_ of the actual parameter values are passed to the constructor. These values are then used to initialize the object's attributes.
 
 ![image](figures/parameterMappingDate.png)
 
