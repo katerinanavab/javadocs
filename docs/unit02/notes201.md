@@ -103,7 +103,16 @@ The **dot operator** `.` is used to call 📣 an object's method. You can think 
 
 The parentheses ``()`` after a method name are there in case you need to give the method **arguments** (some data) to do its job.
 
-> _Example:_ to go forward 50 pixels instead of 100, pass the distance argument into the method: ``yertle.forward(50);`` 
+> _Example:_ to go forward 50 pixels instead of 100, pass the distance argument into the method: ``yertle.forward(50);``
+
+<div class="task" markdown="block">
+
+💬 **Discuss:** 
+* Is `yertle` a class or an object?
+* Is `Turtle` a class or an instance of a class?
+* Is `setHeight` an attribute or a behavior?
+
+</div>
 
 #### Turtle Class Diagram
 
