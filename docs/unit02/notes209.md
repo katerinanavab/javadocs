@@ -104,40 +104,21 @@ System.out.println("The square root of 9 is " + Math.sqrt(9));
 
 ### Random Numbers
 
-🎲 The ``Math.random()`` method returns a double number greater than or equal to 0.0, and less than 1.0.
-When we talk about ranges of numbers sometimes
-we need to be precise about whether the ends of the range are part of the range.
-For example, ``Math.random`` returns a number between 0 and 1, but does that
-mean it can return exactly 0? Or exactly 1? As it turns out it can return 0 but
-never returns 1.
+{:.highlight}
+🎲 The ``Math.random()`` method returns a `double` number **greater than or equal to 0.0**, and **less than 1.0**.
 
-When we need to be precise about this we’d say that it returns a number between
-0, *inclusive*, and 1, *exclusive*, meaning *include* 0 but *exclude* 1. Lots of
-ranges in Java are expressed this way, as you’ll see later on with an inclusive
-bottom and exclusive top.
+When we talk about ranges of numbers, sometimes we need to be precise about whether the ends of the range are part of the range. When we need to be **precise** about this we’d say that it returns a number between 0, *inclusive*, and 1, *exclusive*, meaning *include* 0 but *exclude* 1. Lots of ranges in Java are expressed this way, as you’ll see later on with an inclusive bottom and exclusive top.
 
-Getting a number between 0, inclusive, and 1, exclusive, may not seem all that
-useful. But we can expand the range easily enough. To see how, imagine you had
-less than a dollar to your name and you wanted to be richer—you’d want to find a
-way to **multiply** your money. If you could invest every penny you had in
-something that would multiply your money by 1,000 then instead of having
-somewhere between $0 and $1, then you’d have somewhere between $0 (inclusive—if
-you started with $0) and $1,000 (exclusive, since if you had even a fraction of
-a penny less than $1 multiplying by 1,000 would still leave you just a bit shy
-of $1,000.) If the investment multiplied your original money by a million,
-you’d have between $0 and $1,000,000! (But never *quite* $1,000,000.)
+> For example, ``Math.random`` returns a number between 0 and 1, but does that mean it can return exactly 0? Or exactly 1?
+> 
+> As it turns out, it can return 0.0, but never returns 1.0.
 
-Same trick applies to random numbers. The value ``Math.random`` returns is like
-the initial amount of money in your pocket, always a bit less than $1.
+#### MANIPULATING THE RETURN VALUE
+{:.no_toc}
 
-You may have noticed that while the numbers generated were always in the range 0
-to 10, all the numbers probably had a lot a digits after the decimal point.
-Often we want a random integer, with nothing after the decimal point. Easy
-enough—casting a ``double`` to an ``int`` will throw away any values
-after the decimal point. For example,
+Getting a number between 0, inclusive, and 1, exclusive, may not seem all that useful. But we can expand the range easily enough by manipulating the output (adding, subtracing, multiplying or dividing the return value). And often we want a random integer, with nothing after the decimal point. Easy enough—casting a ``double`` to an ``int`` will throw away any values after the decimal point. For example:
 
 ```java
-
     // rnd is an integer in the range 0-9 (from 0 up to 10).
     int rnd = (int)(Math.random()*10);  
 ```
