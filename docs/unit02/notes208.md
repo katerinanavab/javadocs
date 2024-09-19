@@ -45,11 +45,11 @@ For every primitive type in Java, there is a built-in object type called a wrapp
 
 These wrapper classes (defined in the `java.lang` included **package**) are also useful because they have some special values (like the minimum and maximum values for the type) and methods that you can use.
 
-When would you ever use Integer.MIN_VALUE or Integer.MAX_VALUE?  They are handy if you want to initialize a variable to the smallest possible value and then search a sequence of values for a larger value.
+When would you ever use `Integer.MIN_VALUE` or `Integer.MAX_VALUE`?  They are handy if you want to initialize a variable to the smallest possible value and then search a sequence of values for a larger value.
 
 ### Autoboxing and Unboxing 
 
-**Autoboxing** is the automatic conversion that the Java compiler makes between primitive types and their corresponding object wrapper classes. This includes converting an int to an Integer and a double to a Double. The Java compiler applies autoboxing when a primitive value is passed as a parameter to a method that expects an object of the corresponding wrapper class or assigned to a variable of the corresponding wrapper class. Here's an example of autoboxing.
+**Autoboxing** is the automatic conversion that the Java compiler makes between primitive types and their corresponding object wrapper classes. This includes converting an `int` to an `Integer` and a `double` to a `Double`. The Java compiler applies autoboxing when a primitive value is passed as a parameter to a method that expects an object of the corresponding wrapper class or assigned to a variable of the corresponding wrapper class. Here's an example of autoboxing.
 
 ```java
    Integer i = 2;
