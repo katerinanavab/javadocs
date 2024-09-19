@@ -72,8 +72,6 @@ Math.abs(-33.3); // returns 33.3
 #### Exponentiation
 {:.no_toc}
 
-![image](figures/pow.png)
-
 ``Math.pow`` takes two argument, both ``double``s and returns a ``double`` which is the first argument **raised to the power** of the second argument.
 
 ```java
@@ -106,9 +104,7 @@ System.out.println("The square root of 9 is " + Math.sqrt(9));
 
 ### Random Numbers
 
-![image](figures/dice.png)
-
-The ``Math.random()`` method returns a double number greater than or equal to 0.0, and less than 1.0.
+🎲 The ``Math.random()`` method returns a double number greater than or equal to 0.0, and less than 1.0.
 When we talk about ranges of numbers sometimes
 we need to be precise about whether the ends of the range are part of the range.
 For example, ``Math.random`` returns a number between 0 and 1, but does that
@@ -195,17 +191,17 @@ value.
 
 ## ⭐️ Summary
 
-- Static Math methods can be called using **Math**.method(); for each method.
+- **Static Math methods** can be called using `Math.method();` for each method.
 
 - The following static Math methods are part of the Java Quick Reference:
 
-  - **int abs(int)** : Returns the absolute value of an int value (which means no negatives).
-  - **double abs(double)** : Returns the absolute value of a double value.
-  - **double pow(double, double)** : Returns the value of the first parameter raised to the power of the second parameter.
-  - **double sqrt(double)** :  Returns the positive square root of a double value.
-  - **double random()** :  Returns a double value greater than or equal to 0.0 and less than 1.0 (not including 1.0)!
+  - `int abs(int)` : Returns the absolute value of an int value (which means no negatives).
+  - `double abs(double)` : Returns the absolute value of a double value.
+  - `double pow(double, double)` : Returns the value of the first parameter raised to the power of the second parameter.
+  - `double sqrt(double)` :  Returns the positive square root of a double value.
+  - `double random()` :  Returns a double value greater than or equal to 0.0 and less than 1.0 (not including 1.0)!
 
-- The values returned from Math.random can be manipulated to produce a random int or double in a defined range.
+- The values returned from `Math.random` can be **manipulated** to produce a random int or double in a defined **range**.
 
 - `(int)(Math.random()*range) + min` moves the random number into a range starting from a minimum number. The **range** is the `(max number - min number + 1)`.
 > For example, to get a number in the range of 5 to 10, use the range 10-5+1 = 6 and the min number 5: ``(int)(Math.random()*6) + 5``.
