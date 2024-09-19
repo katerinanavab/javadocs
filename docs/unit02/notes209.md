@@ -29,6 +29,15 @@ nav_order: 9
 
 </div>
 
+## What is Java?
+
+
+
+---
+
+## ⭐️ Summary
+
+
 <br>
 
 <div class="warn" markdown="block">
@@ -43,15 +52,6 @@ nav_order: 9
 6. _Finally you can close your Codespace!_
 
 </div>
-
-## What is Java?
-
-
-
----
-
-## ⭐️ Summary
-
 
 ---
 
