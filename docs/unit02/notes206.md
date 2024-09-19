@@ -49,12 +49,15 @@ String greeting = new String("Hello World");
 ```
 > This is the standard way to **create a `new` object of any class** in Java.
 
-
-In Java you can also use just a **string literal**, which is a set of characters enclosed in double quotes (``"``), to create a ``String`` object.
+<div class="imp" markdown="block">
+  
+In Java you can also use just a **string literal**, which is a set of characters enclosed in double quotes (``" "``), to create a ``String`` object:
 
 ```java
 String greeting = "Hello";
 ```
+
+</div>
 
 In both cases an _object_ of the ``String`` _class_ will be created in memory, and the **value** of the variable `greeting` will be set to an object **reference** (👉 a way to find that object).
 
