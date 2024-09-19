@@ -29,6 +29,15 @@ nav_order: 8
 
 </div>
 
+## Wrapper Classes: Integer and Double
+
+
+
+---
+
+## ⭐️ Summary
+
+
 <br>
 
 <div class="warn" markdown="block">
@@ -43,15 +52,6 @@ nav_order: 8
 6. _Finally you can close your Codespace!_
 
 </div>
-
-## Wrapper Classes: Integer and Double
-
-
-
----
-
-## ⭐️ Summary
-
 
 ---
 
