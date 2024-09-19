@@ -74,17 +74,57 @@ converted by calling their ``toString`` method which we'll talk about in section
 
 ![image](https://i.etsystatic.com/42623235/r/il/0c61d4/5831105772/il_570xN.5831105772_8z3q.jpg)
 
-Remember, however, that ``String``\ s are immutable, just like ``int``\ s and
-``double``\ s. So when we add two ``String``\ s (or a ``String`` and another
+Remember, however, that ``String``s are **immutable**, just like ``int``s and
+``double``s. So when we add two ``String``s (or a ``String`` and another
 value converted to a ``String``) we get a new ``String`` without making any
 change to the values being added together just like when we add `1 + 2` the
 original `1` and `2` aren't changed. When we use ``+=`` we are making a new
 ``String`` by adding something to the current value of a variable and then
 assigning that new value back into the variable, again just like with numbers.
 
+{:.highlight}
+Note that spaces are not added between strings automatically.  If you want a space between two strings then add one using + " " +. If you forget to add spaces, you will get smushed output like "HiJose" instead of "Hi Jose".  And remember that variables are never put inside the quotes ("") since this would print the variable name out letter by letter instead of its value.
+
+You can even add other items to a string using the ``+`` operator. Primitive
+values like ``int`` and ``boolean`` will be converted to a ``String`` like what
+you would type into a Java program and objects will be converted to ``String`` using the
+``toString`` method discussed in the previous section.
+
+<div class="task" markdown="block">
+
+💬 **Discuss:** What do you think the following code will print out?
+
+```java
+String message = "12" + 4 + 3;
+System.out.println(message);
+```
+
+</div>
+
+{:.highlight}
+If you are appending a number to a string it will be converted to a string first before being appended.
+
+Since the same operators are processed from left to right this will print ``1243``.  First 4 will be turned into a string and appended to 12 and then 3 will be turned into a string and appended to 124.  If you want to do addition instead, try using parentheses!
+
+What if you wanted to print out a double quote " character? Since the double quote " is a special character with meaning in Java, we put in a backslash in front of the quote to signal that we want just the character. This is called a **backslash escape sequence**. And if you wanted to print out a backslash, you would have to backslash it too in order to escape its special meaning. Another useful backslashed character is backslash \\n which will put in a newline.
+
+   
 ---
 
 ## ⭐️ Summary
+
+- **Strings** in Java are objects of the ``String`` class that hold sequences of characters.
+
+- String objects can be created by using string literals (String s = "hi";) or by calling the String class constructor (String t = new String("bye");).
+
+- **new** is used to create a new object of a class.
+- **null** is used to indicate that an object reference doesn't refer to any object yet.
+
+- String objects can be concatenated using the ``+`` or ``+=`` operator, resulting in a new String object.
+
+- Primitive values can be concatenated with a String object. This causes implicit conversion of the values to String objects.
+
+- Escape sequences start with a backslash ``\`` and have special meaning in Java. Escape sequences used in this course include ``\"``, ``\\``, and  ``\n`` to print out a quote, backslash, and a new line.
 
 <br>
 
