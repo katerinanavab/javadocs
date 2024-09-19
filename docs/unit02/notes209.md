@@ -31,73 +31,78 @@ nav_order: 9
 
 ## Using the Math Class
 
-Games would be boring if the same thing happened each time you played the game.  Random numbers can be used in games to generate different outcomes each time the game is played. In Java, the ``Math.random()`` method to is used to generate a random number.
+Games would be boring if the same thing happened each time you played the game. Random numbers can be used in games to generate different outcomes each time the game is played. In Java, the ``Math.random()`` method to is used to generate a random number.
 
-There are lots of mathematical methods in the ``Math`` class
-that you might want to use in your programs, like ``Math.pow(2,3)`` which calculates the 2 to the power of 3 which is 8.
-
-These methods are in the **Math** class defined in the java.lang package. These are **static methods** which means you can call them by just using ``ClassName.methodName()`` without creating an object.
-This is why we can just say Math.random() instead of having to define an object of the class Math.
+These methods are in the **Math** class defined in the java.lang package. These are **static methods** which means you can call them by just using ``ClassName.methodName()`` without creating an object. This is why we can just say `Math.random()` instead of having to define an object of the class Math.
 
 
 {:.highlight}
-**Static methods** (also called class methods) are called using the class name and the dot operator (.) followed by the method name. You do not need to create an object of the class to use them. You can use ClassName.methodName() or just methodName() if they are called from within the same class.
+**Static methods** (also called class methods) are called using the class name and the **dot operator** `.` followed by the method name. _You do not need to create an object of the class to use them._ You can use `ClassName.methodName()` or just `methodName()` if they are called from within the same class.
 
 ### Mathematical Functions
 
 The ``Math`` class contains the following **methods** that are in the AP CSA subset. There are many more ``Math`` methods, outside of what you need on the AP exam, that you can find in the [Math class Javadocs](https://devdocs.io/openjdk~17/java.base/java/lang/math).
 
-- ``int abs(int)`` : Returns the absolute value of an int value (which is the value of a number without its sign, for example ``Math.abs(-4)`` = 4).
-
-- ``double abs(double)`` : Returns the absolute value of a double value.
-
-- ``double pow(double, double)`` : Returns the value of the first parameter raised to the power of the second parameter.
-
-- ``double sqrt(double)`` :  Returns the positive square root of a double value.
-
-- ``double random()`` :  Returns a double value greater than or equal to 0.0 and less than 1.0 (not including 1.0!).
+| Method      | Output |
+| ----------- | ----------- |
+| ``int abs(int)``| Returns the **absolute value** of an int value (which is the value of a number without its sign, for example ``Math.abs(-4)`` = 4) |
+| ``double abs(double)``   | Returns the **absolute value** of a double value |
+| ``double pow(double, double)`` | Returns the value of the first parameter **raised to the power** of the second parameter |
+| ``double sqrt(double)`` |  Returns the **positive square root** of a double value |
+| ``double random()`` |  Returns a random double value **greater than or equal to 0.0 and less than 1.0** (_not inclusive!_) |
 
 
 {:.highlight}
 All the ``Math`` methods that you may need to use or understand on the AP exam are listed in the [AP CSA Reference Sheet](https://apstudents.collegeboard.org/ap/pdf/ap-computer-science-a-java-quick-reference_0.pdf) that you can use during the exam.
 
-These Math methods are mathematical functions that compute new values from their arguments. You may be able to guess what ``abs``, ``pow``, and ``sqrt`` do, from their abbreviations. 
+These Math methods are mathematical functions that **compute new values** from their arguments. 
 
-``Math.abs`` takes a single argument, either a ``double`` or an
-``int`` and returns a value of the same type which is the absolute value of the
-argument. The absolute value is the positive value of the number without its sign or its distance from 0. So:
+#### Absolute Value
+{:.no_toc}
+
+``Math.abs`` takes a single argument, either a ``double`` or an ``int`` and returns a value of the same type which is the **absolute value** of the argument. The absolute value is the positive value of the number without its sign or its distance from 0. 
 
 ```java
-   Math.abs(45);    // returns 45
-   Math.abs(-45);   // returns 45
-   Math.abs(33.3);  // returns 33.3
-   Math.abs(-33.3); // returns 33.3
+Math.abs(45);    // returns 45
+Math.abs(-45);   // returns 45
+Math.abs(33.3);  // returns 33.3
+Math.abs(-33.3); // returns 33.3
 ```
+
+#### Exponentiation
+{:.no_toc}
+
 ![image](figures/pow.png)
 
-``Math.pow`` takes two argument, both ``double``\ s and returns
-a ``double`` which is the first argument raised to the power of the second
-argument.
+``Math.pow`` takes two argument, both ``double``s and returns a ``double`` which is the first argument **raised to the power** of the second argument.
 
 ```java
-   Math.pow(2 , 3); // returns 8.0
-   Math.pow(10, 6); // returns 1000000.0
-   Math.pow(2, -3); // returns 0.125
+Math.pow(2 , 3); // returns 8.0
+Math.pow(10, 6); // returns 1000000.0
+Math.pow(2, -3); // returns 0.125
 ```
 
-``Math.sqrt`` takes an ``double`` argument and returns a positive ``double`` value which is the square root of the argument. For example, the square root of 9 is 3 because 3 squared is 9.
+#### Square Root
+{:.no_toc}
+
+``Math.sqrt`` takes an ``double`` argument and returns a positive ``double`` value which is the square root of the argument. 
+> For example, the square root of 9 is 3 because 3 squared is 9.
 
 ```java
-
-   Math.sqrt(9); // returns 3.0
+Math.sqrt(9); // returns 3.0
 ```
 
-Since these methods calculate and return a value, you need to use that value, for example in an assignment statement or in a print statement to see the result.  For example:
+<div class="imp" markdown="block">
+   
+Since these methods calculate and _return_ a **value**, you need to _use_ that value, for example in an assignment statement or in a print statement to see the result. 
+
+_For example:_
 
 ```java
-
-   System.out.println("The square root of 9 is " + Math.sqrt(9));
+System.out.println("The square root of 9 is " + Math.sqrt(9));
 ```
+
+</div>
 
 ### Random Numbers
 
@@ -163,21 +168,20 @@ words, add the difference between the two ranges, 1 in this case.
 Here are some examples that move a random number into a specific range.
 
 ```java
+// Math.random() returns a random number between 0.0-0.99.
+double rnd = Math.random();
 
-    // Math.random() returns a random number between 0.0-0.99.
-    double rnd = Math.random();
+// rnd1 is an integer in the range 0-9 (including 9).
+int rnd1 = (int)(Math.random()*10);
 
-    // rnd1 is an integer in the range 0-9 (including 9).
-    int rnd1 = (int)(Math.random()*10);
+// rnd2 is in the range 1-10 (including 10). The parentheses are necessary!
+int rnd2 = (int)(Math.random()*10) + 1;
 
-    // rnd2 is in the range 1-10 (including 10). The parentheses are necessary!
-    int rnd2 = (int)(Math.random()*10) + 1;
+// rnd3 is in the range 5-10 (including 10). The range is 10-5+1 = 6.
+int rnd3 = (int)(Math.random()*6) + 5;
 
-    // rnd3 is in the range 5-10 (including 10). The range is 10-5+1 = 6.
-    int rnd3 = (int)(Math.random()*6) + 5;
-
-    // rnd4 is in the range -10 up to 9 (including 9). The range is doubled (9 - -10 + 1 = 20) and the minimum is -10.
-    int rnd4 = (int)(Math.random()*20) - 10;
+// rnd4 is in the range -10 up to 9 (including 9). The range is doubled (9 - -10 + 1 = 20) and the minimum is -10.
+int rnd4 = (int)(Math.random()*20) - 10;
 ```
 
 So the general recipe for generating a random is to first stretch the value from
