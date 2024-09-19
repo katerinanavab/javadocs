@@ -30,7 +30,18 @@ nav_order: 6
 </div>
 
 
-## What is Java?
+## The String Class
+
+
+**Strings** in Java are _objects_ of the ``String`` _class_ that hold **sequences of characters** (`a`, `B`, `c`, `$`, etc). You can declare a variable to be of the type ``String``.
+
+> Remember that a **class** (or classification) in Java defines the data that all **objects** of the class have (the _instance variables_) and the behaviors, the things that objects know how to do (the _methods_).
+
+![image](https://i.pinimg.com/736x/84/36/bb/8436bbfbc0577b8a8528e4194ac800de.jpg)
+
+{:.highlight}
+Class names in Java, like ``String``, begin with a _CAPITAL_ letter.  All primitive types: ``int``, ``double``, and ``boolean``, begin with a _lowercase_ letter. This is one easy way to tell the difference between primitive types and class types.
+
 
 
 
