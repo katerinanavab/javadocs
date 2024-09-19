@@ -61,6 +61,27 @@ String greeting = "Hello";
 
 In both cases an _object_ of the ``String`` _class_ will be created in memory, and the **value** of the variable `greeting` will be set to an object **reference** (👉 a way to find that object).
 
+![image](figures/stringObject.png)
+
+### String Concatenation
+
+``String``s can be added to each other to create a new string using the ``+``
+or ``+=`` operator . This is also called **appending** or **concatenating**. You
+can also add any other kind of value to a ``String`` with ``+`` or ``+=`` and
+the other value will be converted to a ``String`` automatically. Objects are
+converted by calling their ``toString`` method which we'll talk about in section
+5.4.
+
+![image](https://i.etsystatic.com/42623235/r/il/0c61d4/5831105772/il_570xN.5831105772_8z3q.jpg)
+
+Remember, however, that ``String``\ s are immutable, just like ``int``\ s and
+``double``\ s. So when we add two ``String``\ s (or a ``String`` and another
+value converted to a ``String``) we get a new ``String`` without making any
+change to the values being added together just like when we add `1 + 2` the
+original `1` and `2` aren't changed. When we use ``+=`` we are making a new
+``String`` by adding something to the current value of a variable and then
+assigning that new value back into the variable, again just like with numbers.
+
 ---
 
 ## ⭐️ Summary
