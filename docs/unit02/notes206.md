@@ -42,8 +42,21 @@ nav_order: 6
 {:.highlight}
 Class names in Java, like ``String``, begin with a _CAPITAL_ letter.  All primitive types: ``int``, ``double``, and ``boolean``, begin with a _lowercase_ letter. This is one easy way to tell the difference between primitive types and class types.
 
+In Java there are two ways to create an object of the ``String`` class. You can use the ``new`` keyword followed by a space and then the class constructor and then in parentheses you can include values used to initialize the fields of the object. 
+
+```java
+String greeting = new String("Hello World");
+```
+> This is the standard way to **create a `new` object of any class** in Java.
 
 
+In Java you can also use just a **string literal**, which is a set of characters enclosed in double quotes (``"``), to create a ``String`` object.
+
+```java
+String greeting = "Hello";
+```
+
+In both cases an _object_ of the ``String`` _class_ will be created in memory, and the **value** of the variable `greeting` will be set to an object **reference** (👉 a way to find that object).
 
 ---
 
