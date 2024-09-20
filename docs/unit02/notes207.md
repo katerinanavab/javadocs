@@ -143,9 +143,13 @@ Here is a list of common mistakes made with Strings.
 #### String Methods Game
 {:.no_toc}
 
+<div class="task" markdown="block">
+
 Try the game below written by AP CSA teacher Chandan Sarkar. Click on **Strings** and then on the letters that would be the result of the string method calls. We encourage you to work in pairs and see how high a score you can get.
 
 <a href="https://csa-games.netlify.app/" target="_blank">game</a>
+
+</div>
 
 ---
 
