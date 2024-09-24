@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "💻 PROJECT #2.1"
-projectname: "Silly Strings"
+projectname: "MadLibs"
 parent: "2️⃣ Using Objects"
 nav_order: 10
 ---
@@ -22,7 +22,7 @@ Have you ever played MAD LIBS? In this game, you first choose a bunch of words w
 
 ### Instructions & Requirements
 
-#### PART A: MadLibs Game
+#### PART A: Create a MadLibs Story
 <div class="task" markdown="block">
 
 1. Come up with a fun story to use for MadLibs. Yours should be at least **10 sentences** long. Choose nouns, verbs, adjectives, etc., that you want the user to fill in, and decide how many blanks you’ll need.
@@ -48,7 +48,7 @@ adjective1 = scan.nextLine();
 
 </div> 
 
-#### PART B: Pig Latin Translation
+#### PART B: Practice String Methods
 
 #### Reminders
 * Strings in Java are **objects** of the `String` class that hold _sequences of characters_.
