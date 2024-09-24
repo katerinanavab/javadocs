@@ -79,20 +79,12 @@ System.out.println("Yertle's y position is: " + yertle.getYPos() );
 
 ### Methods with Arguments and a Return Value
 
-Since getters take no arguments, all they can do is return a value based on the current state of the object. But often it’s useful to have methods that compute values based on both the current state of the object and some arguments.
+Since getters take no arguments, all they can do is return a value based on the current state of the object. But often it’s useful to have methods that **compute values** based on both the current state of the object and some arguments. 
 
 For example, while we could use a ``Turtle``’s ``getXPos`` and ``getYPos``
-getters and some math (remember your Pythagorean Theorem?) to figure out how far
-away a ``Turtle`` is from any given point, if that’s a thing we need to do in
-a lot of programs using ``Turtle``, it might be nice to be able to ask a
-``Turtle`` directly for its distance from a given point. After all, it knows
-where it is, so why not do the math for us?
+getters and some math to figure out how far away a ``Turtle`` is from any given point, if that’s a thing we need to do in a lot of programs using ``Turtle``, it might be nice to be able to ask a ``Turtle`` directly for its distance from a given point. 
 
-And indeed, the ``Turtle`` class has a method called ``getDistance`` that takes
-two ``int`` arguments representing an `x` value and a `y` value and returns the
-distance between the ``Turtle``’s current position and that `x,y` point. This
-is not a getter because it doesn’t just get an existing value; it computes a new
-value based on the arguments it is passed as well as the state of the ``Turtle``.
+And indeed, the ``Turtle`` class has a method called ``getDistance`` that takes two ``int`` arguments representing an `x` value and a `y` value and returns the distance between the ``Turtle``’s current position and that `x,y` point. This is _not a getter_ because it doesn’t just get an existing value; it **computes** a new value based on the arguments it is passed as well as the state of the ``Turtle``.
 
 {:.highlight}
 Methods that take arguments and return values are somewhat like mathematical functions. Given some **input**, they return **output**. 
