@@ -32,13 +32,16 @@ nav_order: 4
 
 ## Calling Methods With Parameters
 
-In the last lessons, we used simple **methods** like ``forward`` and ``turnRight`` to make the turtle draw lines. You may have noticed that ``forward()`` and ``backward()`` always move the same number of pixels (100 pixels), and ``turnRight()`` and ``turnLeft()`` always turn at right angles (90 degrees). This is a little limiting. What if we wanted to draw a triangle or the letter A? These require smaller angles to draw diagonal lines and different length lines. Luckily, there are more complex methods in the ``Turtle`` class that let you specify the number of pixels to move forward or the number of degrees to turn. These values that you can give to methods to help them do their job are called **arguments** or **parameters**.
+In the last lessons, we used simple **methods** like ``forward`` and ``turnRight`` to make the turtle draw lines. You may have noticed that ``forward()`` and ``backward()`` always move the same number of pixels (100 pixels), and ``turnRight()`` and ``turnLeft()`` always turn at right angles (90 degrees). 
 
-The parentheses ``()`` after method names when we call a method are there in case you need to give the method **actual parameters** or **arguments** (some data) to do its job. For example, we can give the argument 100 in ``forward(100)`` to make the turtle go forward 100 pixels or the argument 30 in ``turn(30)`` to make the turtle turn 30 degrees instead of 90 degrees.
+This is a little limiting. What if we wanted to draw a triangle or the letter A? These require smaller angles to draw diagonal lines and different length lines. Luckily, there are more complex methods in the ``Turtle`` class that let you specify the number of pixels to move forward or the number of degrees to turn. These values that you can give to methods to help them do their job are called **arguments** or **parameters**.
+
+The parentheses ``()`` after method names when we call a method are there in case you need to give the method **actual parameters** or **arguments** (some data) to do its job. 
+> For example, we can give the argument 100 in ``forward(100)`` to make the turtle go forward 100 pixels or the argument 30 in ``turn(30)`` to make the turtle turn 30 degrees instead of 90 degrees.
 
 
 {:.important}
-`object.method(arguments);` is used to call an object's method _and_ provide some **arguments** (actual parameters) to do its job.
+📣 `object.method(arguments);` is used to call an object's method _and_ provide some **arguments** (actual parameters) to do its job.
 
 ### Parameters vs. Arguments
 
