@@ -8,7 +8,7 @@ nav_order: 10
 
 ### Overview & Setup
 
-Have you ever played MAD LIBS? In this game, you first choose a bunch of words without looking at the story, and then those words are filled into the story to make it sound very wacky!
+In this project, you'll be creating your own **MadLibs** game using Java! A MadLibs story is a short story where certain words are left out, and players fill in the blanks with their own words (like nouns, verbs, adjectives, etc.), making the story fun and creative. You will write a story, replace some words with variables, and ask the user to fill in those blanks by gathering input using a `Scanner` object.
 
 <div class="setup" markdown="block">
 
@@ -25,7 +25,7 @@ Have you ever played MAD LIBS? In this game, you first choose a bunch of words w
 #### PART A: Create a MadLibs Story
 <div class="task" markdown="block">
 
-1. Come up with a fun story to use for MadLibs. Yours should be at least **10 sentences** long. Choose nouns, verbs, adjectives, etc., that you want the user to fill in, and decide how many blanks you’ll need.
+1. Come up with a fun story to use for MadLibs. Yours should be long enough to include at least **10 variables**. Choose nouns, verbs, adjectives, etc., that you want the user to fill in, and decide how many blanks you’ll need.
 > Example: "Today, I went to the PLACE to VERB with my ADJECTIVE NOUN. It was a ADJECTIVE day, and we had lots of fun!"
 
 2. In your `main` method, **declare variables** for the parts of the story that the user will input. For each _blank_ in the story, you'll need a variable.
@@ -48,7 +48,10 @@ adjective1 = scan.nextLine();
 
 </div> 
 
-#### PART B: Practice String Methods
+#### Extensions
+* Add more variables to make your story longer and funnier.
+* Format the output to make it look like a paragraph using `\n` for new lines.
+* Include emojis to make the story visually interesting!
 
 #### Reminders
 * Strings in Java are **objects** of the `String` class that hold _sequences of characters_.
