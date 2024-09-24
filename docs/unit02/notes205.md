@@ -32,51 +32,35 @@ nav_order: 5
 ## Methods that Return Values
 
 All the methods on ``Turtle`` that we’ve discussed so far have had a ``void``
-return type. Such methods are sometimes called **void methods**. Because a
-``void`` method doesn’t return any value, the only point of calling one is
-because it does something that can be observed by the user or by other code—it
-changes the state of the object or maybe causes something to happen like drawing
-a line on the screen. Or both. These things they do are sometimes called
-“effects”.
+return type. Such methods are sometimes called **void methods**. 
 
-In contrast, methods with a return type of anything `other` than ``void`` are
-called **non-void** methods. These methods **return** a value that the code
-calling the method can use. And because methods are called on an object, these
-methods can be used to return values that tell us things about an object’s
-internal state.
+⬛️ Because a ``void`` method _does NOT return any value_, the only point of calling one is
+because it *does something* that can be observed by the user or by other code—it
+**changes the state** of the object or maybe **causes something to happen** like drawing
+a line on the screen. Or both. 
+> 🪄 These things they do are sometimes called **effects**.
 
-In well-designed programs, non-void methods typically don’t have effects; they
-just compute and return a value. And void methods obviously can’t return values.
-So most methods are of one kind or the other: either a void method which is
-called for some effect or a non-void method that is called to compute a value
-but otherwise has no effect. To put it another way, void methods `do things`
-while non-void methods `produce values`.
+{:.important}
+Methods with a **return** type of anything other than ``void`` are called **non-void** methods. These methods **return** a value (output) that the code
+calling the method can use. 
+> And because methods are called on an **object**, these methods can be used to return values that tell us things about an object’s
+_internal state_.
+
+Most methods are of one kind or the other: either a **void** method which is called for some effect or a **non-void** method that is called to compute a value
+but otherwise has no effect. 
+
+{:.highlight}
+To put it another way, **void** methods *do things* while **non-void** methods *produce values*.
 
 ### Accessors / Getters
 
 A simple kind of method that returns a value is what is formally called an
-**accessor** because it accesses a value in an object. In the real world
-everyone calls them **getters**. A getter is a method that takes no arguments
-and has a non-\ ``void`` return type. In Java they are almost always named
-something that starts with ``get``, and they usually just return the value of one
-of the object’s instance variables. For example, the ``Turtle`` class has
-several getters, ``getWidth`` and ``getHeight`` which return the width and the
-height of a ``Turtle`` object and ``getXPos`` and ``getYPos`` which return the x
-and y values of the ``Turtle``\ ’s position.
-
-That means that after you construct a ``Turtle``, either at the default position
-in the middle of the ``World`` or by specifying a starting point as arguments to
-the constructor, you don’t need to keep track of where you put it; you can
-always get its current position with the ``getXPos`` and ``getYPos`` getters.
-Better yet, after creating a ``Turtle`` and moving it all around with the
-``forward`` and ``turn`` methods we discussed in the previous section, you don’t
-have to figure out where it ended up; you can just ask it for its new position,
-again with the ``getXPos`` and ``getYPos`` getters.
-
-Note that when you use a getter, you need to do something with the value it
-returns. You might assign it to a variable, use it in an expression, or print it
-out. If you don’t, you’re just getting a value and doing nothing with it—you
-might as well not have bothered to call the getter in the first place.
+**accessor** because it _accesses a value_ in an object. 
+* In the real world everyone calls them **getters**.
+* A getter is a method that takes no arguments and has a non-``void`` return type.
+* In Java they are almost always named something that starts with ``get``, and they usually just return the value of one
+of the object’s **instance variables**. 
+> For example, the ``Turtle`` class has several getters, ``getWidth`` and ``getHeight`` which return the width and the height of a ``Turtle`` object and ``getXPos`` and ``getYPos`` which return the x and y values of the `Turtle`’s position.
 
 Here are some examples of using getters on the ``Turtle`` object ``yertle``.
 
@@ -95,11 +79,9 @@ System.out.println("Yertle's y position is: " + yertle.getYPos() );
 
 ### Methods with Arguments and a Return Value
 
-Since getters take no arguments, all they can do is return a value based on the
-current state of the object. But often it’s useful to have methods that compute
-values based on both the current state of the object and some arguments.
+Since getters take no arguments, all they can do is return a value based on the current state of the object. But often it’s useful to have methods that compute values based on both the current state of the object and some arguments.
 
-For example, while we could use a ``Turtle``\ ’s ``getXPos`` and ``getYPos``
+For example, while we could use a ``Turtle``’s ``getXPos`` and ``getYPos``
 getters and some math (remember your Pythagorean Theorem?) to figure out how far
 away a ``Turtle`` is from any given point, if that’s a thing we need to do in
 a lot of programs using ``Turtle``, it might be nice to be able to ask a
@@ -108,24 +90,17 @@ where it is, so why not do the math for us?
 
 And indeed, the ``Turtle`` class has a method called ``getDistance`` that takes
 two ``int`` arguments representing an `x` value and a `y` value and returns the
-distance between the ``Turtle``\ ’s current position and that `x,y` point. This
+distance between the ``Turtle``’s current position and that `x,y` point. This
 is not a getter because it doesn’t just get an existing value; it computes a new
 value based on the arguments it is passed as well as the state of the ``Turtle``.
 
-Methods that take arguments and return values are somewhat like mathematical
-functions. Given some input, they return a value. (Mathematicians expect that a
-function always returns the same value, given the same arguments. So they would
-not consider something like ``getDistance(x, y)`` a true function since its
-return value also depends on the current position of the ``Turtle``. But we’re
-doing programming, not math.)
+{:.highlight}
+Methods that take arguments and return values are somewhat like mathematical functions. Given some **input**, they return **output**. 
+
+> (Mathematicians expect that a function always returns the same value, given the same arguments. So they would not consider something like ``getDistance(x, y)`` a true function since its return value also depends on the current position of the ``Turtle``. But we’re doing programming, not math.)
 
 ![image](figures/function.png)
 
-We will save a deeper discussion of actually writing getters and other methods
-until Unit 5, but for the AP progress checks for this unit, you should be able to
-trace through method calls like the ones below. Notice that the **return
-statement** in a method returns the value, and it must match declared return type
-of the method. The calling method must then do something useful with that value.
 
 #### 💻 In-Class Activity
 {:.no_toc}
