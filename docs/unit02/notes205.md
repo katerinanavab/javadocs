@@ -70,13 +70,13 @@ Scanner scan = new Scanner(System.in);
 ```
 3. You only need to construct the Scanner once in the program. Now, you can call its methods to take different types of user input:
 ```java
-System.out.println("Enter a String: ");
+System.out.println("Enter some text: ");
 String strInput = scan.nextLine();
 
-System.out.println("Enter an int: ");
+System.out.println("Enter a whole number: ");
 String intInput = scan.nextInt();
 
-System.out.println("Enter a double: ");
+System.out.println("Enter a decimal number: ");
 String doubleInput = scan.nextDouble();
 ```
 4. Because the Scanner methods **RETURN** a value (_the user's input_), you need to do something with it:
