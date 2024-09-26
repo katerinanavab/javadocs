@@ -72,10 +72,8 @@ Scanner scan = new Scanner(System.in);
 ```java
 System.out.println("Enter some text: ");
 String strInput = scan.nextLine();
-
 System.out.println("Enter a whole number: ");
 String intInput = scan.nextInt();
-
 System.out.println("Enter a decimal number: ");
 String doubleInput = scan.nextDouble();
 ```
@@ -83,7 +81,6 @@ String doubleInput = scan.nextDouble();
 ```java
 // Print out the return value
 System.out.println("You entered " + strInput);
-
 // Use the return value in an expression
 int sum = intInput + doubleInput;
 ```
