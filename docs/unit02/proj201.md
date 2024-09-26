@@ -26,29 +26,29 @@ In this project, you'll be creating your own **MadLibs** game using Java! A MadL
 <div class="task" markdown="block">
 
 1. Come up with a fun story to use for MadLibs. Yours should be long enough to include at least **10 variables**. Choose nouns, verbs, adjectives, etc., that you want the user to fill in, and decide how many blanks you’ll need.
-> Example: "Today, I went to the PLACE to VERB with my ADJECTIVE NOUN. It was a ADJECTIVE day, and we had lots of fun!"
-
+> _Example:_ "Today, I went to the PLACE to VERB with my ADJECTIVE NOUN. It was a ADJECTIVE day, and we had lots of fun!"
 2. In your `main` method, **declare variables** for the parts of the story that the user will input. For each _blank_ in the story, you'll need a variable.
-> Example: `String adjective1;`
-
+> _Example:_ `String adjective1;`
 3. Use a Scanner object to take user input, using the code example below for help.
 ```java
-// Only need to construct the Scanner once
+// Add to TOP of program before the class:
+import java.util.Scanner;
+// In the main method:
+// Construct the Scanner - only do this once
 Scanner scan = new Scanner(System.in);
-
-// Do this for each variable!!!
+// Take input for each variable!!!
 System.out.print("Enter an adjective: ");
 adjective1 = scan.nextLine();
 ```
 4. Use string **concatenation** to combine the user's input with your story.
-> Example: `String story = "It was a " + adjective1 + " day";`
-
-5. Print out your story!
+> _Example:_ `String story = "It was a " + adjective1 + " day";`
+5. **Print** out your story!
 > It may be easier to separate each sentence into its own variable, then use the appropriate method to print them out (either all together or on separate lines). 
 
 </div> 
 
 #### Extensions
+* Incorporate **numbers** (`int` and `double`), using the appropriate Scanner class methods to obtain user input, then doing something with the numbers (like printing or using in an expression).
 * Add more variables to make your story longer and funnier.
 * Format the output to make it look like a paragraph using `\n` for new lines.
 * Include emojis to make the story visually interesting!
