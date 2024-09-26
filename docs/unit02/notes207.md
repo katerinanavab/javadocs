@@ -29,8 +29,6 @@ nav_order: 7
 
 </div>
 
-
-
 ## String Methods
 
 A string holds **characters in a sequence**. Each character is at a position, or **index**, which starts with `0` as shown below.  An **index** is a number associated with a position in a string. The **length** of a string is the _number of characters_ in it including any spaces or special characters. The string below has a `length` of 14:
@@ -42,6 +40,8 @@ The _first_ character in a String is at **index** `0` and the _last_ character i
 
 For the AP CSA exam, you only need to know how to use the following String **methods**.  All of the String method descriptions are included in the <a href="https://apstudents.collegeboard.org/ap/pdf/ap-computer-science-a-java-quick-reference_0.pdf" target="_blank">AP CSA Java Quick Reference Sheet</a> that you get during the exam so you don't have to memorize these.
 
+| Method      | Output |
+| ----------- | ------ |
 
 -  `int length()` method returns the number of characters in the string, including spaces and special characters like punctuation.
 
@@ -116,7 +116,8 @@ System.out.println(message.equals("hello!"));
 
 > Since ``"Hello!"`` would be alphabetically ordered after ``"And"``, ``compareTo`` returns a positive number. Since ``"Hello!"`` would be alphabetically ordered before ``"Zoo"``, ``compareTo`` returns a negative number.  Notice that ``equals`` is case-sensitive.
 
-There are lots of other methods in the String class.  You can look through the Java documentation for the |String class| online.   You don't have to know all of these for the exam, but you can use them if you want to on the exam.
+{:.highlight}
+There are lots of other methods in the String class. You can look through the **Java documentation **for the [String class](https://devdocs.io/openjdk~21/java.base/java/lang/string) online. You don't have to know all of these for the exam, but you can use them if you want to on the exam.
 
 An **Application Programming Interface (API)** is a library of prewritten classes that simplify complex programming tasks for us. These classes are grouped together in a **package** like java.lang and we can import these packages (or individual classes) into our programs to make use of them. For instance, we have just discussed the String library built into the default java.lang package - it takes care of the detailed work of manipulating strings for us.  There are many other useful library packages as well, both in the java.lang package and in other packages. Documentation for APIs and libraries are essential to understanding how to use these classes.
 
@@ -147,7 +148,7 @@ Here is a list of common mistakes made with Strings.
 
 Try the game below written by AP CSA teacher Chandan Sarkar. Click on **Strings** and then on the letters that would be the result of the string method calls. We encourage you to work in pairs and see how high a score you can get.
 
-<a href="https://csa-games.netlify.app/" target="_blank">game</a>
+<a href="https://csa-games.netlify.app/" target="_blank"><button class="btn">String Methods Game</button></a>
 
 </div>
 
