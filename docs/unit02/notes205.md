@@ -52,7 +52,48 @@ but otherwise has no effect.
 {:.highlight}
 To put it another way, **void** methods *do things* while **non-void** methods *produce values*.
 
-### Accessors / Getters
+### 🖨️ The Scanner Class
+
+The `Scanner` class is used to get user input, and it is found in the `java.util` package. To use the `Scanner` class, create an **object** instance of the class and use any of the available **methods** found in the `Scanner` class documentation. [More info on the Scanner class](https://www.w3schools.com/java/java_user_input.asp)
+
+#### Using Scanner Objects for Input
+
+<div class="imp" markdown="block">
+  
+1. Add an import statement at the very top of your program, BEFORE the class declaration:
+```java
+import java.util.Scanner; // import Scanner class
+```
+2. Construct a Scanner object:
+```java
+Scanner scan = new Scanner(System.in); 
+```
+3. You only need to construct the Scanner once in the program. Now, you can call its methods to take different types of user input:
+```java
+System.out.println("Enter a String: ");
+String strInput = scan.nextLine();
+
+System.out.println("Enter an int: ");
+String intInput = scan.nextInt();
+
+System.out.println("Enter a double: ");
+String doubleInput = scan.nextDouble();
+```
+4. Because the Scanner methods **RETURN** a value (_the user's input_), you need to do something with it:
+```java
+// Print out the return value
+System.out.println("You entered " + strInput);
+
+// Use the return value in an expression
+int sum = intInput + doubleInput;
+```
+
+</div>
+
+{:.highlight} 
+💡 The `Scanner` class is NOT TESTED on the AP Exam. However, it is very useful in our programs because it enables **user interaction**!
+
+### Accessor / "Getter" Methods
 
 A simple kind of method that returns a value is what is formally called an
 **accessor** because it _accesses a value_ in an object. 
