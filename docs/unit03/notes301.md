@@ -15,7 +15,7 @@ nav_order: 1
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 3.1]() 
+📖 This page is a condensed version of [CSAwesome Topic 3.1](https://runestone.academy/ns/books/published/csawesome/Unit3-If-Statements/topic-3-1-booleans.html?mode=browsing) 
 
 #### Using a GitHub Template for class notes
 {:.no_toc}
