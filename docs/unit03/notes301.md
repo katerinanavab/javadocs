@@ -85,13 +85,7 @@ The **Relational Operators** below in Java are used to compare numeric values or
 | ``==`` |  Equals |
 | ``!=`` | Does not equal |
 
-If you have trouble telling ``<`` and ``>`` apart, think of ``<`` and ``>`` as
-arrows where the pointy end should _point to the smaller value_. If ``<`` (less
-than) points towards a smaller number on the left, then it evaluates to
-``true``. On the other hand a ``>`` (greater than) expression will be ``true``
-only if the smaller number is on the right hand side. 
-
-Or maybe you prefer the “hungry alligator” mnemonic beloved by elementary school teachers—think of ``<`` and ``>`` as the mouths of hungry alligators which always want to _eat the bigger number_; a ``<`` or ``>`` expression is only ``true`` if the alligator is in fact about to eat the bigger number.
+🐊 If you have trouble telling ``<`` and ``>`` apart, use the “hungry alligator” mnemonic beloved by elementary school teachers—think of ``<`` and ``>`` as the mouths of **hungry alligators** which always want to _eat the bigger number_; a ``<`` or ``>`` expression is only ``true`` if the alligator is in fact about to eat the bigger number.
 
 {:.highlight}
 To remember the correct order of the two characters in ``<=`` and ``>=``, just
