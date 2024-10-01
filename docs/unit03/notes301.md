@@ -76,6 +76,8 @@ In the figure below, we are creating two separate ``Turtle`` objects called ``ju
 
 The **Relational Operators** below in Java are used to compare numeric values or arithmetic expressions. Although some programming languages allow using relational operators like ``<`` to compare strings, Java only uses these operators for numbers, and uses the methods ``compareTo`` and ``equals`` for comparing ``String`` values.
 
+| Operator | Description |
+| --- | ----------- |
 | ``<``  | Less than |
 | ``>``  | Greater than |
 | ``<=`` | Less than or equal to |
