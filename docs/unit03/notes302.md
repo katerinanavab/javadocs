@@ -100,7 +100,9 @@ Have you ever seen a **Magic 8 ball**? You ask it a yes-no question and then sha
 > If you need help with random numbers, see [lesson 2.9](ttps://runestone.academy/runestone/books/published/csawesome/Unit2-Using-Objects/topic-2-9-Math.html)
 2. Come up with **8 possible responses** to yes-no questions.
 3. Use **if statements** to test the number and print out a different response for each number.
-   
+
+</div>
+
 ---
 
 ## ⭐️ Summary
