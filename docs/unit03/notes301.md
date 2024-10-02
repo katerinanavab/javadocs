@@ -151,7 +151,7 @@ Because Java's ``%`` is a remainder operator and not a true
 
 <div class="task" markdown="block">
 
-Try the game below to practice! Click on _Relationals_, evaluate the relational expression and click on **None**, **All**, or the **numbers** that make the expression `true`. Check on _Compound_ for an added challenge. We encourage you to work in pairs and see how high a score you can get.
+🎲 Try the game below to practice! Click on _Relationals_, evaluate the relational expression and click on **None**, **All**, or the **numbers** that make the expression `true`. Check on _Compound_ for an added challenge. We encourage you to work in pairs and see how high a score you can get.
 
 <a href="https://csa-games.netlify.app/" target="_blank"><button class="btn">Relational Operators Game</button></a>
 
