@@ -47,8 +47,17 @@ adjective1 = scan.nextLine();
 
 </div> 
 
+#### PART B: Mix it up with Methods
+<div class="task" markdown="block">
+  
+1. Manipulate some of the string variables with `String` class methods such as `.substring()`. Use at least **3 String class methods** total.
+2. Take numerical input (`int` and `double`) by using the `Scanner` class methods: `scan.nextInt()` or `scan.nextDouble()`, for at least 2 of the variables in your story. 
+3. Before including those numbers in your story, run a `Math` class method on them to manipulate the numbers however you'd like. You should use at **least 2 Math class methods** total here, and possibly `Math.random()` to include a random number somewhere in the story.  
+
+</div> 
+
 #### Extensions
-* Incorporate **numbers** (`int` and `double`), using the appropriate Scanner class methods to obtain user input, then doing something with the numbers (like printing or using in an expression).
+* 
 * Add more variables to make your story longer and funnier.
 * Format the output to make it look like a paragraph using `\n` for new lines.
 * Include emojis to make the story visually interesting!
