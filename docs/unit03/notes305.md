@@ -103,14 +103,11 @@ In Java, `!` will be executed before `&&`, and `&&` will be executed before `||`
 
 The following table (also called a **truth table**) shows the result for ``P && Q`` when ``P`` and ``Q`` are both expressions that can be ``true`` or ``false``. An expression involving logical operators like ``P && Q`` evaluates to a ``boolean`` value, ``true`` or ``false``. As you can see below the result of ``P && Q`` is only ``true`` if both ``P`` and ``Q`` are ``true``.
 
-| P     | Q     | P && Q    |
+| P     | Q     | P `&&` Q  |
 |-------|-------|-----------|
 |true   |true   |true       |
-|-------|-------|-----------|
 |true   |false  |false      |
-|-------|-------|-----------|
 |false  |true   |???        |
-|-------|-------|-----------|
 |false  |false  |false      |
 
 > 💬: The truth table above is missing one result.  What is the result of ``P && Q`` when ``P = false`` and ``Q = true``?
@@ -119,14 +116,11 @@ The following table (also called a **truth table**) shows the result for ``P && 
 
 The following table shows the result for ``P || Q`` when ``P`` and ``Q`` are both expressions that can be ``true`` or ``false``.  As you can see below the result of ``P || Q`` is ``true`` if either ``P`` or ``Q`` is ``true``.  It is also ``true`` when both of them are ``true``.
 
-| P     | Q     | P || Q    |
+| P     | Q     | P `||` Q  |
 |-------|-------|-----------|
 |true   |true   |true       |
-|-------|-------|-----------|
 |true   |false  |true       |
-|-------|-------|-----------|
 |false  |true   |???        |
-|-------|-------|-----------|
 |false  |false  |false      |
 
 > 💬: The truth table above is missing one result.  What is the result of ``P || Q`` when ``P = false`` and ``Q = true``?
