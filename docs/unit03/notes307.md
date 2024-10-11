@@ -30,14 +30,50 @@ nav_order: 7
 </div>
 
 
-## Booleans
+## Comparing Objects
+
+Comparing objects is a little different than comparing primitive typed values like numbers. Objects can be very complex and have many attribute values or instance variables inside them. For example, the ``Turtle`` objects have many instance variables like ``name``, ``width``, ``height``, ``xPos``, ``yPos``, etc. When comparing two ``Turtle`` objects, we need a specially written **equals** method to compare all of these values. In this lesson, we will take a look at ``String`` objects and the difference between comparing them with ``==`` vs. the ``equals`` method.
+
+### String Equality
+
+The **equals** method for Strings compares two strings letter by letter. ``s1.equals(s2)`` is true if ``s1`` and ``s2`` have all the same characters in the same order. With ``Strings`` and other objects, you almost always use ``equals`` instead of ``==`` to check their equality.
+
+When the operator ``==`` is used to compare object variables, it returns true when the two variables *refer to the same object*. These variables are called **object references** and **aliases** for the same object. With strings this happens when one string variable is set to another.
 
 
+![image](Figures/stringEquality.png)
 
+### Equality with New Strings
+{:.no_toc}
+
+If you use the ``new`` keyword to create a string, it will always create a new string object. So, even if we create two string objects with new that contain all the same characters in the same order, they will not refer to the same object.
+
+Watch this [video](https://www.youtube.com/watch?v=xZroaSGhgxA) to see how this code works in memory. 
+> Since we used the ``new`` keyword, two different ``String`` objects will be created that each have the characters ``Hello`` in them.  So ``s1 == s2`` will be false since they don't refer to the same object, but ``s1.equals(s2)`` is true since the two different objects contain the same characters in the same order.
+
+
+Here is the representation of these String objects in memory:
+
+![image](Figures/s1ands2.jpg)
+
+{:.warning}
+Only use ``==`` with primitive types like ``int`` or to test if two strings (or objects) refer to the same object.  Use ``equals``, not ``==``, with strings to test if they are equal letter by letter.
+
+### Comparing with null
+
+One common place to use ``==`` or ``!=`` with objects is to compare them to **null** to see if they really exist. Sometimes short-circuit evaluation is used to avoid an error if the object doesn't exist. Remember that **short-circuit evaluation** is used with ``&&`` in Java meaning that if the first part of the if condition is false, it doesn't even have to check the second condition and it knows the whole ``&&`` test is false.
 
 ---
 
 ## ⭐️ Summary
+
+- Often classes have their own **equals** method, which can be used to determine whether two objects of the class are equivalent.
+
+- Two object references are considered **aliases** when they both reference the same object.
+
+- Object reference values can be compared, using ``==`` and ``!=``, to identify aliases.
+
+- A reference value can be compared with null, using ``==`` or ``!=``,  to determine if the reference actually references an object.
 
 
 <div class="warn" markdown="block">
