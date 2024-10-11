@@ -30,15 +30,79 @@ nav_order: 4
 </div>
 
 
-## Booleans
+## Multi-Selection: else-if Statements
 
+Using if/else statements, you can even pick between 3 or more possibilites. Just add **else if** for each possibility after the first **if**, and **else** before the last possibility.
 
+```java
+// 3 way choice with if, else if, else
+if (boolean expression) {
+  statement1;
+}
+else if (boolean expression) {
+  statement2;
+}
+else {
+  statement3;
+}
+```
 
+<div class="task" markdown="block">
+
+Run the code below and try changing the value of `x` to get each of the three possible lines in the conditional to print.
+```java
+int x = 2;
+if (x < 0) {
+  System.out.println("x is negative");
+}
+else if (x == 0) {
+  System.out.println("x is 0");
+}
+else {
+  System.out.println("x is positive");
+}
+System.out.println("after conditional");
+```
+</div>
+
+Here is a flowchart for a conditional with 3 options like in the code above:
+
+![image](Figures/Condition-three.png)
+
+{:.highlight}
+Another way to handle 3 or more conditional cases is to use the ``switch`` and ``case`` keywords, but these will not be on the exam. For a tutorial on using switch see the [Java Documentation](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/switch.html).
+
+<div class="task" markdown="block">
+
+Finish the following code so that it prints "Plug in your phone!" if the battery is below 50, "Unplug your phone!" if it is equal to 100, and "All okay!" otherwise. Change the battery value to test all 3 conditions.
+
+```java
+int battery = 60;
+
+System.out.println("All okay!");
+```
+</div>
 
 ---
 
 ## ⭐️ Summary
 
+- A multi-way selection is written when there are a series of conditions with different statements for each condition.
+
+- Multi-way selection is performed using if-else-if statements such that exactly one section of code is executed based on the first condition that evaluates to true.
+
+```java
+// 3 way choice with if, else if, else
+if (boolean expression) {
+  statement1;
+}
+else if (boolean expression) {
+  statement2;
+}
+else {
+  statement3;
+}
+```
 
 <div class="warn" markdown="block">
 
