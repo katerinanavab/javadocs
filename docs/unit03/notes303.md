@@ -111,6 +111,8 @@ There is great online version called [Akinator](https://en.akinator.com/) that g
 
 </div>
 
+![image](Figures/if-else-example.png)
+
 ---
 
 ## ⭐️ Summary
