@@ -34,6 +34,8 @@ import java.util.Scanner;
 public class Main {
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
+
+    // SCENARIO #1
     System.out.println("\n\n You are on an island surrounded by water.\n There is a path to the woods to the NORTH, the sea to the SOUTH, and a beach shack to the EAST. \n Which way do you want to go (n,e,s,w)?");
     String command = scan.nextLine();
     if (command.equals("n")) {
