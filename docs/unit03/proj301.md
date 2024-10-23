@@ -54,7 +54,7 @@ public class Main {
 > * 📝 **PLAN & DRAW OUT YOUR MAP** on paper before coding!!! 
 6. Expand the gameplay by adding more branches (**nesting** conditional blocks).
 > * You do not need to keep the commands as `n`, `s`, `e`, `w` every time. Just make sure you tell the user what the options are!
-> * Don't forget to take **input** (`scan.nextLine()`) before the 
+> * Don't forget to take **input** (`scan.nextLine()`) for the user's command before your next conditional block.
 > * Follow your map (or flowchart) as you write code for the paths you designed.
 
 </div> 
