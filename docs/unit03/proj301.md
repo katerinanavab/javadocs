@@ -28,9 +28,7 @@ In a game like Adventure, `if`, `else if`, and `else` statements can be used to 
 
 ### Instructions & Requirements
 
-<div class="task" markdown="block">
-
-1. Use the **starter code** below and run the program. This is a very simple adventure game that lets the user move in 4 different directions. Right now, it only lets the user move north.
+Copy in the **starter code** below and run the program. This is a very simple adventure game that lets the user move in 4 different directions. Right now, it only lets the user move north.
 ```java
 import java.util.Scanner;
 public class Main {
@@ -46,7 +44,10 @@ public class Main {
   }
 }
 ```
-2. Add in `else if` statements to go in the directions of "s" for south, "e" for east, "w" for west, and an `else` statement that says "You can't go in that direction". Be creative and come up with different situations in each direction!
+
+<div class="task" markdown="block">
+
+1. Add in `else if` statements to go in the directions of "s" for south, "e" for east, "w" for west, and an `else` statement that says "You can't go in that direction". Be creative and come up with different situations in each direction!
 3. How many test-cases are needed to _test all branches_ of your code at this point? Write your answer in a **comment**, and try out your test-cases.
 4. Next, come up with a **different location** for your adventure. 📝 **PLAN & DRAW YOUR MAP** before coding!
 5. Expand the gameplay by adding more branches (**nesting** conditional blocks).
