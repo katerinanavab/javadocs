@@ -12,7 +12,7 @@ One of the first games coded for early computers in the 1970s was called [Coloss
 
 You can try [playing adventure](http://www.web-adventures.org/cgi-bin/webfrotz?s=Adventure) recreated online following some of the commands in this [walkthrough](https://adventuregamers.com/walkthrough/full/colossal-cave). Part of the challenge is finding the commands that the code will understand.
 
-In a game like Adventure, else if statements can be used to respond to commands from the user like `n`, `s`, `e`, `w`.
+In a game like Adventure, `if`, `else if`, and `else` statements can be used to respond to commands from the user like `n`, `s`, `e`, `w`.
 
 ![image](Figures/adventure.jpg)
 
@@ -37,17 +37,13 @@ import java.util.Scanner;
 public class Main {
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
-    System.out.println("\n\n You are on an island surrounded by water.\n There is a path to the woods to the north, the sea to the south, and a beach shack to the east. \n Which way do you want to go (n,e,s,w)?");
+    System.out.println("\n\n You are on an island surrounded by water.\n There is a path to the woods to the NORTH, the sea to the SOUTH, and a beach shack to the EAST. \n Which way do you want to go (n,e,s,w)?");
     String command = scan.nextLine();
-    if (command.equals("n")) 
-    {
+    if (command.equals("n")) {
         System.out.println("You enter the forest and hear some rustling. \nThere may be tigers here or maybe it's just monkeys.");
     }
     // Add else-ifs for s, e, w, and an else for any other input. Be creative!
     
-    
-    System.out.println("End of adventure!");   
-    scan.close();
   }
 }
 ```
