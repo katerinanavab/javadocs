@@ -47,11 +47,14 @@ public class Main {
 
 <div class="task" markdown="block">
 
-1. Add in `else if` statements to go in the directions of "s" for south, "e" for east, "w" for west, and an `else` statement that says "You can't go in that direction". Be creative and come up with different situations in each direction!
-3. How many test-cases are needed to _test all branches_ of your code at this point? Write your answer in a **comment**, and try out your test-cases.
-4. Next, come up with a **different location** for your adventure. 📝 **PLAN & DRAW YOUR MAP** before coding!
-5. Expand the gameplay by adding more branches (**nesting** conditional blocks).
+1. Add in `else if` statements to go in the directions of `"s"` for south, `"e"` for east, `"w"` for west, and an `else` statement that says "You can't go in that direction". Be creative and come up with different situations in each direction!
+3. How many **test-cases** are needed to _test all branches_ of your code at this point? 💬 Write your answer in a `//comment`, and try out your test-cases.
+4. Next, come up with a **unique location** for your adventure and replace the deserted island theme with scenarios for your location.
+> * Your adventure could be set anywhere – a place you are familiar with (like BWL or Manhattan), a place you'd like to visit, or even a fantasy/fictional world.
+> * 📝 **PLAN & DRAW OUT YOUR MAP** on paper before coding!!! 
+6. Expand the gameplay by adding more branches (**nesting** conditional blocks).
 > * You do not need to keep the commands as `n`, `s`, `e`, `w` every time. Just make sure you tell the user what the options are!
+> * Don't forget to take **input** (`scan.nextLine()`) before the 
 > * Follow your map (or flowchart) as you write code for the paths you designed.
 
 </div> 
