@@ -48,15 +48,13 @@ public class Main {
 }
 ```
 2. Add in `else if` statements to go in the directions of "s" for south, "e" for east, "w" for west, and an `else` statement that says "You can't go in that direction". Be creative and come up with different situations in each direction!
-3. How many test-cases are needed to _test all branches_ of your code? Write your answer in a **comment**, and try out your test-cases.
-
+3. How many test-cases are needed to _test all branches_ of your code at this point? Write your answer in a **comment**, and try out your test-cases.
+4. Next, come up with a **different location** for your adventure. 📝 **PLAN & DRAW YOUR MAP** before coding!
+5. Expand the gameplay by adding more branches (**nesting** conditional blocks).
+> * You do not need to keep the commands as `n`, `s`, `e`, `w` every time. Just make sure you tell the user what the options are!
+> * Follow your map (or flowchart) as you write code for the paths you designed.
 
 </div> 
-
-#### Extensions
-
-* Expand this game further (add more branches)
-* Come up with a different adventure location
 
 
 <!--
