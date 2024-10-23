@@ -33,7 +33,6 @@ In a game like Adventure, `if`, `else if`, and `else` statements can be used to 
 1. Use the **starter code** below and run the program. This is a very simple adventure game that lets the user move in 4 different directions. Right now, it only lets the user move north.
 ```java
 import java.util.Scanner;
-
 public class Main {
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
