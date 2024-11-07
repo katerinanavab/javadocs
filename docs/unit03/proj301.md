@@ -61,6 +61,10 @@ public class Main {
 
 </div> 
 
+### Extension
+
+{:.highlight}
+Turn your **text-based** adventure into one with a **GUI** (Graphical User Interface)! See my `JavaFX` demo: [GitHub JavaFX GUI](https://github.com/katerinanavab/JavaFX-GUI-Demo)
 
 <!--
   public class RunestoneTests extends CodeTestHelper
