@@ -15,7 +15,7 @@ nav_order: 4
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 4.4]() 
+📖 This page is a condensed version of [CSAwesome Topic 4.4](https://runestone.academy/ns/books/published/csawesome/Unit4-Iteration/topic-4-4-nested-loops.html?mode=browsing) 
 
 <div class="setup" markdown="block">
 
@@ -31,7 +31,7 @@ nav_order: 4
 
 ---
 
-## For Loops
+## Nested For Loops
 
 
 
