@@ -15,7 +15,7 @@ nav_order: 2
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 4.2]() 
+📖 This page is a condensed version of [CSAwesome Topic 4.2](https://runestone.academy/ns/books/published/csawesome/Unit4-Iteration/topic-4-2-for-loops.html?mode=browsing) 
 
 <div class="setup" markdown="block">
 
