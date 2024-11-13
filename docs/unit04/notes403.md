@@ -15,7 +15,7 @@ nav_order: 3
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 4.3]() 
+📖 This page is a condensed version of [CSAwesome Topic 4.3](https://runestone.academy/ns/books/published/csawesome/Unit4-Iteration/topic-4-3-strings-loops.html?mode=browsing) 
 
 <div class="setup" markdown="block">
 
@@ -31,7 +31,7 @@ nav_order: 3
 
 ---
 
-## For Loops
+## Loops & Strings
 
 
 
