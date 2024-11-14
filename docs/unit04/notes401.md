@@ -155,7 +155,10 @@ test condition) and using the incorrect relational operator ``<`` or ``<=``.
 
 ### Input-Controlled Loops
 
-You can use a ``while`` loop to repeat the body of the loop a certain number of times as shown above.  However, a ``while`` loop is typically used <span class="highlight">when you do NOT know how many times</span> the loop will execute. It is often used for a **input-controlled loop** where the user's input indicates when to stop. 
+You can use a ``while`` loop to repeat the body of the loop a certain number of times as shown above. 
+
+{:.highlight}
+However, a ``while`` loop is typically used _when you do NOT know how many times_ the loop will execute. It is often used for a **input-controlled loop** where the user's input indicates when to stop. 
 
 For example, in the <a href="https://firewalledreplit.com/@BerylHoffman/Magpie-ChatBot-Lab-v2#Main.java" target="_blank">Magpie chatbot lab on replit.com</a> below, the while loop stops when you type in "Bye". The stopping value is often called the **sentinel value** for the loop. Notice that if you type in "Bye" right away, the loop will never run. If the loop condition evaluates to false initially, the loop body is not executed at all. Another way to stop the loop prematurely is to put in a ``return`` statement that makes it immediately return from the method.
 
