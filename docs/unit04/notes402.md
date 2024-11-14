@@ -41,8 +41,9 @@ Another type of loop in Java is a **for loop**. This is usually used when _you k
   
 A `for`-loop combines all 3 parts of writing a loop in one line to **initialize**, **test condition**, and **change** the loop control variable. The 3 parts are separated by **semicolons** (``;``):
 ```java
+// LOOP HEADER
 for (initialize; test condition; change) {
-   loop body
+     // LOOP BODY
 }
 ```
 </div>
@@ -66,26 +67,26 @@ Two common _patterns_ in `for`-loops are to **count from `0` up to an number** (
 
 The two loops below using these two patterns both run 10 times: 
 ```java
-      // These loops both run 10 times
-      // If you start at 0, use <
-      for(int i = 0; i < 10; i++) {
-         System.out.println(i);
-      }
-      // If you start at 1, use <=
-      for(int i = 1; i <= 10; i++) {
-         System.out.println(i);
-      }
+// These loops both run 10 times
+// If you start at 0, use <
+for(int i = 0; i < 10; i++) {
+    System.out.println(i);
+}
+// If you start at 1, use <=
+for(int i = 1; i <= 10; i++) {
+    System.out.println(i);
+}
 ```
 > The variable `i` (stands for **index**) is often used as a **counter** in `for`-loops.
 
 ### Decrementing Loops
 
-You can also count **backwards** in a loop s_tarting from the last number_ and decrementing down to 0 or 1. All 3 parts of the loop must change to count backwards including the test of when to stop. 
+You can also count **backwards** in a loop _starting from the last number_ and **decrementing** the loop counter down to 0 or 1. All 3 parts of the loop must change to count backwards including the test of when to stop. 
 > For example, ``for (int i=5; i > 0; i--)`` counts from 5 down to 1.
 
 <div class="task" markdown="block">
 
-What do you think will happen when you run the code below? How would it change if you changed line 11 to initialize `i`'s value to 3? 
+💬 **DISCUSS:** What do you think will happen when you run the code below? How would it change if you changed line 11 to initialize `i`'s value to 3? 
 
 ```java
 String line1 = " bottles of pop on the wall";
@@ -94,22 +95,47 @@ String line3 = "Take one down and pass it around";
 
 // loop 5 times (5, 4, 3, 2, 1)
 for (int i = 5; i > 0; i--) {
-  System.out.println(i + line1);
-  System.out.println(i + line2);
-  System.out.println(line3);
-  System.out.println((i - 1) + line1);
-  System.out.println();
+    System.out.println(i + line1);
+    System.out.println(i + line2);
+    System.out.println(line3);
+    System.out.println((i - 1) + line1);
+    System.out.println();
 }
 ```
 
+</div>
+
+#### 💻 In-Class Activity: Turtle Loops
+{:.no_toc}
+
+<div class="task" markdown="block">
+
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit4-Iteration/topic-4-2-for-loops.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 4.2</button></a> 
+2. Make sure you **SIGN IN**!
+3. Complete the **Programming Challenge: Turtles Drawing Shapes** activity in pairs.
 
 </div>
+
+
 
 ---
 
 ## ⭐️ Summary
 
+- There are three parts in a `for` loop header: the **initialization**, the **test condition** (a Boolean expression), and an increment or decrement statement to **change** the loop control variable.
+```java
+// LOOP HEADER
+for (initialize; test condition; change) {
+     // LOOP BODY
+}
+```
 
+- In a `for` loop, the initialization statement is _only executed once_ before the evaluation of the test Boolean expression. The variable being initialized is referred to as a **loop control variable**.
+
+- In each iteration of a `for` loop, the increment or decrement statement is _executed after the entire loop body_ is executed and before the Boolean expression is evaluated again.
+
+- A `for` loop can be rewritten into an **equivalent** `while` loop and vice versa.
+  
 <div class="warn" markdown="block">
 
 🛑 When class ends, don't forget to **SAVE YOUR WORK**!
