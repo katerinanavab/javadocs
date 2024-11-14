@@ -33,7 +33,30 @@ nav_order: 2
 
 ## For Loops
 
+Another type of loop in Java is a **for loop**. This is usually used when _you know how many times_ you want the loop to execute. It is often a simple **counter-controlled loop** to do the loop body a set number of times.
 
+### Three Parts of a For Loop
+
+<div class="imp" markdown="block">
+  
+A `for`-loop combines all 3 parts of writing a loop in one line to **initialize**, **test condition**, and **change** the loop control variable. The 3 parts are separated by **semicolons** (``;``):
+```java
+for (initialize; test condition; change) {
+   loop body
+}
+```
+</div>
+
+> The `for`-loop is like a **shortcut** way to write a `while` loop, with **all three steps** that you need in one line.
+
+![image](Figures/compareForAndWhile.png)
+
+Watch the following <a href="https://www.youtube.com/watch?v=SEDnzXeb2hU&list=PLHqz-wcqDQIEP6p1_0wOb9l9aQ0qFijrP&index=9&ab_channel=colleenlewis"><button class="btn">📺 VIDEO</button></a> which **compares** a while loop and for loop line by line.
+
+Here is a **control flow diagram** for a `for` loop:
+
+![image](Figures/ForLoopFlow.png)
+> The code in the **initialization** area is executed only one time before the loop begins, the **test condition** is checked each time through the loop and the loop continues as long as the condition is `true`, and the **loop control variable change** is done at the _end_ of each execution of the body of the loop, just like a `while` loop.  When the loop condition is `false`, execution will continue at the next statement after the body of the loop.
 
 ---
 
