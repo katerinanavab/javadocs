@@ -56,7 +56,54 @@ Watch the following <a href="https://www.youtube.com/watch?v=SEDnzXeb2hU&list=PL
 Here is a **control flow diagram** for a `for` loop:
 
 ![image](Figures/ForLoopFlow.png)
-> The code in the **initialization** area is executed only one time before the loop begins, the **test condition** is checked each time through the loop and the loop continues as long as the condition is `true`, and the **loop control variable change** is done at the _end_ of each execution of the body of the loop, just like a `while` loop.  When the loop condition is `false`, execution will continue at the next statement after the body of the loop.
+> * The code in the **initialization** area is executed only _one time_ before the loop begins
+> * The **test condition** is _checked each time_ through the loop and the loop continues as long as the condition is `true`
+> * The **loop control variable change** is done at the _end_ of each execution of the body of the loop, just like a `while` loop.
+> * When the loop condition becomes `false`, execution will continue at the next statement _after_ the body of the loop.
+
+{:.highlight}
+Two common _patterns_ in `for`-loops are to **count from `0` up to an number** (using `<`) or **count from `1` to a number** including the number (using `<=`). Remember that if you start at 0 use `<`, and if you start at 1, use `<=`. 
+
+The two loops below using these two patterns both run 10 times: 
+```java
+      // These loops both run 10 times
+      // If you start at 0, use <
+      for(int i = 0; i < 10; i++) {
+         System.out.println(i);
+      }
+      // If you start at 1, use <=
+      for(int i = 1; i <= 10; i++) {
+         System.out.println(i);
+      }
+```
+> The variable `i` (stands for **index**) is often used as a **counter** in `for`-loops.
+
+### Decrementing Loops
+
+You can also count **backwards** in a loop s_tarting from the last number_ and decrementing down to 0 or 1. All 3 parts of the loop must change to count backwards including the test of when to stop. 
+> For example, ``for (int i=5; i > 0; i--)`` counts from 5 down to 1.
+
+<div class="task" markdown="block">
+
+What do you think will happen when you run the code below? How would it change if you changed line 11 to initialize `i`'s value to 3? 
+
+```java
+String line1 = " bottles of pop on the wall";
+String line2 = " bottles of pop";
+String line3 = "Take one down and pass it around";
+
+// loop 5 times (5, 4, 3, 2, 1)
+for (int i = 5; i > 0; i--) {
+  System.out.println(i + line1);
+  System.out.println(i + line2);
+  System.out.println(line3);
+  System.out.println((i - 1) + line1);
+  System.out.println();
+}
+```
+
+
+</div>
 
 ---
 
