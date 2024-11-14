@@ -97,7 +97,7 @@ The simplest loops are **counter-controlled loops** like below, where the **loop
 
 A really important skill to develop is the ability to trace the values of variables and how they change during each iteration of a loop. 
 
-You can create a tracing table that keeps track of the variable values each time through the loop as shown below.  This is very helpful on the exam. Studies have shown that students who create tables like this do much better on code tracing problems on multiple choice exams.
+You can create a **tracing table** that keeps track of the variable values each time through the loop as shown below.  This is very helpful on the exam. Studies have shown that students who create tables like this do much better on code tracing problems on multiple choice exams.
 
 ![image](Figures/traceTable.png)
 
@@ -131,9 +131,10 @@ stuck. For example look at this loop:
 > That loop looks a lot like loops earlier in this chapter but it is actually an
 infinite loop. Can you see why?
 
-The problem in this loop—and a common way to accidentally create an infinite
-``while`` loop—is that although it includes steps 1 and 2 (initializing the loop
-variable and testing it) it forgot step 3 and never changes the loop variable.
+{:.warning}
+The problem in this loop—and a common way to **accidentally create an infinite
+``while`` loop**—is that although it includes steps 1 and 2 (_initializing the loop
+variable and testing it_) it forgot step 3 and never changes the loop variable.
 The loop variable, ``i``, starts at ``0`` and the loop loops as long as ``i <
 10`` which will always be true because there’s no code in the loop that changes
 ``i``. The simple fix is to add a line that increments ``i``:
@@ -146,14 +147,15 @@ The loop variable, ``i``, starts at ``0`` and the loop loops as long as ``i <
    }
 ```
 
+{:.warning}
 Another common error with loops is an **off-by-one error** where the loop runs
-one too many or one too few times. This is usually a problem with step 2 the
-test condition and using the incorrect relational operator ``<`` or ``<=``.
+one too many or one too few times. This is usually a problem with step 2 (the
+test condition) and using the incorrect relational operator ``<`` or ``<=``.
 
 
 ### Input-Controlled Loops
 
-You can use a ``while`` loop to repeat the body of the loop a certain number of times as shown above.  However, a ``while`` loop is typically used when you don't know how many times the loop will execute. It is often used for a **input-controlled loop** where the user's input indicates when to stop. For example, in the <a href="https://firewalledreplit.com/@BerylHoffman/Magpie-ChatBot-Lab-v2#Main.java" target="_blank">Magpie chatbot lab on replit.com</a> below, the while loop stops when you type in "Bye". The stopping value is often called the **sentinel value** for the loop. Notice that if you type in "Bye" right away, the loop will never run. If the loop condition evaluates to false initially, the loop body is not executed at all. Another way to stop the loop prematurely is to put in a ``return`` statement that makes it immediately return from the method.
+You can use a ``while`` loop to repeat the body of the loop a certain number of times as shown above.  However, a ``while`` loop is typically used <span class="highlight">when you do NOT know how many times</span> the loop will execute. It is often used for a **input-controlled loop** where the user's input indicates when to stop. For example, in the <a href="https://firewalledreplit.com/@BerylHoffman/Magpie-ChatBot-Lab-v2#Main.java" target="_blank">Magpie chatbot lab on replit.com</a> below, the while loop stops when you type in "Bye". The stopping value is often called the **sentinel value** for the loop. Notice that if you type in "Bye" right away, the loop will never run. If the loop condition evaluates to false initially, the loop body is not executed at all. Another way to stop the loop prematurely is to put in a ``return`` statement that makes it immediately return from the method.
 
 <html>
 <iframe height="700px" width="100%" style="max-width:90%; margin-left:5%" src="https://firewalledreplit.com/@BerylHoffman/Magpie-ChatBot-Lab-v2?lite=true#Main.java" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe> 
