@@ -41,16 +41,124 @@ Remember that `String` objects are a **sequence of characters** where each chara
 
 ![image](Figures/stringIndicies.png)
 
-🔄 **Loops** that process Strings should always start counting from `0`... recall that the _first_ character in a Java `String` is located at **index** `0` and the _last_ character is at `length() - 1`.
+🔄 **Loops** that process strings should initialize the **loop control variable** (_counter_) at `0`... recall that the _first_ character in a Java `String` is located at **index** `0` and the _last_ character is at `length() - 1`.
 
 </div>
 
-{:.highlight}
-The first character in a Java String is at index 0 and the last characters is at **length()** - 1. So loops processing Strings should start at 0!
+The **String methods** (covered in lesson 2.7 and given in the [AP CSA Reference Sheet](https://apstudents.collegeboard.org/ap/pdf/ap-computer-science-a-java-quick-reference_0.pdf)) that are most often used to process strings are:
+
+- **`int length()`** : returns the **number of characters** in a String object.
+
+- **`int indexOf(String str)`** : returns the **index** of the first occurrence of ``str`` or **-1** if ``str`` is not found.
+
+- **`String substring(int from, int to)`** : returns the **substring** beginning at index `from` and ending at index `(to – 1)`.
+  > - Note that  `s.substring(i,i+1)` returns the single character at index `i`.
+
+- **S`tring substring(int from)`** : returns `substring(from, length())`.
+
+### While Loops: Find and Replace
+
+A `while` loop can be used with the ``String`` ``indexOf`` method to find certain characters in a string and process them, usually using the ``substring`` method:
+
+```java
+
+   String s = "example";
+   int i = 0;
+   // while there is an a in s
+   while (s.indexOf("a") >= 0)
+   {
+     // Find and save the next index for an a
+     i = s.indexOf("a");
+     // Process the string at that index
+     String ithLetter = s.substring(i,i+1);
+     ...
+   }
+```
+
+Google has been scanning old books and then using software to read the scanned text.  But, the software can get things mixed up like using the number 1 for the letter l. 
+
+The following code loops through a string replacing all 1's with l's.  Trace through the code below with a partner and explain how it works on the given message.  You can run it line by line in the [Java visualizer](http://www.pythontutor.com/visualize.html#code=public%20class%20Test%0A%20%20%20%7B%0A%20%20%20%20%20%20public%20static%20void%20main%28String%5B%5D%20args%29%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20String%20message%20%3D%20%22Have%20a%201ong%20and%20happy%201ife%22%3B%20%0A%20%20%20%20%20%20%20%20int%20index%20%3D%200%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20//%20while%20more%201s%20in%20the%20message%0A%20%20%20%20%20%20%20%20while%20%28message.indexOf%28%221%22%29%20%3E%3D%200%29%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20//%20Find%20the%20next%20index%20for%201%0A%20%20%20%20%20%20%20%20%20%20%20index%20%3D%20message.indexOf%28%221%22%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20System.out.println%28%22Found%20a%201%20at%20index%3A%20%22%20%2B%20index%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20//%20Replace%20the%201%20with%20a%20l%20at%20index%20by%20concatenating%20substring%20up%20to%20index%20and%20then%20the%20rest%20of%20the%20string.%0A%20%20%20%20%20%20%20%20%20%20%20String%20firstpart%20%3D%20message.substring%280,index%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20String%20lastpart%20%3D%20message.substring%28index%2B1%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20message%20%3D%20firstpart%20%2B%20%22l%22%20%2B%20lastpart%3B%0A%20%20%20%20%20%20%20%20%20%20%20System.out.println%28%22Replaced%201%20with%20l%20at%20index%20%22%20%2B%20index%29%3B%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20System.out.println%28%22Cleaned%20text%3A%20%22%20%2B%20message%29%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%7D&cumulative=false&curInstr=21&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false&curInstr=0). 
+> Note that ``indexOf`` here can work repeatedly to find the next occurrence of a 1 because they are replaced as soon as they are found.
+
+<div class="task" markdown="block">
+
+1. Add code for a `counter` variable to count the number of 1's replaced in the message and print it out.
+2. Change the `message` to have more mistakes with 1's to test it.
+  
+```java
+String message = "Have a 1ong and happy 1ife";
+int index = 0;
+
+while (message.indexOf("1") >= 0)
+{
+    // Find the next index for 1
+    index = message.indexOf("1");
+    System.out.println("Found a 1 at index: " + index);
+    // Replace the 1 with a l at index by concatenating substring up to
+    // index and then the rest of the string.
+    String firstpart = message.substring(0, index);
+    String lastpart = message.substring(index + 1);
+    message = firstpart + "l" + lastpart;
+    System.out.println("Replaced 1 with l at index " + index);
+    System.out.println("The message is currently " + message + " but we aren't done looping yet!");
+}
+System.out.println("Cleaned text: " + message);
+```
+
+</div>
+
+### For Loops: Reversing Strings
+
+``for`` loops can also be used to process strings, especially in situations where you know you will visit every character.
+
+{:.highlight} 
+``while`` loops are often used with strings when you are looking for a certain character or substring in a string and **do not know how many times** the loop needs to run. ``for`` loops are used when **you know you want to visit every character**.
+
+``for`` loops with strings usually start at `0` and use the string's `length()` for the **ending condition** to _step through the string_, character by character.
+
+```java
+   String s = "example";
+   // loop through the string from 0 to length
+   for(int i=0; i < s.length(); i++)
+   {
+      String ithLetter = s.substring(i,i+1);
+      // Process the string at that index
+      ...
+   }
+  ```
+
+Here is a ``for`` loop that creates a new string that **reverses** the string ``s``.  We start with a blank string ``sReversed`` and _build up_ our reversed string in that variable by copying in characters from the string ``s``. You can also run this code in this [Java visualizer link](http://www.pythontutor.com/visualize.html#code=%20%20%20public%20class%20ReverseString%0A%20%20%20%7B%0A%20%20%20%20%20%20public%20static%20void%20main%28String%5B%5D%20args%29%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20String%20s%20%3D%20%22Hello%22%3B%0A%20%20%20%20%20%20%20%20String%20sReversed%20%3D%20%22%22%3B%0A%20%20%20%20%20%20%20%20String%20ithLetter%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20for%28int%20i%3D0%3B%20i%20%3C%20s.length%28%29%3B%20i%2B%2B%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20ithLetter%20%3D%20s.substring%28i,i%2B1%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20//%20add%20the%20letter%20at%20index%20i%20to%20what%20is%20already%20reversed.%0A%20%20%20%20%20%20%20%20%20%20%20%20sReversed%20%3D%20ithLetter%20%2B%20sReversed%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20System.out.println%28s%20%2B%20%22%20reversed%20is%20%22%20%2B%20sReversed%29%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D&cumulative=false&curInstr=25&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false&curInstr=0).
+
+
+
+```java
+String s = "Hello";
+String sReversed = "";
+String ithLetter;
+
+for (int i = 0; i < s.length(); i++) {
+  ithLetter = s.substring(i, i + 1);
+  // add the letter at index i to what's already reversed.
+  sReversed = ithLetter + sReversed;
+}
+
+System.out.println(s + " reversed is " + sReversed);
+      
+```
+> 💬 **DISCUSS:**
+> * What would happen if you started the loop at 1 instead?
+> * What would happen if you used the `<=` operator instead of `<`?
+> * What would happen if you changed the **order** in which you added the `ithLetter`?
 
 ---
 
 ## ⭐️ Summary
+
+- **Loops** can be used to _traverse_ or process a `String`.
+- There are **standard algorithms** that utilize String traversals to:
+  - Find if one or more substrings has a particular property
+  - Determine the number of substrings that meet specific criteria
+  - Create a new string with the characters reversed
 
 
 <div class="warn" markdown="block">
