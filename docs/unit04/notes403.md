@@ -33,7 +33,20 @@ nav_order: 3
 
 ## Loops & Strings
 
+Loops are often used for **String Traversals** or **String Processing** where the code steps through a string character by character. In topic 2.6 and 2.7, we learned to use `String` **objects** and built-in string **methods** to process strings. In this lesson, we will write our own **loops** to process strings.
 
+<div class="imp" markdown="block">
+
+Remember that `String` objects are a **sequence of characters** where each character is stored at an **index** (_position_) starting from `0`:
+
+![image](Figures/stringIndicies.png)
+
+🔄 **Loops** that process Strings should always start counting from `0`... recall that the _first_ character in a Java `String` is located at **index** `0` and the _last_ character is at `length() - 1`.
+
+</div>
+
+{:.highlight}
+The first character in a Java String is at index 0 and the last characters is at **length()** - 1. So loops processing Strings should start at 0!
 
 ---
 
