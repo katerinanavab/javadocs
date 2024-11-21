@@ -52,8 +52,8 @@ int var2 = 2;
 
 while ((var2 != 0) && ((var1 / var2) >= 0))
 {
-  var1 = var1 + 1;
-  var2 = var2 - 1;
+    var1 = var1 + 1;
+    var2 = var2 - 1;
 }
 ```
 </div>
@@ -72,10 +72,79 @@ while ((var2 != 0) && ((var1 / var2) >= 0))
 </details>
 </html>
 
+### Counting Loop Iterations
+
+Loops can be also analyzed to determine how many times they run. This is called **run-time analysis** or a **statement execution count**.
+
+<div class="task" markdown="block">
+  
+✏️ How many stars are printed out in this loop? How many times does the loop run? Figure it out on paper before you run the code.
+
+```java
+for (int i = 3; i < 7; i++)
+{
+    System.out.print("*");
+}
+```
+</div>
+
+> If you made a trace table, you would know that the loop runs when i = 3, 4, 5, 6 but finishes as soon as i becomes 7 since that is not less than 7. So, the loop runs 4 times. Or you can use the shortcut formula in the note below.
+
+<div class="imp" markdown="block">
+
+💡 The **number of times** a loop executes can be calculated by: `(largestValue - smallestValue + 1)`
+
+- If the loop uses `counter <= limit` as the condition, `limit` is the **largest** value.
+- If the loop uses `counter < limit`, `limit-1` is the **largest** value that allows the loop to run.
+  
+</div>
+
+> In the code above the **largest** value that allows the loop to run is 6 (which is the largest value < 7) and the **smallest** value that allows the loop to execute is 3 so this loop executes (6 - 3 + 1 = 4 times).
+
+<div class="task" markdown="block">
+  
+✏️ How many stars are printed out in this loop? How many times does the loop run? Figure it out on paper before you run the code.
+
+```java
+for (int row = 0; row < 5; row++)
+{
+    for (int col = 0; col < 10; col++)
+    {
+        System.out.print("*");
+    }
+    System.out.println();
+}
+```
+</div>
+
+{:.highlight}
+The **number of times a nested for loop body is executed** is equal to the number of times the outer loop runs multiplied by the number of times the inner loop runs (`OuterLoopRuns * InnerLoopRuns`).
+
+> For the example above, the outer loop executes 4 - 0 + 1 = 5 times and the inner 9 - 0 + 1 = 10 times so the total is 5 * 10 = 50.
+
+
+#### Loop Analysis Game
+{:.no_toc}
+
+<div class="task" markdown="block">
+
+🎲 Try the game below to practice loop analysis. Click on **Loops** and click on the number of times the loop runs. For an added challenge, try the check boxes for `Backwards` and `Nested`. We encourage you to work in pairs and see how high a score you can get.
+
+<a href="https://csa-games.netlify.app/" target="_blank"><button class="btn">Loop Analysis Game</button></a>
+
+</div>
+
 ---
 
 ## ⭐️ Summary
 
+- A trace table can be used to keep track of the variables and their values throughout each iteration of the loop.
+
+- We can determine the number of times a code segment will execute with a **statement execution count**. This is called **run-time analysis**.
+
+- The number of times a loop executes can be calculated by ``largestValue - smallestValue + 1`` where these are the largest and smallest values of the loop counter variable possible in the body of the loop.
+
+- The number of times a nested for-loop runs is the number of times the outer loop runs **times** the number of times the inner loop runs.
 
 <div class="warn" markdown="block">
 
