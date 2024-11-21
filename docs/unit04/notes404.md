@@ -33,7 +33,25 @@ nav_order: 4
 
 ## Nested For Loops
 
+A **nested loop** has _one loop inside of another_. These are typically used for working with two dimensions such as printing stars in rows and columns as shown below:
 
+![image](Figures/nestedloops.png)
+
+When a loop is nested inside another loop, the inner loop runs many times inside the outer loop. In each iteration of the outer loop, the inner loop will be re-started. The inner loop must finish all of its iterations before the outer loop can continue to its next iteration.
+
+What does the following code print out? Watch the code run in the [Java visualizer](). Notice how the inner loop is started over for each row. Can you predict how many rows and columns of stars there will be?
+
+```java
+for (int row = 1; row <= 3; row++)
+           {
+               for (int col = 1; col <= 5; col++)
+               {
+                   System.out.print("*");
+               }
+               System.out.println();
+           }
+```
+> Can you change the code to print a rectangle with 10 rows and 8 columns of stars? You can also try replacing line 10 with this print statement to see the rows and columns: ``System.out.print(row + "-" + col + " ");``
 
 ---
 
