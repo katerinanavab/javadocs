@@ -74,6 +74,9 @@ for (int row = 1; row <= 3; row++) {
 
 ## ⭐️ Summary
 
+- **Nested iteration statements** are iteration statements that appear in the body of another iteration statement.
+
+- When a loop is nested inside another loop, the inner loop must complete all its iterations before the outer loop can continue.
 
 <div class="warn" markdown="block">
 
