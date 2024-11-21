@@ -37,21 +37,38 @@ A **nested loop** has _one loop inside of another_. These are typically used for
 
 ![image](Figures/nestedloops.png)
 
-When a loop is nested inside another loop, the inner loop runs many times inside the outer loop. In each iteration of the outer loop, the inner loop will be re-started. The inner loop must finish all of its iterations before the outer loop can continue to its next iteration.
+When a loop is _nested inside_ another loop, the inner loop runs many times inside the outer loop. In each iteration of the **outer loop**, the **inner loop** will be _re-started_. 
 
-What does the following code print out? Watch the code run in the [Java visualizer](). Notice how the inner loop is started over for each row. Can you predict how many rows and columns of stars there will be?
+{:.highlight}
+The **inner loop** must finish all of its iterations _before_ the **outer loop** can continue to its next iteration!
+
+💬 **DISCUSS:** What does the following code print out? Watch the code run in the [Java visualizer](http://www.pythontutor.com/visualize.html#code=public%20class%20NestedLoops%0A%7B%0A%20%20%20public%20static%20void%20main%28String%5B%5D%20args%29%0A%20%20%20%7B%0A%20%20%20%20%20%20%20for%20%28int%20row%20%3D%201%3B%20row%20%3C%3D%203%3B%20row%2B%2B%29%0A%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20for%20%28int%20col%20%3D%201%3B%20col%20%3C%3D%205%3B%20col%2B%2B%29%0A%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20System.out.print%28%22*%22%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20System.out.println%28%29%3B%0A%20%20%20%20%20%20%20%7D%0A%20%20%20%7D%0A%7D&cumulative=false&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false&curInstr=0). 
+> Notice how the **inner loop is started over** for each `row`. Can you predict how many rows and columns of stars there will be?
 
 ```java
-for (int row = 1; row <= 3; row++)
-           {
-               for (int col = 1; col <= 5; col++)
-               {
-                   System.out.print("*");
-               }
-               System.out.println();
-           }
+for (int row = 1; row <= 3; row++) {
+    for (int col = 1; col <= 5; col++) {
+        System.out.print("*");
+    }
+    System.out.println();
+}
 ```
 > Can you change the code to print a rectangle with 10 rows and 8 columns of stars? You can also try replacing line 10 with this print statement to see the rows and columns: ``System.out.print(row + "-" + col + " ");``
+
+### Nested Loops with Turtles
+
+❄️ Try nested loops with `Turtle` objects to create a snowflake design!
+
+#### 💻 In-Class Activity: Turtle Snowflakes
+{:.no_toc}
+
+<div class="task" markdown="block">
+
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit4-Iteration/topic-4-4-nested-loops.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 4.4</button></a> 
+2. Make sure you **SIGN IN**!
+3. Complete the **Programming Challenge: Turtle Snowflake** activity in pairs.
+
+</div>
 
 ---
 
