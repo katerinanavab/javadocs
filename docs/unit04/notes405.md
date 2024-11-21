@@ -33,7 +33,44 @@ nav_order: 5
 
 ## Loop Analysis
 
+In this lesson, you will practice **tracing through code with loops** and analyzing loops to determine how many times they run.
 
+### Tracing Loops
+
+Let's practice tracing through loops with many variables. Remember to make a **tracing table** to keep track of all the variables, the iterations, and the output.
+
+Here is a complex loop.  See if you can trace the code on paper by making a tracing table to predict what the code will do when you run it. Click on the this [Java visualizer](https://goo.gl/qEHnpg) link to help you step through the code.
+
+<div class="task" markdown="block">
+  
+✏️ Can you trace through this code? Write your **tracing table** on paper first, then test the code.
+> Add in output statements ``System.out.println("var1: " + var1 + " var2: " + var2);`` before the loop and inside the loop at the end to keep track of the variables and run. 
+
+```java
+int var1 = 3;
+int var2 = 2;
+
+while ((var2 != 0) && ((var1 / var2) >= 0))
+{
+  var1 = var1 + 1;
+  var2 = var2 - 1;
+}
+```
+</div>
+
+<html>
+<details>
+
+<summary>✅ CHECK: Did your trace table look like the following?</summary>
+
+<div markdown="block">
+
+![image](Figures/whileLoopTrace.png)
+
+</div>
+
+</details>
+</html>
 
 ---
 
