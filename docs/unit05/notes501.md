@@ -41,12 +41,11 @@ In Unit 2, we learned to use **classes** and **objects** that are built-in to
 Java or written by other programmers. In this unit, you will learn to write your
 own classes and make your own objects!
 
-Remember that a **class** in Java defines a blueprint for creating objects. When
+Remember that a **class** in Java defines a _blueprint_ for creating objects. When
 you create **objects**, you create new **instances** of that class and what you
 can do with those instances is determined by what methods are defined in the
 class.
-
-For example in Unit 2, we created ``yertle`` and ``myrtle``, 2 ``Turtle``
+> For example in Unit 2, we created ``yertle`` and ``myrtle``, 2 ``Turtle``
 variables and assigned them references to objects created from the class
 ``Turtle`` and we used instances of Java’s ``String`` class to assign values to
 different ``String`` variables.
@@ -57,8 +56,8 @@ Watch this short video to review the vocabulary of object-oriented programming:
 ### Creating a Class
 
 Most classes you write will have the keyword ``public`` before them though it is
-not required. The class definition itself always starts with the word ``class``
-followed by the name of the class. Then the rest of the class, called the body,
+not required. The **class definition** itself always starts with the **keyword** ``class``
+followed by the **name** of the class. Then the rest of the class, called the **body**,
 is defined inside a pair of ``{ }``s.
 
 Since we’re talking about anatomy, let’s create a class called ``Person``.
@@ -76,12 +75,10 @@ public class Person
 
 You can create **instances** of the ``Person`` class with ``new`` as in ``new
 Person()`` And you can declare variables that can hold a reference to a
-``Person`` object with ``Person variableName``.
-
-Or put it altogether to declare some variables and initialize each one with a
-reference to a new ``Person`` as shown here.
+``Person`` object with ``Person variableName``. Put it altogether to **declare some variables** and **initialize** each one with a reference to a new ``Person`` object as shown here:
 
 ```java
+// Create OBJECTS - instances of the class
 Person ada = new Person();
 Person charles = new Person();
 ```
