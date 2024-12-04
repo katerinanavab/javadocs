@@ -51,7 +51,7 @@ variables and assigned them references to objects created from the class
 ``Turtle`` and we used instances of Java’s ``String`` class to assign values to
 different ``String`` variables.
 
-Watch this short video about the concept of **Object-Oriented Programming**:
+Watch this video about the concept of **Object-Oriented Programming**:
 <a href="https://www.youtube.com/watch?v=X3cFiJnxUBY" target="_blank"><button class="btn">📺 VIDEO</button></a>
 
 ### Creating a Class
@@ -206,16 +206,7 @@ classes, instance variables, constructors, and methods.
 then a return type, then the name of the method followed by parentheses for optional parameters. Methods defined for an object can access and use its instance variables!
 
 The ``Person`` class above has a ``print`` method that prints out all the data
-stored for a person object. Notice that it is marked as ``public`` and after
-``public`` comes the return type. The ``void`` return type, as you may recall
-from Unit 2, is used to indicate that the method does not return anything but
-has some effect such as printing to the screen. After the return type comes the
-method name followed by parentheses containing the list of parameters. In this
-case there are no parameters but we still need the ``()``\ s. The body of the
-method is in ``{}``\ s. As we’ve discussed, the method can access and use the
-instance variables defined in the class: ``name``, ``email``, and
-``phoneNumber`` but will get the values specific to the object we called
-``print`` on.
+stored for a person object. Here is what that **method definition** inside the class file (like peeking into the hood of a car) might look like: 
 
 ```java
 public void print()
@@ -225,6 +216,13 @@ public void print()
     System.out.println("Phone Number: " + phoneNumber);
 }
 ```
+> * Notice that this method is marked as ``public``, and after the keyword
+``public`` comes the **return type**. The ``void`` return type, as you may recall from Unit 2, is used to indicate that the method does not return anything but has some _effect_ such as printing to the screen.
+> * After the return type comes the method **name** followed by parentheses containing the list of **parameters**. In this
+case there are no parameters (no _input_ needed for the process) but we still need the ``( )``s.
+> * The **body** of the method is in ``{ }``s.
+> * As we’ve discussed, the method can access and use the instance variables defined in the class: ``name``, ``email``, and
+``phoneNumber`` but will get the values specific to the object we called ``print`` on.
 
 <div class="important" markdown="block">
 
@@ -251,10 +249,10 @@ solve a problem, and then figure out the **data** and **methods** in each class.
 When you are given a problem specification, you can identify **classes** you’ll need
 by looking for the _nouns_ in the specification. 
 
-> For instance, the specification for the turtle graphics system from Unit 2 probably contained a
+🐢 For instance, the specification for the turtle graphics system from Unit 2 probably contained a
 sentence that said something like, _“there are turtles that can exist on a
 2-dimensional world and can draw lines by moving around the world”_. The main
-nouns in that description are “turtle” and “world” and indeed the classes in the
+**nouns** in that description are “turtle” and “world” and indeed the classes in the
 system are ``Turtle`` and ``World``.
 > (The one noun that was not turned into a
 class was “line”. Do you think it would have made sense to create a ``Line``
@@ -270,10 +268,10 @@ specification, like “move”.
 #### Drawing Class Diagrams
 
 Sometimes it’s useful, when designing a complex system with lots of classes, to
-make diagrams of the classes that show you at a glance what instance variables
+make **diagrams** of the classes that show you at a glance what instance variables
 and methods they have. Often these can just be sketches in your notebook or on a
-whiteboard but there are also more formal systems such as the Unified Modeling
-Language (UML) for drawing these diagrams.
+whiteboard but there are also more formal systems such as the [Unified Modeling
+Language (UML)](https://en.wikipedia.org/wiki/Unified_Modeling_Language#:~:text=The%20unified%20modeling%20language%20(UML,the%20design%20of%20a%20system.) for drawing these diagrams.
 
 {:.important}
 Here is a [tutorial on class diagrams](https://medium.com/@smagid_allThings/uml-class-diagrams-tutorial-step-by-step-520fd83b300b) that explains it in more detail if you are curious (_drawing class diagrams is not tested on the AP CSA exam_). If you want to draw your own, [app diagrams](https://app.diagrams.net/) or [Creately.com](https://creately.com) are good free online drawing tools for UML class diagrams.
