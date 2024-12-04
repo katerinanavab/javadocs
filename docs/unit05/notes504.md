@@ -19,7 +19,7 @@ nav_order: 4
 
 ---
 
-## Accessor (_Getter_) Methods
+## Accessor Methods (_Getters_)
 
 
 
