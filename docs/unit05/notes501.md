@@ -39,7 +39,8 @@ nav_order: 1
 
 In Unit 2, we learned to use **classes** and **objects** that are built-in to
 Java or written by other programmers. In this unit, you will learn to _write your
-own classes_ and make your own objects!
+own classes_ and make your own objects! Watch this video to review the concept of **Object-Oriented Programming**:
+<a href="https://www.youtube.com/watch?v=X3cFiJnxUBY" target="_blank"><button class="btn">📺 VIDEO</button></a>
 
 {:.highlight}
 💡 Remember that a **class** in Java defines a _blueprint_ for creating objects. When
@@ -50,9 +51,6 @@ class.
 variables and assigned them references to objects created from the class
 ``Turtle`` and we used instances of Java’s ``String`` class to assign values to
 different ``String`` variables.
-
-Watch this video about the concept of **Object-Oriented Programming**:
-<a href="https://www.youtube.com/watch?v=X3cFiJnxUBY" target="_blank"><button class="btn">📺 VIDEO</button></a>
 
 ### Creating a Class
 
