@@ -38,10 +38,11 @@ nav_order: 1
 ## Anatomy of a Java Class
 
 In Unit 2, we learned to use **classes** and **objects** that are built-in to
-Java or written by other programmers. In this unit, you will learn to write your
-own classes and make your own objects!
+Java or written by other programmers. In this unit, you will learn to _write your
+own classes_ and make your own objects!
 
-Remember that a **class** in Java defines a _blueprint_ for creating objects. When
+{:.highlight}
+💡 Remember that a **class** in Java defines a _blueprint_ for creating objects. When
 you create **objects**, you create new **instances** of that class and what you
 can do with those instances is determined by what methods are defined in the
 class.
@@ -61,7 +62,7 @@ followed by the **name** of the class. Then the rest of the class, called the **
 is defined inside a pair of ``{ }``s.
 
 Since we’re talking about anatomy, let’s create a class called ``Person``.
-Classes are almost always named with capitalized names though this is a matter
+Classes are almost always named with _capitalized names_ though this is a matter
 of style, not a rule of the language. Here is the basic skeleton of a ``Person``
 class:
 
@@ -89,18 +90,18 @@ So what makes up the **body** of the class—the stuff between the ``{}``s?
 Remember that `objects` have both _attributes_ and _behaviors_. These correspond to
 **instance variables** and **methods** in the `class` definition.
 
-The first things we define in a class are usually the **instance variables**. They
-are called that because each instance of the class (each object) has its own set
+🧠📚 The first things we define in a class are usually the **instance variables**. They
+are called that because each _instance_ of the class (each _object_) has its own set
 of variables that aren’t shared with other instances. 
 > This is what allowed ``yertle`` and ``myrtle`` from Unit 2 to be at different positions at the same
 time; they each had their own x position and y position instance variables.
 
-The next thing we define in a class is usually its **constructors**. We’ll talk
+🏗️🧱 The next thing we define in a class is usually its **constructors**. We’ll talk
 about writing constructors in more detail in the next section but a
-constructor’s job is to initialize the instance variables when the object is
-created. Usually that will mean they need to take arguments. 
+constructor’s job is to _initialize the instance variables_ when the object is
+created. Usually that will mean they need to take **arguments**. 
 
-The real meat of a class is in the **methods** which define the _behaviors_ of the
+💃🕺 The real meat of a class is in the **methods** which define the _behaviors_ of the
 objects of that class. 
 > Recall from Unit 2 that most methods either do things
 (like the ``Turtle`` methods that moved the turtle on the screen) or return
@@ -141,10 +142,6 @@ public class Person
 program either to **test** that one class, or sometimes act as the **entry point** to a whole
 program made up of many classes and objects.
 
-Now that we know what the skeleton of a class looks like and the elements that
-make up the body of the class, we’re ready to create our own class! Let’s start
-with a look at how to design a class such as ``Person``.
-
 {:.highlight}
 One important question we have to ask when designing a class is, **what data does
 it represent**? In this case we can ask, what would we want to _know_ about a
@@ -157,11 +154,10 @@ and pulse rate.
 
 ### Instance Variables
 
-As we’ve said, **instance Variables** hold the data for an object. They record
-what an object needs to know to play its role in the program. Instance variables
-are also sometimes called **attributes**, **fields**, or **properties**.
+As we’ve said, **instance variables** hold the data for an object. They record what an object _needs to know_ to play its role in the program. 
+> Instance variables are also sometimes called **attributes**, **fields**, or **properties**.
 
-In general and definitely on the AP CSA exam, instance variables should be
+🔐 In general and definitely on the AP CSA exam, instance variables should be
 declared **private**. Think of ``private`` as like your diary. Only you should
 have direct access to it. Similarly, in Java a ``private`` instance variable can
 only be accessed by code in the class that declares the variable.
@@ -182,18 +178,18 @@ them (as seen in the cookie decorations below):
 
 ![image](Figures/PersonClassWithCookies.png)
 
-> * Good Java style stresses **data encapsulation** where the data (instance
-variables) and the code acting on the data (methods) are wrapped together into a
-single unit and the implementation details are _hidden_.
-> * Because only code in the class can access or change the values of ``private`` instance variables, it is a
+> * 💊 Good Java coding style stresses **data encapsulation** where the data (_instance
+variables_) and the code acting on the data (_methods_) are wrapped together into a
+single unit and the implementation details are **hidden**.
+> * Why?? Because only code in the class can access or change the values of ``private`` instance variables, it is a
 lot easier to keep track of how your program works than if you had to worry that
 any code anywhere in a much larger program could possibly change the values of
 the variables.
 > * Code in other classes can only interact with the ``public`` methods you provide
-and cannot directly access the ``private`` instance variables (shown in the pink
-box above).
-> * When designing a class you get to decide what data to make accessible or
-modifiable from other classes by what ``public`` methods you provide. 
+and cannot directly access the ``private`` instance variables (_shown in the pink
+box above_).
+> * When designing a class you get to decide what data to make **accessible** or
+**modifiable** from other classes by what ``public`` methods you provide. 
 
 ### Methods
 
@@ -267,7 +263,8 @@ class? Why or why not?)
 Once you’ve determined the classes you need, then you can go through the process
 we described above to design the individual classes. 
 
-{:.highlight} Note that you can often identify **methods** that should exist on classes by looking for _verbs_ in the
+{:.highlight}
+Note that you can often identify **methods** that should exist on classes by looking for _verbs_ in the
 specification, like “move”.
 
 #### Drawing Class Diagrams
