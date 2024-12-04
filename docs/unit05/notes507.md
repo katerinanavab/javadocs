@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓5.7: The `static` Keyword" 
+title: "📓5.7: `static` Keyword" 
 parent: "5️⃣ Writing Classes"
 nav_order: 7
 ---
