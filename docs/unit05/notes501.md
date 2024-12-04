@@ -51,8 +51,8 @@ variables and assigned them references to objects created from the class
 ``Turtle`` and we used instances of Java’s ``String`` class to assign values to
 different ``String`` variables.
 
-Watch this short video to review the vocabulary of object-oriented programming:
-<a href="https://www.youtube.com/watch?v=LfSaSANJPLg" target="_blank"><button class="btn">📺 VIDEO</button></a>
+Watch this short video about the concept of **Object-Oriented Programming**:
+<a href="https://www.youtube.com/watch?v=X3cFiJnxUBY" target="_blank"><button class="btn">📺 VIDEO</button></a>
 
 ### Creating a Class
 
