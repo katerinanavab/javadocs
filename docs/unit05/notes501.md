@@ -89,27 +89,27 @@ So what makes up the **body** of the class—the stuff between the ``{}``s?
 Remember that `objects` have both _attributes_ and _behaviors_. These correspond to
 **instance variables** and **methods** in the `class` definition.
 
-The first things we define in a class are usually the instance variables. They
+The first things we define in a class are usually the **instance variables**. They
 are called that because each instance of the class (each object) has its own set
-of variables that aren’t shared with other instances. This is what allowed
-``yertle`` and ``myrtle`` from Unit 2 to be at different positions at the same
+of variables that aren’t shared with other instances. 
+> This is what allowed ``yertle`` and ``myrtle`` from Unit 2 to be at different positions at the same
 time; they each had their own x position and y position instance variables.
 
 The next thing we define in a class is usually its **constructors**. We’ll talk
 about writing constructors in more detail in the next section but a
 constructor’s job is to initialize the instance variables when the object is
-created. Usually that will mean they need to take arguments. (The call to ``new
-Person()`` before is to a constructor that doesn’t take any arguments. In a
-moment we’ll see that our ``Person`` constructor will actually need arguments.)
+created. Usually that will mean they need to take arguments. 
 
-The real meat of a class is in the **methods** which define the behaviors of the
-objects of that class. Recall from Unit 2 that most methods either do things
+The real meat of a class is in the **methods** which define the _behaviors_ of the
+objects of that class. 
+> Recall from Unit 2 that most methods either do things
 (like the ``Turtle`` methods that moved the turtle on the screen) or return
 values like the ``getXPos`` and ``getYPos`` on ``Turtle``.
 
-The methods of the class share access to the object’s instance variables and
+The methods of the class **share access to the object’s instance variables** and
 when a method is called on an object it uses the instance variables for that
-object. For example in the ``Turtle`` class the ``forward`` method changes an
+object. 
+> For example in the ``Turtle`` class the ``forward`` method changes an
 instance variable ``xPos``. When you call ``forward`` on ``yertle`` it changes
 ``xPos`` on the ``yertle`` object and when you call it on ``myrtle`` it changes
 the ``xPos`` on the ``myrtle`` object.
@@ -118,19 +118,19 @@ the ``xPos`` on the ``myrtle`` object.
     
 _Putting it all together, the three main anatomical features of a class are:_
 
-1. The **instance variables** which hold values associated with each object
+1. The **instance variables** which hold values (_attributes_) associated with each object
 2. The **constructors** whose job is to initialize the instance variables for an object
-3. The **methods** who contain the code that gives the objects their behavior and which
+3. The **methods** who contain the code that gives the objects their _behavior_ and which
 can use the instance variables defined in the class
 
 ```java
 public class Person
 {
-    // 1. INSTANCE VARIABLES (attributes)
+    // 1. INSTANCE VARIABLES
 
-    // 2. CONSTRUCTORS (object initializers)
+    // 2. CONSTRUCTORS
 
-    // 3. METHODS (behaviors)
+    // 3. METHODS
 
 }
 ```
