@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓5.1: Java Classes" 
+title: "📓5.1: Classes & Objects" 
 parent: "5️⃣ Writing Classes"
 nav_order: 1
 ---
