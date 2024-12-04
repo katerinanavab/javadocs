@@ -157,7 +157,93 @@ and pulse rate.
 
 ### Instance Variables
 
+As we’ve said, **instance Variables** hold the data for an object. They record
+what an object needs to know to play its role in the program. Instance variables
+are also sometimes called **attributes**, **fields**, or **properties**.
+
+In general and definitely on the AP CSA exam, instance variables should be
+declared **private**. Think of ``private`` as like your diary. Only you should
+have direct access to it. Similarly, in Java a ``private`` instance variable can
+only be accessed by code in the class that declares the variable.
+
+{:.highlight}
+**Instance variables** are declared right after the class declaration. They usually start with ``private`` then the *type* of the variable and then a *name* for the variable. Private means only the code in this class has access to it.
+
+The ``Person`` class declares 3 private instance variables: ``name``, ``email``,
+and ``phoneNumber``. These are things that you might want to know about a
+person. They are declared at the top of the class and they exist inside the ``{
+}`` of the class.
+
+Once we have created a class like ``Person``, we can create many **instances**
+(_objects_) of the class. The class is like a _blueprint_ or _cookie cutter_ that
+defines the variables and methods for that class. Each object will have their
+own copies of the _same instance variables_ but with _possibly different values_ in
+them (as seen in the cookie decorations below):
+
+![image](Figures/PersonClassWithCookies.png)
+
+> * Good Java style stresses **data encapsulation** where the data (instance
+variables) and the code acting on the data (methods) are wrapped together into a
+single unit and the implementation details are _hidden_.
+> * Because only code in the class can access or change the values of ``private`` instance variables, it is a
+lot easier to keep track of how your program works than if you had to worry that
+any code anywhere in a much larger program could possibly change the values of
+the variables.
+> * Code in other classes can only interact with the ``public`` methods you provide
+and cannot directly access the ``private`` instance variables (shown in the pink
+box above).
+> * When designing a class you get to decide what data to make accessible or
+modifiable from other classes by what ``public`` methods you provide. 
+
 ### Methods
+
+Now to **methods** which define what we can actually do with an object. The most
+important methods in a class are the ``public`` methods since they can be
+accessed from outside the class. You may also write ``private`` methods that are
+not accessible outside of the class and therefore can only be used by other
+methods inside the same class. As you’ve probably figured out, the ``public``
+and ``private`` keywords determine the external access and visibility of
+classes, instance variables, constructors, and methods.
+
+{:.important}
+**Methods** define what the _object can do_. They typically start with the ``public`` keyword 
+then a return type, then the name of the method followed by parentheses for optional parameters. Methods defined for an object can access and use its instance variables!
+
+The ``Person`` class above has a ``print`` method that prints out all the data
+stored for a person object. Notice that it is marked as ``public`` and after
+``public`` comes the return type. The ``void`` return type, as you may recall
+from Unit 2, is used to indicate that the method does not return anything but
+has some effect such as printing to the screen. After the return type comes the
+method name followed by parentheses containing the list of parameters. In this
+case there are no parameters but we still need the ``()``\ s. The body of the
+method is in ``{}``\ s. As we’ve discussed, the method can access and use the
+instance variables defined in the class: ``name``, ``email``, and
+``phoneNumber`` but will get the values specific to the object we called
+``print`` on.
+
+```java
+public void print()
+{
+    System.out.println("Name: " + name);
+    System.out.println("Email: " + email);
+    System.out.println("Phone Number: " + phoneNumber);
+}
+```
+
+<div class="important" markdown="block">
+
+📣 To **call** (_activate/run/use_) a method, we need to create an object that is an instance of the class such as we
+get by calling its constructor. Then we use the **dot** (``.``) **operator** to call its
+``public`` methods, for example ``p1.print()`` means call the ``print`` method
+on the object ``p1``.
+
+```java
+// call the constructor to create a new person
+Person p1 = new Person("Sana", "sana@gmail.com", "123-456-7890");
+// call p1's print method
+p1.print();
+```
+</div>
 
 ### Object-Oriented Design
 
