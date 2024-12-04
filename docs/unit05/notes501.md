@@ -85,7 +85,7 @@ Person charles = new Person();
 
 So what makes up the **body** of the class—the stuff between the ``{}``s?
 
-{.highlight}
+{:.highlight}
 Remember that `objects` have both _attributes_ and _behaviors_. These correspond to
 **instance variables** and **methods** in the `class` definition.
 
@@ -145,7 +145,7 @@ Now that we know what the skeleton of a class looks like and the elements that
 make up the body of the class, we’re ready to create our own class! Let’s start
 with a look at how to design a class such as ``Person``.
 
-{.highlight}
+{:.highlight}
 One important question we have to ask when designing a class is, **what data does
 it represent**? In this case we can ask, what would we want to _know_ about a
 person? Our answer will depend on what problem we are trying to solve. 
@@ -181,7 +181,7 @@ class? Why or why not?)
 Once you’ve determined the classes you need, then you can go through the process
 we described above to design the individual classes. 
 
-{.highlight} Note that you can often identify **methods** that should exist on classes by looking for _verbs_ in the
+{:.highlight} Note that you can often identify **methods** that should exist on classes by looking for _verbs_ in the
 specification, like “move”.
 
 #### Drawing Class Diagrams
@@ -192,7 +192,7 @@ and methods they have. Often these can just be sketches in your notebook or on a
 whiteboard but there are also more formal systems such as the Unified Modeling
 Language (UML) for drawing these diagrams.
 
-{.important}
+{:.important}
 Here is a [tutorial on class diagrams](https://medium.com/@smagid_allThings/uml-class-diagrams-tutorial-step-by-step-520fd83b300b) that explains it in more detail if you are curious (_drawing class diagrams is not tested on the AP CSA exam_). If you want to draw your own, [app diagrams](https://app.diagrams.net/) or [Creately.com](https://creately.com) are good free online drawing tools for UML class diagrams.
 
 For example, here is a UML class diagram for the ``Turtle`` class. The ``-`` in
