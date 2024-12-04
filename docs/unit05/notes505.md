@@ -19,7 +19,7 @@ nav_order: 5
 
 ---
 
-## Mutators/Setters
+## Mutator Methods (_Setters_)
 
 
 
