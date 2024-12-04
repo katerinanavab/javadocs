@@ -33,6 +33,7 @@ nav_order: 1
 
 </div>
 
+---
 
 ## Anatomy of a Java Class
 
