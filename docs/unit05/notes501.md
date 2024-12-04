@@ -117,27 +117,31 @@ instance variable ``xPos``. When you call ``forward`` on ``yertle`` it changes
 ``xPos`` on the ``yertle`` object and when you call it on ``myrtle`` it changes
 the ``xPos`` on the ``myrtle`` object.
 
-Putting it all together, the three main anatomical features of a class are the
-**instance variables** which hold values associated with each object, the
-**constructors** whose job is to initialize the instance variables, and the
-**methods** who contain the code that gives the objects their behavior and which
-can use the instance variables defined in the class.
+<div class="imp" markdown="block">
+    
+_Putting it all together, the three main anatomical features of a class are:_
+
+1. The **instance variables** which hold values associated with each object
+2. The **constructors** whose job is to initialize the instance variables for an object
+3. The **methods** who contain the code that gives the objects their behavior and which
+can use the instance variables defined in the class
 
 ```java
-    public class Person
-    {
-        // instance variables
+public class Person
+{
+    // 1. INSTANCE VARIABLES (attributes)
 
-        // constructors
+    // 2. CONSTRUCTORS (object initializers)
 
-        // methods
+    // 3. METHODS (behaviors)
 
-    }
+}
 ```
 
-And finally one last bit of weird anatomy, kind of like the appendix: any Java
-class can have a ``main`` method which can be used to run that class as a
-program either to test that one class or sometimes as the entry point to a whole
+</div>
+
+> ADDITIONALLY, any Java class can have a ``main`` method which can be used to run that class as a
+program either to **test** that one class, or sometimes act as the **entry point** to a whole
 program made up of many classes and objects.
 
 ### Designing a Class
@@ -149,6 +153,30 @@ program made up of many classes and objects.
 
 ### Object-Oriented Design
 
+
+#### 🧠 Check Your Understanding
+{:.no_toc}
+
+<div class="task" markdown="block">
+    
+Say you wanted to make a computer game from a board game that you are playing. Think about what objects are in the game. For example, here is the description for **Monopoly** (trademark Hasbro games):
+> "Buy, sell, dream and scheme your way to riches. Players buy, sell and trade to win. Build houses and hotels on your properties and bankrupt your opponents to win it all. Chance and Community Chest cards can change everything." 
+
+What **classes** would you need to create a computer version of this game? (Remember to look for the _nouns_). Take one of the classes you listed, and try to come up with 2 pieces of _data_ in that class that will be the **instance variables**.
+
+</div>
+
+#### 💻 In-Class Activity: Riddle Class
+{:.no_toc}
+
+
+<div class="task" markdown="block">
+
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit5-Writing-Classes/topic-5-1-parts-of-class.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 5.1</button></a> 
+2. Make sure you **SIGN IN**!
+3. Complete the **Programming Challenge: Riddle Class** activity in pairs.
+
+</div>
 
 ---
 
