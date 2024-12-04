@@ -141,8 +141,19 @@ public class Person
 program either to **test** that one class, or sometimes act as the **entry point** to a whole
 program made up of many classes and objects.
 
-### Designing a Class
+Now that we know what the skeleton of a class looks like and the elements that
+make up the body of the class, we’re ready to create our own class! Let’s start
+with a look at how to design a class such as ``Person``.
 
+{.highlight}
+One important question we have to ask when designing a class is, **what data does
+it represent**? In this case we can ask, what would we want to _know_ about a
+person? Our answer will depend on what problem we are trying to solve. 
+
+> In one program, perhaps an address book, we might want to know the person's name and
+phone number and email. In another program, such as a medical application, we
+might need to know their vital signs such as their blood pressure, temperature,
+and pulse rate.
 
 ### Instance Variables
 
@@ -150,6 +161,45 @@ program made up of many classes and objects.
 
 ### Object-Oriented Design
 
+So far we’ve just talked about designing one class. In **object-oriented
+design** (OOD), programmers often start by deciding which **classes** are needed to
+solve a problem, and then figure out the **data** and **methods** in each class.
+
+{:.highlight}
+When you are given a problem specification, you can identify **classes** you’ll need
+by looking for the _nouns_ in the specification. 
+
+> For instance, the specification for the turtle graphics system from Unit 2 probably contained a
+sentence that said something like, _“there are turtles that can exist on a
+2-dimensional world and can draw lines by moving around the world”_. The main
+nouns in that description are “turtle” and “world” and indeed the classes in the
+system are ``Turtle`` and ``World``.
+> (The one noun that was not turned into a
+class was “line”. Do you think it would have made sense to create a ``Line``
+class? Why or why not?)
+
+Once you’ve determined the classes you need, then you can go through the process
+we described above to design the individual classes. 
+
+{.highlight} Note that you can often identify **methods** that should exist on classes by looking for _verbs_ in the
+specification, like “move”.
+
+#### Drawing Class Diagrams
+
+Sometimes it’s useful, when designing a complex system with lots of classes, to
+make diagrams of the classes that show you at a glance what instance variables
+and methods they have. Often these can just be sketches in your notebook or on a
+whiteboard but there are also more formal systems such as the Unified Modeling
+Language (UML) for drawing these diagrams.
+
+{.important}
+Here is a [tutorial on class diagrams](https://medium.com/@smagid_allThings/uml-class-diagrams-tutorial-step-by-step-520fd83b300b) that explains it in more detail if you are curious (_drawing class diagrams is not tested on the AP CSA exam_). If you want to draw your own, [app diagrams](https://app.diagrams.net/) or [Creately.com](https://creately.com) are good free online drawing tools for UML class diagrams.
+
+For example, here is a UML class diagram for the ``Turtle`` class. The ``-`` in
+front of the attributes indicate that they are private, and the ``+`` in front
+of the methods indicate that they are public. 
+
+![image](Figures/turtleUMLClassDiagram.png)
 
 #### 🧠 Check Your Understanding
 {:.no_toc}
