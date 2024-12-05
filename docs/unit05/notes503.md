@@ -65,7 +65,34 @@ Notice that there are some special tags that you can use in Java documentation. 
 - `@version` Version of program
 - `@param`   Parameter of a method
 - `@return`  Return value for a method
-  
+
+### Preconditions and Postconditions
+
+As you write methods in a class, it is a good idea to keep in mind the **preconditions** and the **postconditions** for the method and write them in the comments:
+
+* A **precondition** is a condition that must be `true` for your method code to work, for example the assumption that the parameters have values and are not null. The methods could check for these preconditions, but they do not have to. The precondition is _what the method expects_ in order to do its job properly.
+* A **postcondition** is a condition that is `true` _after_ running the method. It is what the method promises to do. Postconditions describe the _outcome of running the method_, for example what is being returned or the changes to the instance variables. These assumptions are very useful to other programmers who want to use your class and get the correct results.
+
+Here is an example of **preconditions**, **postconditions**, and `@param` in the Turtle code that we have used in the past for our drawing turtles.
+
+```java
+
+       /**
+         * Constructor that takes the x and y position for the
+         * turtle
+         * Preconditions: parameters x and y are coordinates from 0 to
+         *    the width and height of the world.
+         * Postconditions: the turtle is placed in (x,y) coordinates
+         * @param x the x position to place the turtle
+         * @param y the y position to place the turtle
+         */
+        public Turtle(int x, int y)
+        {
+          xPos = x;
+          yPos = y;
+        }
+```
+
 ---
 
 ## ⭐️ Summary
