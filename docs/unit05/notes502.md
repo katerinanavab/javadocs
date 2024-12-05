@@ -47,7 +47,7 @@ Now it's time to learn to write our own constructors.
 In the source code for a class, constructors are usually written after the
 instance variables and before any methods.
 
-The **signature** of a constructor is similar to the signature of a method except
+➰🖋️ The **signature** of a constructor is similar to the signature of a method except
 there is **no return type**, not even ``void``, and instead of a method name, the
 name of the constructor is the **same as the name of the class**. 
 > _Other details:_ The constructors you write will almost always be marked ``public``. Like methods, constructors also have a **parameter list** specified in parenthesis that declare the variables that will be used to hold the arguments passed when the constructor is called.
