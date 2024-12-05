@@ -21,20 +21,24 @@ nav_order: 2
 
 ## Writing Constructors
 
-In Unit 2, we learned how to create objects by calling **constructors**. To
-review, a call to a constructor consists of the word ``new`` followed by the
-name of the class being constructed, and then an argument list in parentheses.
-For example, here is how we create ``World``, ``Turtle``, and ``Person``
-objects.
+In Unit 2, we learned how to create objects by calling **constructors**. 
+
+<div class="imp" markdown="block">
+    
+📣 To review, a _call_ to a **constructor** consists of the word ``new`` followed by the
+name of the `class` being constructed, and then an **argument list** in parentheses:
 
 ```java
-
-    // To create a new object, write:
-    // ClassName variableName = new ConstructorName(arguments);
-    World world = new World();
-    Turtle t = new Turtle(world);
-    Person p = new Person("Pat", "pat@gmail.com", "123-456-7890");
+// To create a new object, write:
+// ClassName variableName = new ConstructorName(arguments);
+World world = new World();
+Turtle t = new Turtle(world);
+Person p = new Person("Pat", "pat@gmail.com", "123-456-7890");
 ```
+> This is how we create specific ``World``, ``Turtle``, and ``Person``
+objects as _instances_ of their classes.
+
+</div>
 
 Now it's time to learn to write our own constructors.
 
@@ -43,16 +47,12 @@ Now it's time to learn to write our own constructors.
 In the source code for a class, constructors are usually written after the
 instance variables and before any methods.
 
-The signature of a constructor is similar to the signature of a method except
-there is no return type, not even ``void``, and instead of a method name, the
-name of the constructor is the same as the name of the class. The constructors
-you write will almost always be marked ``public``. Like methods, constructors
-also have a **parameter list** specified in parenthesis that declare the
-variables that will be used to hold the arguments passed when the constructor is
-called.
+The **signature** of a constructor is similar to the signature of a method except
+there is **no return type**, not even ``void``, and instead of a method name, the
+name of the constructor is the **same as the name of the class**. 
+> _Other details:_ The constructors you write will almost always be marked ``public``. Like methods, constructors also have a **parameter list** specified in parenthesis that declare the variables that will be used to hold the arguments passed when the constructor is called.
 
 ```java
-
    public class ClassName
    {
        /* Instance variable declarations go here, before constructors */
@@ -72,59 +72,57 @@ called.
 
 ### The Job of a Constructor
 
-The job of a constructor is to set the initial values for the object’s instance
-variables to useful values. But what does “useful” mean? Sometimes we describe
-the values of all an object's instance variables at a given time as the object's
-**state**. And we say an object is in a **valid state** when all its instance
-variables have values that let us use the object by invoking its public methods.
-So another way to describe the job of a constructor is to set the object’s
-instance values so it’s in a valid state and ready to be used.
+The job of a constructor is to **set the initial values** for the object’s instance
+variables to "useful" values. But what does “useful” mean? 
+> Sometimes we describe the values of all an object's instance variables at a given time as the object's **state**. And we say an object is in a **valid state** when all its instance variables have values that _let us use the object_ by invoking its public methods.
 
+🏗️🧱 So another way to describe the job of a constructor is to set up a specific object’s instance values so it’s in a **valid state** – essentially, using the blueprint (class) to crate a **usable object with data**. 
+
+{:.highlight}
 Classes can have zero or more constructors but they should all produce an object
-in a valid state.
+in a **valid, usable state**.
 
+#### Default no-argument constructor
 The easiest way to write a constructor is to *not* write one. If you do not
-write a constructor your class will automatically get what is called the
+write a constructor, your class will **automatically** get what is called the
 **default no-argument constructor**. This constructor will initialize all your
-instance variables to the default value for their type: 0 for ``int`` and
-``double``, ``false`` for ``boolean``, and ``null`` for all reference types. If
-those default values are sufficient to put your object into a valid state you may
-not need to write a constructor at all.
+instance variables to the _default value_ for their data type: 
+* 0 for ``int`` and ``double``
+* ``false`` for ``boolean``
+* ``null`` for all reference (object) types like `String`.
+
+In the (rare) case where those default values are sufficient to put your object into a valid state, you may not need to write a constructor at all.
+
+#### Constructors that take arguments
 
 Usually, however, if you are writing a class that has instance variables, you
-need to initialize your instance values to some other values. In that case you
-probably need to write a constructor that takes arguments and uses them to
+need to initialize your instance values to **some specific values**. In that case you
+probably need to write a constructor that **takes arguments and uses them** to
 initialize your instance variables.
 
 For example, consider the constructor from the ``Person`` class from the last
-section.
+section:
 
 ```java
-
-   public Person(String initName, String initEmail, String initPhone)
-   {
-       name = initName;
-       email = initEmail;
-       phoneNumber = initPhone;
-   }
+public Person(String initName, String initEmail, String initPhone)
+{
+    name = initName;
+    email = initEmail;
+    phoneNumber = initPhone;
+}
 ```
+> This constructor ensures that all three of the instance variables (``name``, ``email``, and ``phoneNumber``) in ``Person`` are initialized to the values provided by whatever code called the constructor. For example, in the constructor call ``new Person("Pat", "pat@gmail.com", "123-456-7890")``, the argument "Pat" is passed into the parameter variable ``initName``, which the constructor then assigns to the instance variable ``name``.  
 
-This constructor ensures that all three of the instance variables (``name``, ``email``, and ``phoneNumber``) in ``Person`` 
-are initialized to the values provided by whatever code called the constructor. For example, in the constructor call  
-``new Person("Pat", "pat@gmail.com", "123-456-7890")``, the argument "Pat" is passed into the parameter variable ``initName``, 
-which the constructor then assigns to the instance variable ``name``.  
+{:.warning}
+_One important note:_ if you DO write a constructor, Java will NOT generate the **default** constructor automatically for you. This is a good thing because it lets you make sure that instances of your class are always properly initialized. With this constructor in place, for instance, there’s no way to construct a ``Person`` object without providing the three required ``String`` values.
 
-One important note: if you do write a constructor, Java will not generate the
-default constructor for you. This is a good thing because it lets you make sure
-that instances of your class are always properly initialized. With this
-constructor in place, for instance, there’s no way to construct a ``Person``
-object without providing the three required ``String`` values.
+#### Overloading constructors
 
-Sometimes you will want to write more than one constructor so there are
-different ways of making an instance of your class. One reason to do that is to
-make it convenient to create instances from different kinds of arguments. This
-is called **overloading** and we discussed it in Chapter 2 from the perspective
-of calling constructors.
+Sometimes you will want to write _more than one constructor_ so there are
+different ways of making an instance of your class. 
+
+{:.highlight}
+Writing **multiple methods** that the same _NAME_ but accept different _ARGUMENTS_ is called **overloading**, and we discussed it in Chapter 2 from the perspective of calling methods like `String.substring(int from)` and `String.substring(int from, int to)`. One reason to **overload constructors** is to make it convenient to create instances from different kinds/combinations of arguments. 
 
 For instance, suppose we were writing a program that had another class
 ``AddressBookEntry`` which had getters for name, email, and phone number. In
@@ -132,32 +130,27 @@ that program it might be useful to write another ``Person`` constructor like
 this:
 
 ```java
-
-   public Person(AddressBookEntry address) {
-   {
-       name = address.getName();
-       email = address.getEmail();
-       phoneNumber = address.getPhoneNumber();
-   }
+public Person(AddressBookEntry address) {
+{
+    name = address.getName();
+    email = address.getEmail();
+    phoneNumber = address.getPhoneNumber();
+}
 ```
 
-Sometimes you might still even want to provide a no-argument constructor. If
+Most of the time, you might still even want to provide a **no-argument constructor**. If
 there’s a valid object that you can create without any arguments, you could
 write a no-argument constructor for ``Person`` like:
 
 ```java
-
-   public Person()
-   {
-       name = "Anonymous";
-       email = "unknown";
-       phoneNumber = "unknown";
-   }
+public Person()
+{
+    name = "Anonymous";
+    email = "unknown";
+    phoneNumber = "unknown";
+}
 ```
-
-It’s up to you to decide if this is actually a useful value to have or if it
-would be better to force the users of the ``Person`` class to choose the
-values themselves.
+> It’s up to you to decide if this is actually a useful value to have or if it would be better to force the users of the ``Person`` class to choose the values themselves.
 
 #### 💻 In-Class Activity: Student Class
 {:.no_toc}
