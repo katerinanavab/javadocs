@@ -46,18 +46,22 @@ Although you do not technically have to use this in the AP exam, it's a VERY goo
 The compiler will always _skip over comments_, so they don't affect how your program runs. They are for you, your teacher, and other programmers working with you. Here are some examples of good commenting:
 
 ```java
-    /**
-    * MyClass.java
-    * @author My Name
-    * @since Date
-    * This class keeps track of the max score.
-    */
-    public class MyClass()
-    {
-       private int max = 10; // this keeps track of the max score
-       /* The print() method prints out the max */
-       public print() {  System.out.println(max); 
-    }
+/**
+* MyClass.java
+* @author My Name
+* @since Date
+* This class keeps track of the maximum score.
+*/
+public class MyClass()
+{
+  private int max = 10; // this keeps track of the max score
+
+  /* The print() method prints out the max */
+  public void print()
+  {
+    System.out.println(max);
+  } 
+}
 ```
 
 Notice that there are some special tags that you can use in Java documentation. These are not required but many programmers use them. Here are some common tags:
@@ -75,24 +79,22 @@ As you write methods in a class, it is a good idea to keep in mind the **precond
 * A **precondition** is a condition that must be `true` for your method code to work, for example the assumption that the parameters have values and are not null. The methods could check for these preconditions, but they do not have to. The precondition is _what the method expects_ in order to do its job properly.
 * A **postcondition** is a condition that is `true` _after_ running the method. It is what the method promises to do. Postconditions describe the _outcome of running the method_, for example what is being returned or the changes to the instance variables. These assumptions are very useful to other programmers who want to use your class and get the correct results.
 
-Here is an example of **preconditions**, **postconditions**, and `@param` in the Turtle code that we have used in the past for our drawing turtles:
+🐢 Here is an example of **preconditions**, **postconditions**, and `@param` descriptions in the `Turtle` class code that we have used in the past to construct our drawing turtles:
 
 ```java
-
-       /**
-         * Constructor that takes the x and y position for the
-         * turtle
-         * Preconditions: parameters x and y are coordinates from 0 to
-         *    the width and height of the world.
-         * Postconditions: the turtle is placed in (x,y) coordinates
-         * @param x the x position to place the turtle
-         * @param y the y position to place the turtle
-         */
-        public Turtle(int x, int y)
-        {
-          xPos = x;
-          yPos = y;
-        }
+/**
+* Constructor that takes the x and y position for the turtle
+* PRE: parameters x and y are coordinates from 0 to
+*    the width and height of the world.
+* POST: the turtle is placed in (x,y) coordinates
+* @param x the x position to place the turtle
+* @param y the y position to place the turtle
+*/
+public Turtle(int x, int y)
+{
+  xPos = x;
+  yPos = y;
+}
 ```
 
 ### Software Validity and Use-Case Diagrams
@@ -135,18 +137,18 @@ There are many different models for software development. The **Waterfall model*
 
 <div class="task" markdown="block">
 
-🎲 As a class, try the game below to practice the iterative and incremental agile development process:
+🎲 As a class, try the game below to practice the iterative and incremental **agile** development process:
 
 <a href="https://www.agilesparks.com/blog/wake-up-in-the-morning-game/" target="_blank"><button class="btn">Wake Up In the Morning Game</button></a>
 
 </div>
 
-#### 💻 In-Class Activity: Comments and Conditions
+#### 💻 In-Class Activity: Online Shopping Conditions
 {:.no_toc}
 
 <div class="task" markdown="block">
 
-Working in pairs or groups, come up with **4 steps** that a user must do to _purchase a product online_, for example ordering a book on Java in an online store, and list the **preconditions** and **postconditions** for each step. You could pretend to buy something online (don't actually purchase it) to come up with the steps. 
+Working in pairs or groups, come up with **4 steps** that a user must do to _purchase a product online_, for example ordering a book on Java in an online store, and list the **preconditions** and **postconditions** for each step. You could pretend to buy something you want online (don't actually finish checkout) to come up with the steps. 
 > Use an online drawing tool like [Creately.com](https://creately.com) (select **Use-Case Diagrams**) to draw a diagram for the Online Store System. Don't forget to list the preconditions and postconditions for each step. 
 
 </div>
@@ -157,13 +159,13 @@ Working in pairs or groups, come up with **4 steps** that a user must do to _pur
 
 - Comments are ignored by the compiler and are not executed when the program is run.
 
-- Three types of comments in Java include ``/* */``, which generates a block of comments, ``//``, which generates a comment on one line, and ``/** */``, which are Javadoc comments and are used to create API documentation.
+- Three types of comments in Java include ``/* */``, which generates a block of comments, ``//``, which generates a comment on one line, and ``/** */``, which are Javadoc comments and are used to create **API** **documentation**.
 
-- A precondition is a condition that must be true just prior to the execution of a section of program code in order for the method to behave as expected. There is no expectation that the method will check to ensure preconditions are satisfied.
+- A **precondition** is a condition that must be true just prior to the execution of a section of program code in order for the method to behave as expected. There is no expectation that the method will check to ensure preconditions are satisfied.
 
-- A postcondition is a condition that must always be true after the execution of a section of program code. Postconditions describe the outcome of the execution in terms of what is being returned or the state of an object.
+- A **postcondition** is a condition that must always be true after the execution of a section of program code. Postconditions describe the outcome of the execution in terms of what is being returned or the state of an object.
 
-- Programmers write method code to satisfy the postconditions when preconditions are met.
+- Programmers write **method** code to satisfy the postconditions when preconditions are met.
 
 
 ---
