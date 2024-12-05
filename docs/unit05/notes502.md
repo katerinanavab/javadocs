@@ -122,7 +122,9 @@ Sometimes you will want to write _more than one constructor_ so there are
 different ways of making an instance of your class. 
 
 {:.highlight}
-Writing **multiple methods** that the same _NAME_ but accept different _ARGUMENTS_ is called **overloading**, and we discussed it in Chapter 2 from the perspective of calling methods like `String.substring(int from)` and `String.substring(int from, int to)`. One reason to **overload constructors** is to make it convenient to create instances from different kinds/combinations of arguments. 
+Writing **multiple methods** that the same _NAME_ but accept different _ARGUMENTS_ is called **overloading**. One reason to **overload constructors** is to make it convenient to create instances from different kinds/combinations of arguments. 
+
+> We discussed **overloading** in Chapter 2 from the perspective of calling methods with the same name, but providing different amounts of information: like `String.substring(int from)` and `String.substring(int from, int to)`.
 
 For instance, suppose we were writing a program that had another class
 ``AddressBookEntry`` which had getters for name, email, and phone number. In
