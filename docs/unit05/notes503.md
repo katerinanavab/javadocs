@@ -99,12 +99,14 @@ Here is an example of **preconditions**, **postconditions**, and `@param` in the
 
 Preconditions and postconditions _are_ covered on the AP CSA exam. **Software validity**, **testing**, and **use-case diagrams** which are discussed in this subsection _are not_ covered on the AP CSA exam, but they are described here because they use **preconditions** and **postconditions** and are used by professional programmers.
 
-Determining the preconditions and postconditions help us to test our code and determine the **validity** of our software.  Software validity tests whether the software _does what it is supposed to do_ before it is released. This is sometimes very important. 
+Determining the preconditions and postconditions help us to test our code and determine the **validity** of our software.  Software validity tests whether the software _does what it is supposed to do_ before it is released. This is sometimes very important! 
 > For example, if the code is part of a satellite going to outerspace or is going to be used in an emergency condition, we want to test it thoroughly and make sure it works and is valid before it is put into use. Remember _Humble Pi?_
 
-Preconditions and postconditions can also help us to design better software systems. Software designers often first draw a high-level **Use-Case Diagram** of a system that shows the different ways that a user might interact with a system before they build it. Here is a simple Use-Case Diagram of a restaurant system. It shows 2 actors in the system: the customer and the staff at the restaurant, and 3 use-cases in circles. A **Use-case** is a particular user interaction or situation in the system or software, and they often become methods in the program.
+🧑‍💻 Preconditions and postconditions can also help us to design better software systems. Software designers often first draw a high-level **Use-Case Diagram** of a system that shows the different ways that a user might interact with a system before they build it. Here is a simple Use-Case Diagram of a restaurant system:
 
 ![image](Figures/use-case-restaurant.png)
+
+> It shows 2 actors in the system: the customer and the staff at the restaurant, and 3 use-cases in circles. A **use-case** is a particular user interaction or situation in the system or software, and they often become **methods** in the program.
 
 {:.highlight} 
 After drawing a Use-Case Diagram, designers write down the **preconditions** and the **postconditions** for each Use-Case. Often the successful post-condition for one use-case becomes the preconditions for the next use-case. 
