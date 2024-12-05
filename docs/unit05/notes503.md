@@ -113,7 +113,7 @@ Determining the preconditions and postconditions help us to test our code and de
 {:.highlight} 
 After drawing a Use-Case Diagram, designers write down the **preconditions** and the **postconditions** for each Use-Case. Often the successful post-condition for one use-case becomes the preconditions for the next use-case. 
 
-For example, for the "Order Food" and "Eat Food" Use Cases:
+For example, for the "Order Food" and "Eat Food" **Use Cases**:
 
 - _Preconditions for "Order Food":_ Customer enters restaurant. Staff is ready to take the order.
 - _Postconditions for "Order Food":_ Customer orders the food. Staff takes the order.
