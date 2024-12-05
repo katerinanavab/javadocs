@@ -53,18 +53,18 @@ name of the constructor is the **same as the name of the class**.
 > _Other details:_ The constructors you write will almost always be marked ``public``. Like methods, constructors also have a **parameter list** specified in parenthesis that declare the variables that will be used to hold the arguments passed when the constructor is called.
 
 ```java
-   public class ClassName
-   {
-       /* Instance variable declarations go here, before constructors */
+public class ClassName
+{
+    /* Instance variable declarations go here, before constructors */
 
-       /* Constructor - same name as Class, no return type */
-       public ClassName()
-       {
-           /* Implementation not shown */
-       }
+    /* Constructor - same name as Class, no return type */
+    public ClassName()
+    {
+        /* Implementation not shown */
+    }
 
-       /* Method definitions go here, after constructors */
-   }
+    /* Method definitions go here, after constructors */
+}
 ```
 
 {:.highlight}
@@ -100,8 +100,7 @@ need to initialize your instance values to **some specific values**. In that cas
 probably need to write a constructor that **takes arguments and uses them** to
 initialize your instance variables.
 
-For example, consider the constructor from the ``Person`` class from the last
-section:
+Consider the constructor from the ``Person`` class from the last section. This constructor ensures that all three of the **instance variables** (``name``, ``email``, and ``phoneNumber``) in ``Person`` are **initialized** to the values provided by whatever code called the constructor:
 
 ```java
 public Person(String initName, String initEmail, String initPhone)
@@ -111,10 +110,12 @@ public Person(String initName, String initEmail, String initPhone)
     phoneNumber = initPhone;
 }
 ```
-> This constructor ensures that all three of the instance variables (``name``, ``email``, and ``phoneNumber``) in ``Person`` are initialized to the values provided by whatever code called the constructor. For example, in the constructor call ``new Person("Pat", "pat@gmail.com", "123-456-7890")``, the argument "Pat" is passed into the parameter variable ``initName``, which the constructor then assigns to the instance variable ``name``.  
+> For example, in the constructor call ``new Person("Pat", "pat@gmail.com", "123-456-7890")``, the argument "Pat" is passed into the parameter variable ``initName``, which the constructor then assigns to the instance variable ``name``.  
 
 {:.warning}
-_One important note:_ if you DO write a constructor, Java will NOT generate the **default** constructor automatically for you. This is a good thing because it lets you make sure that instances of your class are always properly initialized. With this constructor in place, for instance, there’s no way to construct a ``Person`` object without providing the three required ``String`` values.
+_One important note:_ if you DO write a constructor, Java will NOT generate the **default** constructor automatically for you. This is a good thing because it lets you make sure that instances of your class are always properly initialized. 
+
+> With this constructor in place, for instance, there’s no way to construct a ``Person`` object without providing the three required ``String`` values.
 
 #### Overloading constructors
 
