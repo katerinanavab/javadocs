@@ -45,53 +45,53 @@ take care of drawing lines on the screen if the pen is down.
 
 <div class="imp" markdown="block">
 
-A setter is a `void` method with a name that starts with ``set`` and that takes a **single
-argument** of the same type as the instance variable to be set. The effect of a
-setter is to assign the new provided value to the object's instance variable.
+🪄 A setter is a `void` method with a name that starts with ``set`` and that takes a **single
+argument** of the same type as the instance variable to be set.
 
 ```java
-     public class ExampleTemplate
-     {
-         // Instance variable declaration
-         private typeOfVar varName;
+public class ExampleTemplate
+{
+     // Instance variable declaration
+     private typeOfVar varName;
 
-         // Setter method template
-         public void setVarName(typeOfVar newValue)
-         {
-             varName = newValue;
-         }
+     // Setter method template
+     public void setVarName(typeOfVar newValue)
+     {
+          varName = newValue;
      }
+}
 ```
+> The effect of a setter is to *assign the new provided value* to the object's **instance variable**. 
+
 </div>
 
 Here's an example of the ``Student`` class with a setter for the ``name`` variable:
 
 ```java
-  public class Student
-  {
-      // Instance variable name
-      private String name;
+public class Student
+{
+     // Instance variable name
+     private String name;
 
-      /**
-       * setName sets name to newName
-       *
-       * @param newName
-       */
-      public void setName(String newName)
-      {
+     /**
+     * setName sets name to newName
+     * @param newName
+     */
+     public void setName(String newName)
+     {
           name = newName;
-      }
+     }
 
-      public static void main(String[] args)
-      {
+     public static void main(String[] args)
+     {
           // To call a set method, use objectName.setVar(newValue)
           Student s = new Student();
           s.setName("Ayanna");
-      }
-  }
+     }
+}
 ```
 
-Notice the difference between setters and getters in the following figure.
+Compare the **difference** between setters and getters in the following figure.
 * Getters `return` an instance variable's **value** and have the same return type as this variable and **no parameters**. 
 * Setters have a `void` return type and **take a new value as a parameter** to change the value of the instance variable.
 
