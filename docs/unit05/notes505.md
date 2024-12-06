@@ -22,6 +22,17 @@ nav_order: 5
 ## Mutator Methods (_Setters_)
 
 
+#### 💻 In-Class Activity: Class Pet
+{:.no_toc}
+
+
+<div class="task" markdown="block">
+
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit5-Writing-Classes/topic-5-4-accessor-methods.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 5.4</button></a> 
+2. Make sure you **SIGN IN**!
+3. Complete the **Programming Challenge: Class Pet** activity in pairs.
+
+</div>
 
 ---
 
