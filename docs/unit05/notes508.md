@@ -39,13 +39,13 @@ The image below shows these 3 levels of scope.
 
 ![image](Figures/scopeDiagram.png)
 
-**Local variables** are variables that are declared inside a method, usually at the top of the method. These variables can only be used within the method and do not exist outside of the method. Parameter variables are also considered local variables that only exist for that method. It's good practice to declare any variables that are used by just one method as local variables in that method.
+**Local variables** are variables that are declared inside a method, usually at the top of the method. These variables can only be used _within the method_ and do not exist outside of the method. **Parameter variables** are also considered local variables that only exist for that method. It's good practice to declare any variables that are used by just one method as local variables in that method.
 
-Instance variables at class scope are shared by all the methods in the class and can be marked as public or private with respect to their access outside of the class. They have Class scope regardless of whether they are public or private.
+**Instance variables** at class scope are shared by all the methods in the class and can be marked as `public` or `private` with respect to their access outside of the class. They have **Class scope** regardless of whether they are public or private.
 
-Another way to look at scope is that a variable's scope is where it lives and exists. You cannot use the variable in code outside of its scope. The variable does not exist outside of its scope.
+🏠 Another way to look at scope is that a variable's scope is where it **lives** and exists. _You cannot use the variable in code outside of its scope._ The variable does not exist outside of its scope.
 
-Try the following code to see that you cannot access the variables outside of their scope levels in the toString() method. Explain to someone sitting next to you why you can't access these. Try to fix the errors by either using variables that are in scope or moving the variable declarations so that the variables have larger scope.
+Try the following code to see that you cannot access the variables outside of their scope levels in the `toString()` method. Explain to someone sitting next to you why you can't access these. Try to fix the errors by either using variables that are in scope or moving the variable declarations so that the variables have larger scope.
 
 ```java
 public class Person {
