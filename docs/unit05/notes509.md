@@ -43,15 +43,9 @@ public Person(String name) {
 {:.warning}
 **Static methods** cannot refer to `this` or instance variables because they are called with the _classname_, not an object, so there is no `this` object.
 
-The ``this`` variable can be used anywhere you would use an object variable. You can even _pass it to another method_ as an **argument**. 
+The ``this`` variable can be used anywhere you would use an object variable! You can even _pass it to another method_ as an **argument**. 
 
-Consider the classes below, ``Pay`` and ``Overtime``. The ``Pay`` class declares an ``Overtime`` object and passes in ``this`` (the current ``Pay`` object) to its constructor which computes the overtime with respect to that ``Pay`` object.
-
-Here is an image that shows how ``this``, ``myPay`` and ``p`` all refer to the **same object in memory**:
-
-![image](Figures/thisTrace.png)
-
-What does this code print out? Trace through the code. Notice how the `this` `Pay` object is passed to the `Overtime` constructor.
+**💬 DISCUSS:** Consider the classes below, ``Pay`` and ``Overtime``. What does this code print out? Trace through the code. Notice how the `this` `Pay` object is passed to the `Overtime` class constructor.
 
 ```java
 public class Pay {
@@ -91,6 +85,11 @@ public class Overtime {
        }
 }
 ```
+> The ``Pay`` class declares an ``Overtime`` object and passes in ``this`` (the current ``Pay`` object) to its constructor which computes the overtime with respect to that ``Pay`` object.
+
+Here is an image that shows how ``this``, ``myPay`` and ``p`` all refer to the **same object in memory**:
+
+![image](Figures/thisTrace.png)
 
 #### 💻 In-Class Activity: Bank Account
 {:.no_toc}
