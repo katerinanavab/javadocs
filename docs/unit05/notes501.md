@@ -269,7 +269,7 @@ Sometimes it’s useful, when designing a complex system with lots of classes, t
 make **diagrams** of the classes that show you at a glance what instance variables
 and methods they have. Often these can just be sketches in your notebook or on a
 whiteboard but there are also more formal systems such as the [Unified Modeling
-Language (UML)](https://en.wikipedia.org/wiki/Unified_Modeling_Language#:~:text=The%20unified%20modeling%20language%20(UML,the%20design%20of%20a%20system.) for drawing these diagrams.
+Language (UML)](https://en.wikipedia.org/wiki/Unified_Modeling_Language) for drawing these diagrams.
 
 {:.important}
 Here is a [tutorial on class diagrams](https://medium.com/@smagid_allThings/uml-class-diagrams-tutorial-step-by-step-520fd83b300b) that explains it in more detail if you are curious (_drawing class diagrams is not tested on the AP CSA exam_). If you want to draw your own, [app diagrams](https://app.diagrams.net/) or [Creately.com](https://creately.com) are good free online drawing tools for UML class diagrams.
