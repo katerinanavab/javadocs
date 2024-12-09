@@ -78,6 +78,18 @@ public class Person {
 }
 ```
 
+{:.warning}
+If there is a local variable with the **same name** as an instance variable, the variable name will refer to the local variable instead of the instance variable. We'll see in the next lesson, that we can distinguish between the local variable and the instance variable using the keyword this to refer to this object's instance variables.
+
+```java
+public String toString() {
+          String name = "unknown";
+          // The local variable name here will be used,
+          //  not the instance variable name.
+          return name + ": " + email;
+}
+```
+
 #### 💻 In-Class Activity: Debugging
 {:.no_toc}
 
