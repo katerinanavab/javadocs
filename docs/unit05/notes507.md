@@ -23,6 +23,17 @@ nav_order: 7
 
 
 
+#### 💻 In-Class Activity: 
+{:.no_toc}
+
+
+<div class="task" markdown="block">
+1. Go to <a href=""><button type="button" name="button" class="btn">CSAwesome Topic 5.0</button></a> 
+2. Make sure you **SIGN IN**!
+3. Complete the **Programming Challenge: ** activity in pairs.
+
+</div>
+
 ---
 
 ## ⭐️ Summary
