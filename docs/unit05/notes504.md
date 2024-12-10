@@ -100,7 +100,8 @@ Some common errors when _writing_ and _using_ getters are:
 value is the ``toString`` method. This method is called automatically by Java in
 a number of situations when it needs to convert an object to a ``String``. 
 
-{:.highlight} Most notably the methods ``System.out.print`` and ``System.out.println`` use an object's `toString` method to convert a object argument into a ``String`` to be printed.
+{:.highlight} 
+Most notably the methods ``System.out.print`` and ``System.out.println`` use an object's `toString` method to convert a object argument into a ``String`` to be printed.
 
 Here is the ``Student`` class again, but this time with a ``toString`` method:
 
