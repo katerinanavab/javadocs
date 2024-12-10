@@ -39,24 +39,27 @@ Here are some of the main reasons to use multiple methods in your programs:
 
 There are three steps to creating and calling a custom **method**:
 
-1. **Object of the Class**: Declare an object of your class in the main method or from outside the class.
+3. **Method Definition**: Write the method's **header/signature** and **body** code _inside the class_ that defines the object.
 ```java
-// Step 1: declare an object from outside the class
-Classname objectName = new Classname();
-```
-2. **Method Call**: whenever you want to use the method, call objectName.methodName();
-```java
-// Step 2: call the object's method from outside the class
-objectName.methodName(); 
-```
-3. **Method Definition**: write the method's **header/signature** and **body** code like below:
-```java
-// Step 3: Define the method in the class
+// Step 1: Define the method in the class
 // Method HEADER/SIGNATURE
 public void methodName() {
     // Method BODY for the repeatable code
 }
 ```
+2. **Object Instance**: Declare an object of your class type in the main method or _from outside the class._
+```java
+// Step 2: Declare an object
+ClassName objectName = new ClassName();
+```
+3. **Method Call**: Whenever you want to use the method, call it on the object by using the dot `.` operator
+```java
+// Step 3: Call the object's method
+objectName.methodName(); 
+```
+> * 📥 If the method requires any *INPUT* to work, provide those values in the parenthesis. These are known as **arguments**, or **actual parameters**.
+> * 📤 If the method provides any _OUTPUT_, meaning it has a **return** value, store it in a variable of the appropriate type (see below for more details on using methods that return values).
+
 </div>
 
 ### Formal Parameters
