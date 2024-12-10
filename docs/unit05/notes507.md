@@ -21,21 +21,21 @@ nav_order: 7
 
 ## Static Variables & Methods
 
-In Unit 2, we explored the Math class and its many static methods like Math.random(), and we've always used a main method which is static. In this lesson, you will learn to write your own static variables and methods.
+In Unit 2, we explored the `Math` class and its many **static methods** like `Math.random()`, and we've always used a `main` method which is `static`. In this lesson, you will learn to write your own **static variables** and **static methods**.
 
 <div class="imp" markdown="block">
   
 - **Static** variables and methods belong to a class, and are called with the `Class` name rather than using object variables, like `ClassName.methodName()`;
   
-- There is only one copy of a static variable or method for the whole class.
-> For example, the `main` method is `static` because there should only be 1 main method.
+- There is only **ONE COPY** of a static variable or method for the whole class.
+  > For example, the `main` method is `static` because there should only be 1 main method to run your program.
 
 - Static methods can be `public` or `private`.
 
-- The `static` **keyword** is placed right after the access modifier (public or private) and right before the type of variables and methods in their declarations.
+- The `static` **keyword** is placed right after the **access modifier** (public or private) and right before the **data type** of variables and methods in their declarations.
 
 ```java
-   public class ClassName {
+public class ClassName {
      // static variable
      public static type variableName;
 
@@ -43,15 +43,15 @@ In Unit 2, we explored the Math class and its many static methods like Math.rand
      public static returnType methodName(parameters) {
            // implementation not shown
      }
-   }
+}
 ```
 
 📣 To **call** a static method or variable, use the `Class` name: 
 
 ```java
-   // call a static method or variable
-   System.out.println(ClassName.staticVariable);
-   ClassName.staticMethod();
+// call a static method or variable
+System.out.println(ClassName.staticVariable);
+ClassName.staticMethod();
 ```
 
 </div>
