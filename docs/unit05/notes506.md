@@ -62,7 +62,7 @@ objectName.methodName();
 
 </div>
 
-### Formal Parameters
+### Method Input: Formal Parameters
 
 <div class="imp" markdown="block">
 
@@ -90,8 +90,19 @@ If you pass in an argument that holds a reference to an object, like a String or
 
 ![image](Figures/turtleEquality.png)
 
+### Method Output: Return Values
+
+📤  Methods can also **return** values of any type back to the calling method, like we saw when writing **getter/accessor** methods which are **non-void**. 
+
 {:.highlight}
-Methods can also **return** values of any type back to the calling method, like we saw when writing **getter/accessor** methods. The calling method should then _do something_ with this `return` value, like printing it out or assigning it to a variable.
+If a certain method returns a value, the calling method should then _do something_ with this `return` value, like printing it out or assigning it to a variable.
+
+```java
+// Printing a value returned from a method call
+System.out.print("The student's name is " + student.getName() );
+// Storing a return value in a new variable
+String studentName = student.getName();
+```
 
 #### 💻 In-Class Activity: Song with Parameters
 {:.no_toc}
