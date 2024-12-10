@@ -88,7 +88,7 @@ You may have noticed even more repetition in the song above. What about the line
     System.out.println("He played knick knack on my shoe.");
 ```
 
-We can make methods even more powerful and more abstract by giving them parameters for data that they need to do their job. We can make a method called verse that takes the number and the rhyme to print out any verse!
+We can make methods even more powerful and more abstract by giving them **parameters** for data that they need to do their job - think of it like taking _INPUT_ before the process. We can make a method called verse that takes the number and the rhyme to print out any verse!
 
 ```java
 public void verse(String number, String rhyme) {
