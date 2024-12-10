@@ -72,12 +72,12 @@ objectName.methodName();
 
 </div>
 
-When a method is called, the right method definition is found by checking the **method signature** or **header** at the top of the method definition to **match** the following:
+When a method is called, the right method definition is found by checking the **method signature** or **header** at the top of the method definition to *match* the following:
 
-1. The method name
-2. The number of arguments
-3. The data types for the arguments
-4. The `return` type
+1. The method **name**
+2. The **number** of arguments
+3. The **data types** for the arguments
+4. The `return` type (either `void` or a data type like `int`, `String`, etc.)
 
 Here's what that looks like with the 2 method calls above. Notice how the parameter variables get new values with every method call.
 
@@ -86,16 +86,17 @@ Here's what that looks like with the 2 method calls above. Notice how the parame
 {:.warning}
 Java uses **Call by Value** when it passes arguments to methods. This means that a _copy_ of the value in the argument is saved in the parameter variable. If the parameter variable changes its value inside the method, the original value outside the method is not changed.
 
-If you pass in an argument that holds a reference to an object, like a String or Person or Turtle object, a _copy_ of this reference is passed in and saved in the parameter variable. The formal parameter and the actual parameter (argument) are then **aliases**, both refering to the same object. Java was designed this way to avoid copying large objects from method to method. Remember when we discussed reference aliases with turtle objects who are set equal to one another.
+If you pass in an argument that holds a **reference** to an **object**, like a `String` or `Person` or `Turtle` object, a _copy_ of this reference is passed in and saved in the parameter variable. The formal parameter and the actual parameter (argument) are then **aliases**, both refering to the same object. 
+> Java was designed this way to avoid copying large objects from method to method. Remember when we discussed **reference aliases** with `Turtle` objects who are set equal to one another.
 
 ![image](Figures/turtleEquality.png)
 
 ### Method Output: Return Values
 
-📤  Methods can also **return** values of any type back to the calling method, like we saw when writing **getter/accessor** methods which are **non-void**. 
+📤  Methods can also **return** values of any type back to the calling method, which can be considered _OUTPUT_. Recall that **non-void** methods, like we saw when writing **getter/accessor** methods, `return` a value of a specific data type. 
 
 {:.highlight}
-If a certain method returns a value, the calling method should then _do something_ with this `return` value, like printing it out or assigning it to a variable.
+If a certain method returns a value, the calling method should then _do something_ with this `return` value, like printing it out or assigning it to a variable (of the same type).
 
 ```java
 // Printing a value returned from a method call
