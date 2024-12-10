@@ -38,7 +38,17 @@ nav_order: 7
 
 ## ⭐️ Summary
 
+- Static methods and variables include the keyword static  before their name in the header or declaration. They can be public or private.
 
+- Static variables belong to the class, with all objects of a class sharing a single static variable.
+
+- Static methods are associated with the class, not objects of the class.
+
+- Static variables are used with the class name and the dot operator, since they are associated with a class, not objects of a class.
+
+- Static methods cannot access or change the values of instance variables, but they can access or change the values of static variables.
+
+- Static methods cannot call non-static methods.
   
 
 ---
