@@ -113,6 +113,15 @@ When a method is called, the right method definition is found by checking the **
 3. The **data types** for the arguments
 4. The `return` type (either `void` or a data type like `int`, `String`, etc.)
 
+For example, imagine we are calling the methods for the This Old Man song:
+```java
+Song mySong = new Song();
+mySong.verse("one", "thumb");
+mySong.chorus();
+mySong.verse("two", "shoe");
+mySong.chorus();
+```
+
 Here's what that looks like with the 2 method calls above. Notice how the parameter variables get new values with every method call.
 
 ![image](Figures/args2params.png)
