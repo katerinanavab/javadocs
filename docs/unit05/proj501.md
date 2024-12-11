@@ -48,16 +48,16 @@ In this project, you will practice defining and working with Java classes by cre
   - [ ] Override the `toString()` method to `return` a _String representation_ of the object that includes all instance variables.
 7. **Write Behavior Methods**
   - [ ] Add at least TWO additional behavior methods that define _actions_ the creature can perform. These methods can use the instance variables and return results, perform tasks, or indirectly affect the state of instance variables.
-  - _Examples:_
-      - `public void grow(int years)` - Increases the age of the creature by a given number of years.
-      - `public String speak()` - Returns a string like "The Dragon lets out a mighty roar!" based on the species.
+  > _Examples:_
+  > - `public void grow(int years)` - Increases the age of the creature by a given number of years.
+  > - `public String speak()` - Returns a string like "The Dragon lets out a mighty roar!" based on the species.
 8. **Write a Test Class**
-  - [ ] Create a separate `Main.java` class with a _main method_ that demonstrates all features of your Creature class.
-  - In the `main()` method:
-      - Create at least two Creature _objects_ using different constructors.
-      - Use the _getter_ and _setter_ methods to access and modify their instance variables.
-      - Call the _behavior methods_ and display their outputs.
-      - _Print_ the objects using the toString method.
+  - [ ] Create a separate `Main.java` class with a `main()` method that demonstrates all features of your Creature class.
+  > _In the main method:_
+  > - Create at least two Creature _objects_ using different constructors.
+  > - Use the _getter_ and _setter_ methods to access and modify their instance variables.
+  > - Call the _behavior methods_ and display their outputs.
+  > - _Print_ the objects using the toString method.
 
 </div> 
 
