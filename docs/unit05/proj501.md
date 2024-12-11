@@ -64,6 +64,31 @@ In this project, you will practice defining and working with Java classes by cre
 
 ### Extension
 
+#### Make it Interactive!
+After ensuring your test class works as intended, update it to allow for _user input_:
+1. Import the `Scanner` class at the top of your program.
+2. Set up a `Scanner` object instance in the `main` method.
+3. Prompt the user to input values for each instance variable, store those values in variables, then pass those variables into your _parameterized constructor_.
+
+Allow the user to run your behavior methods as they choose, demonstrating the _output_ or _effects_ in a way that makes sense:
+```java
+while (!userInput.equals("quit") {
+  System.out.println("What would you like to do with your creature - speak or grow?");
+  userInput = scan.nextLine();
+  if (userInput.equals("speak")) {
+    System.out.println(creature.speak());
+  }
+  else if (userInput.equals("grow")) {
+    System.out.println("Enter a whole number: ");
+    int years = scan.nextInt();
+    creature.grow(years);
+    System.out.println("Your creature is now " + creature.getAge() + " years old!");
+  }
+}
+```
+> Different types of methods (`void` or _returns_ data, if it needs _input_ or not) will require different handling as seen in the example above.
+
+
 {:.highlight}
-Turn your text-based version into a visual one with a **GUI** (Graphical User Interface)! See my `Java Swing` demo: [GitHub Swing GUI](https://github.com/katerinanavab/JavaGUI-Demo)
+You can also turn your text-based interactive version into a visual one with a **GUI** (Graphical User Interface)! See my `Java Swing` demo: [GitHub Swing GUI](https://github.com/katerinanavab/JavaGUI-Demo) and make sure to copy your completed `Creature.java` file in the repository too. 
 
