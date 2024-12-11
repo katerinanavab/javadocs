@@ -52,12 +52,12 @@ In this project, you will practice defining and working with Java classes by cre
   > - `public void grow(int years)` - Increases the age of the creature by a given number of years.
   > - `public String speak()` - Returns a string like "The Dragon lets out a mighty roar!" based on the species.
 8. **Write a Test Class**
-  - [ ] Create a separate `Main.java` class with a `main()` method that demonstrates all features of your Creature class.
+  - [ ] Create a separate `Main.java` class with a `main()` method that demonstrates **all features** of your Creature class.
   > _In the main method:_
-  > - Create at least two Creature _objects_ using different constructors.
-  > - Use the _getter_ and _setter_ methods to access and modify their instance variables.
-  > - Call the _behavior methods_ and display their outputs.
-  > - _Print_ the objects using the toString method.
+  > - Create at least two Creature **objects** using different constructors.
+  > - Use the **getter** and **setter** methods to access and modify instance variables.
+  > - Call the **behavior methods** and display their outputs.
+  > - **Print** the objects using the toString method.
 
 </div> 
 
