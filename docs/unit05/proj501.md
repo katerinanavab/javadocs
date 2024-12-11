@@ -84,6 +84,9 @@ while (!userInput.equals("quit") {
     creature.grow(years);
     System.out.println("Your creature is now " + creature.getAge() + " years old!");
   }
+  else {
+    System.out.println("That command is not recognized, try again.");
+  }
 }
 ```
 > Different types of methods (`void` or _returns_ data, if it needs _input_ or not) will require different handling as seen in the example above.
