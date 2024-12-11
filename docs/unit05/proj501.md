@@ -65,7 +65,7 @@ In this project, you will practice defining and working with Java classes by cre
 ### Extension
 
 #### Make it Interactive!
-After ensuring your test class works as intended, update it to allow for _user input_:
+After ensuring your test class works as intended, update it to allow for _user interaction_:
 1. Import the `Scanner` class at the top of your program.
 2. Set up a `Scanner` object instance in the `main` method.
 3. Prompt the user to input values for each instance variable, store those values in variables, then pass those variables into your _parameterized constructor_.
