@@ -15,7 +15,7 @@ nav_order: 1
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 6.1]() 
+📖 This page is a condensed version of [CSAwesome Topic 6.1](https://runestone.academy/ns/books/published/csawesome/Unit6-Arrays/topic-6-1-array-basics.html?mode=browsing) 
 
 #### Using a GitHub Template for class notes
 {:.no_toc}
@@ -35,7 +35,7 @@ nav_order: 1
 
 ---
 
-## Arrays
+## Array Creation and Access
 
 
 
@@ -45,7 +45,7 @@ nav_order: 1
 
 <div class="task" markdown="block">
 
-1. Go to <a href=""><button type="button" name="button" class="btn">CSAwesome Topic 6.1</button></a> 
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit6-Arrays/topic-6-1-array-basics.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 6.1</button></a> 
 2. Make sure you **SIGN IN**!
 3. Complete the **Programming Challenge: ** activity in pairs.
 
