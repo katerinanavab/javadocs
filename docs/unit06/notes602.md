@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓6.2: " 
+title: "📓6.2: Arrays & For Loops" 
 parent: "6️⃣ Arrays"
 nav_order: 2
 ---
@@ -15,11 +15,11 @@ nav_order: 2
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 6.1]() 
+📖 This page is a condensed version of [CSAwesome Topic 6.2](https://runestone.academy/ns/books/published/csawesome/Unit6-Arrays/topic-6-2-traversing-arrays.html?mode=browsing) 
 
 ---
 
-## Arrays
+## Traversing Arrays with For Loops
 
 
 
@@ -29,7 +29,7 @@ nav_order: 2
 
 <div class="task" markdown="block">
 
-1. Go to <a href=""><button type="button" name="button" class="btn">CSAwesome Topic 6.1</button></a> 
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit6-Arrays/topic-6-2-traversing-arrays.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 6.2</button></a> 
 2. Make sure you **SIGN IN**!
 3. Complete the **Programming Challenge: ** activity in pairs.
 
