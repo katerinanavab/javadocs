@@ -117,6 +117,8 @@ Then, add ``System.out.println`` calls to print their lengths.
 
 </div>
 
+What happens in the computer's memory when you declare arrays?
+
 <div class="imp" markdown="block">
 
 Array elements are initialized to **default values** like the following:
