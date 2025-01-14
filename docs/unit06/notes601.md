@@ -154,8 +154,7 @@ Note that `length` is an **instance variable** and not a method, unlike the Stri
 
 ### Access and Modify Array Values
 
-To access the items in an array, we use an **indexed array variable** which is the array name and the index inside of square bracket `[ ]`. Remember that an **index** is a number that indicates the position of an item in a list, starting at 0. 
-
+To access the items in an array, we use an **indexed array variable** which is the array name and the index inside of square bracket `[ ]`. Remember that an **index** is a number that indicates the _position_ of an item in a list, starting at `0`. 
 
 An indexed variable like **arrayname[index]** can be used anywhere a regular variable can be used, for example to assign a new value or to get a value from the array like below.
 
@@ -174,14 +173,15 @@ Watch the following <a href="https://youtu.be/uagEJw6bTM4" target="_blank"><butt
 
 #### Parallel Arrays
 If you want to keep track of the top 5 highest scores in a game and the names of the people with those scores, you could use two **parallel arrays**. One array could keep track of the scores and the other the names. 
-> You have to make sure you keep them in the **same order** so that the same index can be used to get correponding names and scores.
-
-#### 💻 In-Class Practice
-{:.no_toc}
+> With parallel arrays, you have to make sure you keep them in the **same order** so that the same index can be used to get correponding names and scores.
 
 <div class="task" markdown="block">
 
-Try out the following code which has two parallel arrays, highScores and names. Can you print out Mateo's score? Can you change Sofia's score to 97 using an assignment statement in the code? Can you change the arrays so that they have 6 elements and add your name and score and print them out?
+Try out the following code which has two parallel arrays, `highScores` and `names`. 
+
+1. Can you print out Mateo's score?
+2. Can you change Sofia's score to 97 using an assignment statement in the code?
+3. Can you modify the arrays so that they have 6 elements, add your name and score, and print them out?
 
 ```java
 public static void main(String[] args) {
@@ -196,12 +196,12 @@ public static void main(String[] args) {
 ```
 </div>
 
-What happens if you try to access an element that is not there? Try to access a ``highScore`` or ``name`` at index 7 above to see what happens. The index must be between 0 and the length of the array - 1 or it will give an error message called ``ArrayIndexOutOfBoundsException``.
+> 💬 **DISCUSS:** What happens if you try to access an element that is not there? Try to access a ``highScore`` or ``name`` at index 7 above to see what happens. The index must be between 0 and the length of the array - 1 or it will give an error message called ``ArrayIndexOutOfBoundsException``.
 
 {:.warning}
 ⚠️ Using an **index** value outside of the range `0 - (length-1)` will result in an `ArrayIndexOutOfBoundsException` being thrown.
 
-One powerful feature in the array **data abstraction** is that we can use **variables** for the index! As long as the variable holds an integer, we can use it as an index:
+One powerful feature in the array **data abstraction** is that we can use **variables** for the index! As long as the variable holds an integer, we can use it as an index:a
 
 ```java
   // use a variable for the index
@@ -209,18 +209,18 @@ One powerful feature in the array **data abstraction** is that we can use **vari
   System.out.println(  highScores[index] );
 ```
 
-#### 🗺️ In-Class Activity: Countries Array
+#### 🗺 In-Class Challenge: Countries Arrays
 {:.no_toc}
 
 <div class="task" markdown="block">
 
 1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit6-Arrays/topic-6-1-array-basics.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 6.1</button></a> 
 2. Make sure you **SIGN IN**!
-3. Complete the **Programming Challenge: Countries Array** activity in pairs.
+3. Complete the **Programming Challenge: Countries Array** activity in pairs. 🗺
 
 </div>
 
-#### 🎲 Arrays Game
+#### 🎲 Practice Game: Array Indices
 {:.no_toc}
 
 Try the game below to practice! Click on **Arrays** and click on the element of the `*` array that would be printed out by the given code. If you're stuck, check on Labels to see the indices. We encourage you to work in pairs and see how high a score you can get.
