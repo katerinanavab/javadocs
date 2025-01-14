@@ -37,17 +37,186 @@ nav_order: 1
 
 ## Array Creation and Access
 
+To keep track of 10 exam scores, we could declare 10 separate variables:  int score1, score2, score3, … , score10;
+But what if we had 100 exam scores? That would be a lot of variables! Most programming languages have a simple **data structure** for a collection of related data that makes this easier. In many block-based programming languages like App Inventor and Scratch, this is called a list. In Java and many programming languages, this is called an **array**.
 
+An **array** is a block of memory that stores a collection of data items (**elements**) of the same type under one name. Arrays are useful whenever you have many elements of data of the same type that you want to keep track of, but you don't need to name each one. Instead you use the array name and a number (called an **index**) for the position of an item in the array. You can make arrays of ints, doubles, Strings, and even classes that you have written like Students.
 
-#### 💻 In-Class Activity: 
+Here's a fun <a href="https://youtu.be/G7aF-OuLfl4" target="_blank"><button class="btn">📺 VIDEO</button></a> that introduces the concept of an array and gives an example.
+
+An array is like a row of small lockers, except that you can't cram lots of stuff into it. You can only store one value at each locker: 
+
+![image](Figures/rowLockers.jpg)
+
+You can store a value in an array using an **index** (location in the array). An array index is like a locker number.  It helps you find a particular place to store your stuff and retrieve stuff.    You can get or store a value from or to an array using an index.
+
+Arrays and lists in most programming languages start counting elements from the number 0, so the first element in an array is at index 0. This is similar to how Strings are indexed in Java -- the first character is at index 0. 
+
+> 💬 **DISCUSS:** Can you think of another example of something that is like an array?
+
+### Declaring and Creating an Array
+
+When we **declare** a variable, we specify its type and then the variable name. To make a variable into an array, we put square brackets after the data type:
+
+```java
+   // Declaration for a single int variable
+   int score;
+   // Declaration for an ARRAY of ints
+   int[] scores;
+```
+> For example, ``int[] scores`` means we have an array called `scores` that contains `int` type values.
+
+The declarations _do not create the actual array_. Arrays are **objects** in Java, so any variable that declares an array holds a 👉 **reference** to an object. If the array hasn't been created yet and you try to print the value of the variable, it will print `null` (meaning it doesn't reference any object yet).
+
+There are two ways to create an array. You can use the keyword **new** to get new memory or use an **initializer list** to set up the values in the array.
+
+Watch the following <a href="https://youtu.be/IbPFjw1FNkE" target="_blank"><button class="btn">📺 VIDEO</button></a> which shows the two ways of creating an array with a physical model of Java memory.
+
+### Using `new` to Create Arrays
+
+To create an empty array after declaring the variable, use the **new** keyword with the type and the size of the array (the number of elements it can hold). This will actually create the array in memory.  You can do the declaration and the creation all in one step, see the String array names below. The size of an array is set at the time of creation and cannot be changed after that.
+
+```java
+  //declare an array variable
+  int[] highScores;
+  // create the array
+  highScores = new int[5];
+  // declare and create array in 1 step!
+  String[] names = new String[5];
+```
+
+#### 💻 In-Class Practice
 {:.no_toc}
 
+<div class="task" markdown="block">
+
+In the following code, add another two more array declarations, one that creates an array of 5 doubles called prices and another of 5 Strings called names. Then add ``System.out.println`` calls to print their lengths.
+
+```java
+public static void main(String[] args) {
+    // Array creation example
+    int[] highScores = new int[10];
+    // Add an array of 5 doubles called prices.
+    
+    // Add an array of 5 Strings called names.
+    
+    System.out.println("Array highScores declared with size " + highScores.length);
+    // Print out the length of the new arrays
+
+}
+```
+
+</div>
+
+<div class="imp" markdown="block">
+
+Array elements are initialized to **default values** like the following:
+
+- `0` for elements of type ``int``
+- `0.0` for elements of type ``double``
+- `false` for elements of type ``boolean``
+- `null` for elements of type ``String`` or any other **object**
+
+![image](Figures/arrayIndicies.png)
+
+> Two 5 element arrays with their values set to the default values for integer and object arrays.
+
+</div>
+
+### Initializer Lists to Create Arrays
+
+Another way to create an array is to use an **initializer list**. You can initialize (set) the values in the array to a list of values in curly braces (``{}``) when you create it, like below. In this case you don't specify the size of the array, it will be determined from the number of values that you specify.
+
+```java
+  int[ ] highScores = {99,98,98,88,68};
+  String[ ] names = {"Jamal", "Emily", "Destiny", "Mateo", "Sofia"};
+```
+
+When you create an array of a **primitive type** (like ``int``) with initial values specified, space is allocated for the specified number of items of that type and the values in the array are set to the specified values.  When you create an array of an **object type** (like ``String``) with initial values, space is set aside for that number of object references.  The objects are created and the object references set so that the objects can be found.
+
+![image](Figures/intAndStringArrays.png)
+
+
+Watch the following <a href="https://youtu.be/T-YZvVvPOac" target="_blank"><button class="btn">📺 VIDEO</button></a> which shows an array of String objects with a physical model of Java memory.
+
+### Array length
+
+Arrays know their **length** (_how many elements they can store_).  It is a `public` read-only **instance variable** so you can use **dot-notation** to access the instance variable (``arrayName.length``).  
+> **Dot-notation** is using variable name followed by a ``.`` and then the instance variable (property) name or a method name. 
+
+```java
+    System.out.println(highScores.length);
+```
+> Try adding another value to the `highScores` **initializer list** and run again to see the `length` value change.
+
+{:.highlight}
+Note that `length` is an **instance variable** and not a method, unlike the String ``length()`` method, so you don't add _parentheses_ after length. The length instance variable is declared as a ``public final int``.  ``public`` means you can access it and ``final`` means the value can't change.
+
+### Access and Modify Array Values
+
+To access the items in an array, we use an **indexed array variable** which is the array name and the index inside of square bracket `[ ]`. Remember that an **index** is a number that indicates the position of an item in a list, starting at 0. 
+
+
+An indexed variable like **arrayname[index]** can be used anywhere a regular variable can be used, for example to assign a new value or to get a value from the array like below.
+
+
+```java
+  // assign a new value 99 to the first element in the array
+  highScores[0] = 99;
+  // print the first element of the array
+  System.out.println( highScores[0] );
+```
+
+{:.highlight} 
+The _first value_ in an array is stored at index `0` and the index of the _last value_ is the `length - 1` (since length is the number of items and the starting index is 0). Use `arrayname[index]` to **access** or **modify** array items.
+
+Watch the following <a href="https://youtu.be/uagEJw6bTM4" target="_blank"><button class="btn">📺 VIDEO</button></a> which shows a physical model of Java memory setting array values.
+
+#### Parallel Arrays
+If you want to keep track of the top 5 highest scores in a game and the names of the people with those scores, you could use two **parallel arrays**. One array could keep track of the scores and the other the names. 
+> You have to make sure you keep them in the **same order** so that the same index can be used to get correponding names and scores.
+
+#### 💻 In-Class Practice
+{:.no_toc}
+
+<div class="task" markdown="block">
+
+Try out the following code which has two parallel arrays, highScores and names. Can you print out Mateo's score? Can you change Sofia's score to 97 using an assignment statement in the code? Can you change the arrays so that they have 6 elements and add your name and score and print them out?
+
+```java
+public static void main(String[] args) {
+    // declare, create, initialize arrays
+    int[] highScores = {99, 98, 98, 88, 68};
+    String[] names = {"Jamal", "Emily", "Destiny", "Mateo", "Sofia"};
+
+    // Print corresponding names and scores
+    System.out.println(names[0] + " has a score of " + highScores[0]);
+    System.out.println(names[1] + " has a score of " + highScores[1]);
+}
+```
+</div>
+
+What happens if you try to access an element that is not there? Try to access a ``highScore`` or ``name`` at index 7 above to see what happens. The index must be between 0 and the length of the array - 1 or it will give an error message called ``ArrayIndexOutOfBoundsException``.
+
+{:.warning}
+⚠️ Using an **index** value outside of the range `0 - (length-1)` will result in an `ArrayIndexOutOfBoundsException` being thrown.
+
+One powerful feature in the array **data abstraction** is that we can use **variables** for the index! As long as the variable holds an integer, we can use it as an index:
+
+```java
+  // use a variable for the index
+  int index = 3;
+  System.out.println(  highScores[index] );
+```
+
+#### 🗺️ In-Class Activity: Countries Array
+{:.no_toc}
 
 <div class="task" markdown="block">
 
 1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit6-Arrays/topic-6-1-array-basics.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 6.1</button></a> 
 2. Make sure you **SIGN IN**!
-3. Complete the **Programming Challenge: ** activity in pairs.
+3. Complete the **Programming Challenge: Countries Array** activity in pairs.
 
 </div>
 
