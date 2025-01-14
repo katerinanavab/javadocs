@@ -37,10 +37,19 @@ nav_order: 1
 
 ## Array Creation and Access
 
-To keep track of 10 exam scores, we could declare 10 separate variables:  int score1, score2, score3, … , score10;
-But what if we had 100 exam scores? That would be a lot of variables! Most programming languages have a simple **data structure** for a collection of related data that makes this easier. In many block-based programming languages like App Inventor and Scratch, this is called a list. In Java and many programming languages, this is called an **array**.
+To keep track of 10 exam scores, we could declare 10 separate variables: int score1, score2, score3, … , score10; _But what if we had 100 exam scores?_ That would be a lot of variables! 
 
-An **array** is a block of memory that stores a collection of data items (**elements**) of the same type under one name. Arrays are useful whenever you have many elements of data of the same type that you want to keep track of, but you don't need to name each one. Instead you use the array name and a number (called an **index**) for the position of an item in the array. You can make arrays of ints, doubles, Strings, and even classes that you have written like Students.
+📋 Most programming languages have a simple **data structure** for a _collection of related data_ that makes this easier. In some programming languages, this is called a **list**. In Java and many programming languages, this is called an **array**.
+
+<html>
+<dl>
+  <dt>Array</dt>
+  <dd>A block of memory that stores a <strong>collection</strong> of data items (elements) of the <em>same type</em> under one variable name.
+  </dd>
+</dl>
+</html>
+
+Arrays are useful whenever you have _many elements of data_ of the same type that you want to keep track of, but you don't need to name each one. Instead you use the array name and a number (called an **index**) for the _position_ of an item in the array. You can make arrays of `int`s, `double`s, `String`s, and even object classes that you have written like `Student`s.
 
 Here's a fun <a href="https://youtu.be/G7aF-OuLfl4" target="_blank"><button class="btn">📺 VIDEO</button></a> that introduces the concept of an array and gives an example.
 
@@ -48,7 +57,7 @@ An array is like a row of small lockers, except that you can't cram lots of stuf
 
 ![image](Figures/rowLockers.jpg)
 
-You can store a value in an array using an **index** (location in the array). An array index is like a locker number.  It helps you find a particular place to store your stuff and retrieve stuff.    You can get or store a value from or to an array using an index.
+You can store a value in an array using an **index** (location in the array). An array index is like a locker number.  It helps you find a particular place to store your stuff and retrieve stuff.  You can get or store a value from or to an array using an index.
 
 Arrays and lists in most programming languages start counting elements from the number 0, so the first element in an array is at index 0. This is similar to how Strings are indexed in Java -- the first character is at index 0. 
 
