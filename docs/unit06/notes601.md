@@ -220,11 +220,38 @@ One powerful feature in the array **data abstraction** is that we can use **vari
 
 </div>
 
+#### 🎲 Arrays Game
+{:.no_toc}
+
+Try the game below to practice! Click on **Arrays** and click on the element of the `*` array that would be printed out by the given code. If you're stuck, check on Labels to see the indices. We encourage you to work in pairs and see how high a score you can get.
+
+<html>
+        <iframe height="700px" width="100%" style="margin-left:10%;max-width:80%" src="https://csa-games.netlify.app/"></iframe>
+    <script>      window.scrollTo(0, 0);</script>
+</html>
+
 ---
 
 ## ⭐️ Summary
 
+- Arrays represent collections of related data all of the same data type.
 
+- The size of an array is established at the time of creation and cannot be changed.
+
+- Arrays can store either primitive data or object reference data.
+
+- When an array is created using the keyword new, all of its elements are initialized with a specific value based on the type of elements:
+
+  - Elements of type int are initialized to 0
+  - Elements of type double are initialized to 0.0
+  - Elements of type boolean are initialized to false
+  - Elements of a reference type are initialized to the reference value null. No objects are automatically created.
+
+- Initializer lists can be used to create and initialize arrays.
+
+- Square brackets ([ ]) are used to access and modify an element in an array using an index. The indexed array variable, for example array[index], can be used anywhere a regular variable can be used, for example to get or assign values.
+
+- The valid index values for an array are 0 through one less than the number of elements in the array, inclusive. Using an index value outside of this range will result in an ArrayIndexOutOfBoundsException being thrown.
 
 <div class="warn" markdown="block">
 
