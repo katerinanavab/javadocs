@@ -54,7 +54,7 @@ Arrays are useful whenever you have _many elements of data_ of the same type tha
 <html>
 <dl>
   <dt>Index</dt>
-  <dd>An integer that represents a <strong>location</strong> in a collection such as an Array. In Java, the first element in an array is stored at index `0`.
+  <dd>An integer that represents a <strong>location</strong> in a collection such as an Array. In Java, the first element in an array is stored at index <code>0</code>.
   </dd>
 </dl>
 </html>
