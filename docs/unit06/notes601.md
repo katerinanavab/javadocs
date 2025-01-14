@@ -106,26 +106,14 @@ To create an empty array after declaring the variable, use the **new** keyword w
   String[] names = new String[5];
 ```
 
-#### 💻 In-Class Practice
-{:.no_toc}
-
 <div class="task" markdown="block">
 
-In the following code, add another two more array declarations, one that creates an array of 5 doubles called prices and another of 5 Strings called names. Then add ``System.out.println`` calls to print their lengths.
+Add two more array declarations:
 
-```java
-public static void main(String[] args) {
-    // Array creation example
-    int[] highScores = new int[10];
-    // Add an array of 5 doubles called prices.
-    
-    // Add an array of 5 Strings called names.
-    
-    System.out.println("Array highScores declared with size " + highScores.length);
-    // Print out the length of the new arrays
+1. One that creates an array of 5 doubles called `prices`
+2. Another array of 5 Strings called `names`.
 
-}
-```
+Then, add ``System.out.println`` calls to print their lengths.
 
 </div>
 
