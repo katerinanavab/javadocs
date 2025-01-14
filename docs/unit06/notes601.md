@@ -49,16 +49,28 @@ To keep track of 10 exam scores, we could declare 10 separate variables: int sco
 </dl>
 </html>
 
-Arrays are useful whenever you have _many elements of data_ of the same type that you want to keep track of, but you don't need to name each one. Instead you use the array name and a number (called an **index**) for the _position_ of an item in the array. You can make arrays of `int`s, `double`s, `String`s, and even object classes that you have written like `Student`s.
+Arrays are useful whenever you have _many elements of data_ of the same type that you want to keep track of, but you don't need to name each one. Instead you use the array name and a number (called an **index**) for the _position_ of an item in the array. 
 
-Here's a fun <a href="https://youtu.be/G7aF-OuLfl4" target="_blank"><button class="btn">📺 VIDEO</button></a> that introduces the concept of an array and gives an example.
+<html>
+<dl>
+  <dt>Index</dt>
+  <dd>An integer that represents a <strong>location</strong> in a collection such as an Array. In Java, the first element in an array is stored at index `0`.
+  </dd>
+</dl>
+</html>
 
-An array is like a row of small lockers, except that you can't cram lots of stuff into it. You can only store one value at each locker: 
+You can make arrays of ints, doubles, Strings, and even object classes that you have written like Students. Here's a fun <a href="https://youtu.be/G7aF-OuLfl4" target="_blank"><button class="btn">📺 VIDEO</button></a> that introduces the concept of an array and gives an example.
+
+#### ANALOGY
+{:.no_toc}
+
+An array is like a row of small lockers, except that you can't cram lots of stuff into it. You can only **store one value** at each locker: 
 
 ![image](Figures/rowLockers.jpg)
 
-You can store a value in an array using an **index** (location in the array). An array index is like a locker number.  It helps you find a particular place to store your stuff and retrieve stuff.  You can get or store a value from or to an array using an index.
+An array **index** is like a locker number.  It helps you find a particular place to store your stuff and retrieve stuff.  You can _get_ or store a _value_ from or to an array using its index.
 
+{:.highlight}
 Arrays and lists in most programming languages start counting elements from the number 0, so the first element in an array is at index 0. This is similar to how Strings are indexed in Java -- the first character is at index 0. 
 
 > 💬 **DISCUSS:** Can you think of another example of something that is like an array?
