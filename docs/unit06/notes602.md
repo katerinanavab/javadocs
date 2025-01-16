@@ -153,14 +153,14 @@ Call this method `getIndexOfLastGreaterItem` and give it 2 **arguments** and a *
 
 </div>
 
-### Looping through Part of an Array
-
-You don't always have to loop through _all_ of the elements of an array!  You can loop through just some of the elements of an array using a for loop.  The following code doubles the first five elements in an array.  Notice that it uses a complex conditional (``&&``) on line 14 to make sure that the loop doesn't go beyond the length of the array, because if you had an array that had less than 5 elements, you wouldn't want the code to try to double the 5th element which doesn't exist! Notice that in this code, the array is a private instance variable of the class ArrayWorker. It is created in the constructor and changed or accessed by the methods.
-
 ### Common Errors When Looping Through an Array
 {:.no_toc}
 
-When processing all array elements, be careful to start at the first index which is ``0`` and end at the last index. Usually loops are written so that the index starts at 0 and continues while the index is less than ``arrayName.length`` since (``arrayName.length - 1``) is the index for the last element in the array. Make sure you do not use ``<=`` instead of ``<``! If the index is less than 0 or greater than (``arrayName.length - 1``), an **ArrayIndexOutOfBoundsException** will be  thrown.  **Off by one** errors, where you go off the array by 1 element, are easy to make when traversing an array which result in an **ArrayIndexOutOfBoundsException** being thrown.
+**Off by one** errors, where you go off the array by 1 element, are easy to make when traversing an array which result in an `ArrayIndexOutOfBoundsException` being thrown.
+
+When attempting to process ("visit") all array elements, be careful to **start** at the first index which is ``0`` and **end** at the last index.
+* Usually loops are written so that the index starts at 0, and continues while the index is less than ``arrayName.length`` since (``arrayName.length - 1``) is the index for the last element in the array.
+  * Make sure you do not use ``<=`` instead of ``<``! If the index is less than 0 or greater than (``arrayName.length - 1``), an `ArrayIndexOutOfBoundsException` will be  thrown. 
 
 
 #### 💻 In-Class Activity: SpellChecker
