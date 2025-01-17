@@ -75,9 +75,9 @@ Arrays and lists in most programming languages start counting elements from the 
 
 > 💬 **DISCUSS:** Can you think of another example of something that is like an array?
 
-### Declaring and Creating an Array
+### Declaring an Array
 
-When we **declare** a variable, we specify its type and then the variable name. To make a variable into an array, we put square brackets after the data type:
+When we **declare** a variable, we specify its _type_ and then the variable _identifier_ (name). To make a variable into an array, we put square brackets after the data type:
 
 ```java
    // Declaration for a single int variable
@@ -93,7 +93,7 @@ There are two ways to create an array. You can use the keyword **new** to get ne
 
 Watch the following <a href="https://youtu.be/IbPFjw1FNkE" target="_blank"><button class="btn">📺 VIDEO</button></a> which shows the two ways of creating an array with a physical model of Java memory.
 
-### Using `new` to Create Arrays
+### Using `new` to Create Empty Arrays
 
 To create an empty array after declaring the variable, use the **new** keyword with the type and the size of the array (the number of elements it can hold). This will actually create the array in memory.  You can do the declaration and the creation all in one step, see the String array names below. The size of an array is set at the time of creation and cannot be changed after that.
 
@@ -112,8 +112,6 @@ Add two more array declarations:
 
 1. One that creates an array of 5 doubles called `prices`
 2. Another array of 5 Strings called `names`.
-
-Then, add ``System.out.println`` calls to print their lengths.
 
 </div>
 
@@ -134,7 +132,7 @@ Array elements are initialized to **default values** like the following:
 
 </div>
 
-### Initializer Lists to Create Arrays
+### Initializer Lists to Create Arrays with Values
 
 Another way to create an array is to use an **initializer list**. You can initialize (set) the values in the array to a list of values in curly braces (``{}``) when you create it, like below. In this case you don't specify the size of the array, it will be determined from the number of values that you specify.
 
@@ -150,7 +148,7 @@ When you create an array of a **primitive type** (like ``int``) with initial val
 
 Watch the following <a href="https://youtu.be/T-YZvVvPOac" target="_blank"><button class="btn">📺 VIDEO</button></a> which shows an array of String objects with a physical model of Java memory.
 
-### Array length
+### Array Length
 
 Arrays know their **length** (_how many elements they can store_).  It is a `public` read-only **instance variable** so you can use **dot-notation** to access the instance variable (``arrayName.length``).  
 > **Dot-notation** is using variable name followed by a ``.`` and then the instance variable (property) name or a method name. 
