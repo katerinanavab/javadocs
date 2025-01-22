@@ -30,6 +30,22 @@ Use the enhanced for each loop with arrays whenever you can, because it _cuts do
 
 See the examples below in Java that loop through an `int` and a `String` array. Notice the type of the loop variable is the type of the array.
 
+```java
+  int[] highScores = { 10, 9, 8, 8};
+  String[] names = {"Jamal", "Emily", "Destiny", "Mateo"};
+  // for each loop: for each value in highScores
+  // for (type variable : arrayname)
+  for (int value : highScores) {
+      // Notice no index or [ ], just the variable value!
+      System.out.println( value );
+  }
+  // for each loop with a String array to print each name
+  // the type for variable name is String!
+  for (String name : names) {
+      System.out.println( name );
+  }
+```
+
 #### 💻 In-Class Activity: 
 {:.no_toc}
 
