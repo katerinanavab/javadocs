@@ -46,6 +46,8 @@ See the examples below in Java that loop through an `int` and a `String` array. 
   }
 ```
 
+Try the following code. Notice the for each loop with an int array and a String array. Add another high score and another name to the arrays and run again.
+
 #### 💻 In-Class Activity: 
 {:.no_toc}
 
