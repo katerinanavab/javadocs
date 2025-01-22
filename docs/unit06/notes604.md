@@ -21,7 +21,43 @@ nav_order: 4
 
 ## Array Algorithms (FRQs)
 
+In this lesson, you will study different Free Response Questions and responses that develop algorithms using arrays.
 
+
+Here are some common algorithms that you should be familiar with for the AP CSA exam:
+
+- Determine the minimum or maximum value in an array
+- Compute a sum, average, or mode of array elements
+- Search for a particular element in the array
+- Determine if at least one element has a particular property
+- Determine if all elements have a particular property
+- Access all consecutive pairs of elements
+- Determine the presence or absence of duplicate elements
+- Determine the number of elements meeting specific criteria
+- Shift or rotate elements left or right
+- Reverse the order of the elements
+
+<div class="imp" markdown="block">
+  
+🔁 Here are two common **array traversal loops** that can be used for these algorithms:
+
+  ```java
+  for (int value : array) {
+      if (value ....)
+          ...
+  }
+  ```
+  > **Enhanced for** (for-each) loops visit _EVERY ITEM_!
+  ```java
+  for(int i=0; i < array.length; i++)
+  {
+     if (array[i] ....)
+         ...
+  }
+  ```
+  > **Standard for** loops offer more flexibility, and keep track of the _INDEX_.
+
+</div>
 
 #### 💻 In-Class Activity: 
 {:.no_toc}
