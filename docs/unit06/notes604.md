@@ -30,7 +30,7 @@ Here are some common **algorithms** that you should be familiar with for the AP 
   - Determine the _minimum_ value in an array
   - Determine the _maximum_ value in an array
   - Search for a _specific element_ in the array
-- 🧮 **Acculumator Patterns:**
+- ➕ **Acculumator Patterns:**
   - Compute a _sum_ of array elements
   - Compute an _average_ of array elements
   - Determine the _number of elements_ meeting specific _criteria_
@@ -38,7 +38,7 @@ Here are some common **algorithms** that you should be familiar with for the AP 
   - Determine if _at least one element_ has a particular _property_
   - Determine if _all elements_ have a particular _property_
   - Determine the presence (or absence) of _duplicate_ elements
-- **Manipulating Array Order:**
+- ↔️ **Manipulating Array Order:**
   - _Shift/Rotate_ elements to the left or right
     > Requires keeping track of the current **INDEX**!
   - _Reverse_ the order of the elements
