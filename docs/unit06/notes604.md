@@ -24,18 +24,20 @@ nav_order: 4
 In this lesson, you will study different Free Response Questions and responses that develop algorithms using arrays.
 
 
-Here are some common algorithms that you should be familiar with for the AP CSA exam:
+Here are some common **algorithms** that you should be familiar with for the AP CSA exam:
 
-- Determine the minimum or maximum value in an array
-- Compute a sum, average, or mode of array elements
-- Search for a particular element in the array
-- Determine if at least one element has a particular property
-- Determine if all elements have a particular property
-- Access all consecutive pairs of elements
-- Determine the presence or absence of duplicate elements
-- Determine the number of elements meeting specific criteria
-- Shift or rotate elements left or right
-- Reverse the order of the elements
+- Determine the _minimum_ or _maximum_ value in an array
+- Compute a _sum_, _average_, or _mode_ of array elements
+- _Search_ for a particular element in the array
+- Determine if _at least one element_ has a particular _property_
+- Determine if _all elements_ have a particular _property_
+- Access all _consecutive pairs_ of elements
+- Determine the presence (or absence) of _duplicate_ elements
+- Determine the _number of elements_ meeting specific _criteria_
+- _Shift_ elements left or right
+  > Requires keeping track of the current **INDEX**!
+- _Reverse_ the order of the elements
+  > Requires keeping track of the current **INDEX**!
 
 <div class="imp" markdown="block">
   
