@@ -39,7 +39,15 @@ nav_order: 3
 
 ## ⭐️ Summary
 
+- An **enhanced for loop**, also called a **for-each loop**, can be used to loop through an array _without using an index variable_.
 
+- An enhanced for loop header includes a variable, referred to as the enhanced for loop variable, that holds each value in the array.
+
+- For each iteration of the enhanced for loop, the enhanced for loop variable is assigned a copy of an element without using its index.
+
+- Assigning a new value to the enhanced for loop variable does not change the value stored in the array.
+
+- Program code written using an enhanced for loop to traverse and access elements in an array can be rewritten using an indexed for loop or a while loop.
 
 ---
 
