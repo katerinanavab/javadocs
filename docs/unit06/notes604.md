@@ -78,11 +78,6 @@ Here are some common **algorithms** that you should be familiar with for the AP 
 
 </div>
 
----
-
-## ⭐️ Summary
-
-
 
 ---
 
