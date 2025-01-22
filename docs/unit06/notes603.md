@@ -50,17 +50,19 @@ See the examples below in Java that loop through both an `int` and a `String` ar
 
 ### For-Each Loop Limitations
 
-**Enhanced for-each** loops CANNOT be used in all situations! Only use for-each loops when you want to loop through *all* the values in an array, _without changing_ their values.
+What if we had a loop that _incremented_ all the elements in the array. Would that work with an enhanced for-each loop? Unfortunately not! 
+
+Because only the **temporary variable** in the loop changes, _not the real array values_. We would need an **indexed** loop to modify array elements. Try this code in the [Java Visualizer](http://www.pythontutor.com/visualize.html#code=%20%20%20public%20class%20IncrementLoop%0A%20%20%20%7B%20%20%20%20%20%20%0A%20%20%20%20%20%20public%20static%20void%20main%28String%5B%5D%20args%29%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20int%5B%20%5D%20values%20%3D%20%7B6,%202,%201,%207,%2012,%205%7D%3B%0A%20%20%20%20%20%20%20%20//%20Can%20this%20loop%20increment%20the%20values%3F%0A%20%20%20%20%20%20%20%20for%20%28int%20val%20%3A%20values%29%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20val%2B%2B%3B%0A%20%20%20%20%20%20%20%20%20%20System.out.println%28%22New%20val%3A%20%22%20%2B%20val%29%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20//%20Print%20out%20array%20to%20see%20if%20they%20really%20changed%0A%20%20%20%20%20%20%20%20for%20%28int%20v%20%3A%20values%29%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20System.out.print%28v%20%2B%20%22%20%22%29%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%7D%0A%20%20%20&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false&curInstr=0) and step through the code to see why it doesn't work.
 
 <div class="warn" markdown="block">
+
+**Enhanced for-each** loops CANNOT be used in all situations! Only use for-each loops when you want to loop through *all* the values in an array, _without changing_ their values.
   
 - 🚫 Do not use for-each loops if you need to keep track of the **index**.
 - 🚫 Do not use for-each loops if  you need to **change values** in the array.
 - 🚫 Do not use for-each loops if you want to loop through only part of an array or in a different order.
 
 </div>
-
-### For-Each Loop Algorithms
 
 
 #### 💻 In-Class Activity: 
