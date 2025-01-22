@@ -50,16 +50,17 @@ Here are some common **algorithms** that you should be familiar with for the AP 
 
   ```java
   for (int value : array) {
-      if (value ....)
+      if (value ....) {
           ...
+      }
   }
   ```
   > **Enhanced for** (for-each) loops visit _EVERY ITEM_!
   ```java
-  for(int i=0; i < array.length; i++)
-  {
-     if (array[i] ....)
+  for (int i=0; i < array.length; i++) {
+      if (array[i] ....) {
          ...
+      }
   }
   ```
   > **Standard for** loops offer more flexibility, and keep track of the _INDEX_.
