@@ -26,13 +26,14 @@ There is a special kind of loop that can be used with arrays that is called an *
 To set up a for-each loop, use `for (type variable : arrayname)` where the type is the type for elements in the array, and read it as "_for each variable value in arrayname_". 
 
 {:.highlight}
-Use the enhanced for each loop with arrays whenever you can, because it _cuts down on errors_. You can use it whenever you need to **loop through all the elements** of an array, and don't need to know their index and don't need to change their values. It starts with the first item in the array (the one at index `0`) and continues through in order to the last item in the array. 
+Use the enhanced for-each loop with arrays whenever you can, because it _cuts down on errors_! You can use it whenever you need to **loop through all the elements** of an array, don't need to know their **index**, and don't need to **change** their values. It automatically starts by "visiting" the first item in the array (the one at index `0`) and continues through, _in order_, to the last item in the array. 
 
-See the examples below in Java that loop through an `int` and a `String` array. Notice the type of the loop variable is the type of the array.
+See the examples below in Java that loop through both an `int` and a `String` array:
 
 ```java
   int[] highScores = { 10, 9, 8, 8};
   String[] names = {"Jamal", "Emily", "Destiny", "Mateo"};
+
   // for each loop: for each value in highScores
   // for (type variable : arrayname)
   for (int value : highScores) {
@@ -45,8 +46,22 @@ See the examples below in Java that loop through an `int` and a `String` array. 
       System.out.println( name );
   }
 ```
+> Add another high score and another name to the arrays and run again!
 
-Try the following code. Notice the for each loop with an int array and a String array. Add another high score and another name to the arrays and run again.
+### For-Each Loop Limitations
+
+<div class="imp" markdown="block">
+
+**Enhanced for-each** loops CANNOT be used in all situations! Only use for-each loops when you want to loop through *all* the values in an array, _without changing_ their values.
+
+   - 🚫 Do not use for each loops if you need to keep track of the **index**.
+   - 🚫 Do not use for each loops if  you need to **change values** in the array.
+   - 🚫 Do not use for each loops if you want to loop through only part of an array or in a different order.
+
+</div>
+
+### For-Each Loop Algorithms
+
 
 #### 💻 In-Class Activity: 
 {:.no_toc}
