@@ -26,18 +26,23 @@ In this lesson, you will study different Free Response Questions and responses t
 
 Here are some common **algorithms** that you should be familiar with for the AP CSA exam:
 
-- Determine the _minimum_ or _maximum_ value in an array
-- Compute a _sum_, _average_, or _mode_ of array elements
-- _Search_ for a particular element in the array
-- Determine if _at least one element_ has a particular _property_
-- Determine if _all elements_ have a particular _property_
-- Access all _consecutive pairs_ of elements
-- Determine the presence (or absence) of _duplicate_ elements
-- Determine the _number of elements_ meeting specific _criteria_
-- _Shift_ elements left or right
-  > Requires keeping track of the current **INDEX**!
-- _Reverse_ the order of the elements
-  > Requires keeping track of the current **INDEX**!
+- 🔍 **Searching Algorithms:**
+  - Determine the _minimum_ value in an array
+  - Determine the _maximum_ value in an array
+  - Search for a _specific element_ in the array
+- 🧮 **Acculumator Patterns:**
+  - Compute a _sum_ of array elements
+  - Compute an _average_ of array elements
+  - Determine the _number of elements_ meeting specific _criteria_
+- 🧪 **Testing Properties:**
+  - Determine if _at least one element_ has a particular _property_
+  - Determine if _all elements_ have a particular _property_
+  - Determine the presence (or absence) of _duplicate_ elements
+- **Manipulating Array Order:**
+  - _Shift/Rotate_ elements to the left or right
+    > Requires keeping track of the current **INDEX**!
+  - _Reverse_ the order of the elements
+    > Requires keeping track of the current **INDEX**!
 
 <div class="imp" markdown="block">
   
@@ -69,7 +74,7 @@ Here are some common **algorithms** that you should be familiar with for the AP 
 
 1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit6-Arrays/topic-6-4-array-algorithms.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 6.4</button></a> 
 2. Make sure you **SIGN IN**!
-3. Complete the **Programming Challenge: ** activity in pairs.
+3. Complete all **Coding Exercises** in groups.
 
 </div>
 
