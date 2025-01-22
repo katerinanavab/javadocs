@@ -50,13 +50,13 @@ See the examples below in Java that loop through both an `int` and a `String` ar
 
 ### For-Each Loop Limitations
 
-<div class="imp" markdown="block">
-
 **Enhanced for-each** loops CANNOT be used in all situations! Only use for-each loops when you want to loop through *all* the values in an array, _without changing_ their values.
 
-   - 🚫 Do not use for each loops if you need to keep track of the **index**.
-   - 🚫 Do not use for each loops if  you need to **change values** in the array.
-   - 🚫 Do not use for each loops if you want to loop through only part of an array or in a different order.
+<div class="warn" markdown="block">
+  
+- 🚫 Do not use for-each loops if you need to keep track of the **index**.
+- 🚫 Do not use for-each loops if  you need to **change values** in the array.
+- 🚫 Do not use for-each loops if you want to loop through only part of an array or in a different order.
 
 </div>
 
