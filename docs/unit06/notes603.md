@@ -31,7 +31,7 @@ nav_order: 3
 
 1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit6-Arrays/topic-6-3-arrays-with-foreach.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 6.3</button></a> 
 2. Make sure you **SIGN IN**!
-3. Complete the **Programming Challenge: ** activity in pairs.
+3. Complete the **Programming Challenge: SpellChecker 2** activity in pairs.
 
 </div>
 
