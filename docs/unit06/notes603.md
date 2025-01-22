@@ -21,7 +21,14 @@ nav_order: 3
 
 ## Traversing Arrays with For-Each Loops
 
+There is a special kind of loop that can be used with arrays that is called an **enhanced for loop** or a **for-each loop**. This loop is much easier to write because it _does not involve an index variable_ or the use of the `[]`. It just sets up a variable that is set to each **value** in the array successively. This type of loop can only be used with arrays and some other collections of items like ArrayLists which we will see in the next unit.
 
+To set up a for-each loop, use `for (type variable : arrayname)` where the type is the type for elements in the array, and read it as "_for each variable value in arrayname_". 
+
+{:.highlight}
+Use the enhanced for each loop with arrays whenever you can, because it _cuts down on errors_. You can use it whenever you need to **loop through all the elements** of an array, and don't need to know their index and don't need to change their values. It starts with the first item in the array (the one at index `0`) and continues through in order to the last item in the array. 
+
+See the examples below in Java that loop through an `int` and a `String` array. Notice the type of the loop variable is the type of the array.
 
 #### 💻 In-Class Activity: 
 {:.no_toc}
