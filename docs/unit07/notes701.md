@@ -114,12 +114,6 @@ missed until run time.
     elements of the ``ArrayList`` as if they were in fact ``int``\ s or
     ``double``\ s.
 
-```java
-```
-> In the code above we are declaring a variable called ``nameList`` that can
-   refer to a ``ArrayList`` of strings, but currently doesn't refer to any
-   ``ArrayList`` yet as it’s set to ``null``.
-
 As with other reference types, declaring a ``ArrayList`` variable doesn't
 actually create a ``ArrayList`` object. It only creates a variable that can
 refer to a ``ArrayList`` or ``null``. To actually create a ``ArrayList`` we must
