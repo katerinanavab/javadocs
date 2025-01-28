@@ -63,6 +63,92 @@ You can use ``ArrayList`` instead of arrays whenever you don't know the size of 
 
 ### Packages and Imports
 
+The ``ArrayList`` class is in the ``java.util`` package. A **package** is a set
+or library of related classes. The classes we have used until now, such as
+``String`` and ``Math``, are in the special package ``java.lang`` whose classes
+are always available in any Java program. Other packages, such as ``java.util``,
+provide classes that can only be used either by **importing** them or (much more
+rarely) by referring to them by their full name which includes the package as a
+prefix. The full name of ``ArrayList`` is thus ``java.util.ArrayList`` but
+rather than type that out all the time, in any class where we want to use
+``ArrayList`` we will usually import it with an ``import`` statement.
+
+<div class="imp" markdown="block">
+
+Import statements have to come _before_ the `class` definition in a Java source file and serve to tell Java which class you mean when you use a short name like ``ArrayList``. To import just one class we use a single ``import`` of the fully-qualified name of the class like this:
+
+```java
+import java.util.ArrayList;
+```
+> **AP EXAM NOTE:** Don't worry about adding `import` statements on the exam. Any that you need will be provided for you.
+
+</div>
+
+After such an import statement, anywhere ``ArrayList`` is used as a **class name** in the file it will be taken to mean ``java.util.ArrayList``.
+
+### Declaring and Creating ArrayLists
+
+To declare a ArrayList use ``ArrayList<Type> name`` where *Type*, called a
+**type parameter** is the type of objects you want to store in the ArrayList.
+For example a variable naming an ``ArrayList`` meant to hold ``String``\ s is
+declared as ``ArrayList<String>`` as shown in the code below. You can declare a
+variable to just be of type ``ArrayList``, with no type parameter, and it’ll be
+approximately the same as if you had declared ``ArrayList<Object>``, but it is
+good practice to specify the type of objects you intend to store in an
+``ArrayList`` as it allows the compiler to find errors that would otherwise be
+missed until run time.
+
+.. code-block:: java
+
+    // ArrayList<Type> name = new ArrayList<Type>();
+    // An ArrayList of Strings:
+    ArrayList<String> shoppingList = new ArrayList<String>();
+
+.. note::
+
+    ``ArrayList``\ s can only hold reference types like ``String``. Since they
+    can’t hold primitive types like ``int`` and ``double``, if we want a
+    collection of numbers we need to use the wrapper classes ``Integer`` or
+    ``Double``. However, because of autoboxing, if you declare an
+    ``ArrayList<Integer>`` or ``ArrayList<Double>`` you can mostly treat the
+    elements of the ``ArrayList`` as if they were in fact ``int``\ s or
+    ``double``\ s.
+
+```java
+```
+> In the code above we are declaring a variable called ``nameList`` that can
+   refer to a ``ArrayList`` of strings, but currently doesn't refer to any
+   ``ArrayList`` yet as it’s set to ``null``.
+
+As with other reference types, declaring a ``ArrayList`` variable doesn't
+actually create a ``ArrayList`` object. It only creates a variable that can
+refer to a ``ArrayList`` or ``null``. To actually create a ``ArrayList`` we must
+invoke a constructor such as ``new ArrayList<String>()``.
+
+You can get the number of items in a ``ArrayList`` using the ``size()`` method.
+Notice that a newly constructed ``ArrayList`` is empty and thus has a size of 0.
+Also remember that you can’t call methods on ``null`` so trying to call ``size``
+on the value of ``list2`` at line 10 below causes a ``NullPointerException``.
+
+#### Wrapper Classes: Integer & Double
+
+You can also create ArrayLists of integer and double values. However, you have
+to use ``Integer`` or ``Double`` as the type parameter because ``ArrayList``\ s
+can only hold objects, not primitive values. All primitive types must be
+**wrapped** in objects before they are added to an ArrayList. For example,
+``int`` values can be wrapped in ``Integer`` objects, ``double`` values can be
+wrapped in ``Double`` objects. However this normally happens automatically
+thanks to autoboxing.
+
+```java
+ArrayList<Integer> numList = new ArrayList<Integer>();
+ArrayList<Double> decimalList = new ArrayList<Double>();
+```
+
+You can actually put in any kind of objects in an ``ArrayList``, including
+instances of classes that you write, such as the ``Student``, ``Person``, or
+``Pet`` classes from Unit 5.
+
 ---
 
 ## ⭐️ Summary
