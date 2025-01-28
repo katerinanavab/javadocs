@@ -15,7 +15,7 @@ nav_order: 1
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 7.1]() 
+📖 This page is a condensed version of [CSAwesome Topic 7.1](https://runestone.academy/ns/books/published/csawesome/Unit7-ArrayList/topic-7-1-arraylist-basics.html?mode=browsing) 
 
 #### Using a GitHub Template for class notes
 {:.no_toc}
@@ -45,6 +45,7 @@ nav_order: 1
 </dl>
 </html>
 
+### Packages and Imports
 
 ---
 
