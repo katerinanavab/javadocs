@@ -159,8 +159,82 @@ System.out.println(nameList);
 
 ### Comparing Arrays and ArrayLists
 
+When do you use arrays and when do you use ``ArrayList``s? Use an array when
+you want to store several items of the same type and you know how many items
+will be in the array and the items in the array won't change in order or number.
+Use an ``ArrayList`` when you want to store several items of the same type and
+you don't know how many items you will need in the list or when you want to
+remove items from the list or add items to the list while the program is
+running.
 
+Here is a comparison of how to create Arrays and ``ArrayList``s:
 
+```java
+// Arrays must specify a size!
+int[] highScores = new int[5];
+String[] names = new String[5];
+
+// ArrayLists are empty to start with
+ArrayList<Integer> highScoreList = new ArrayList<Integer>();
+ArrayList<String> nameList = new ArrayList<String>();
+```
+
+Here is a comparison of how to access and change elements in arrays and
+``ArrayList``\ s. Note that ``ArrayList``\ s have a method ``size()`` instead of a
+``length`` property, and ``ArrayList``\ s use ``get``/``set`` methods instead of
+the index operator (``[]``).
+
+=========== ========================  ========================
+Operation   array                     ArrayList
+=========== ========================  ========================
+length/size array.length              list.size()
+----------- ------------------------  ------------------------
+Access      value = array[index];     value = list.get(index);
+----------- ------------------------  ------------------------
+Modify      array[index] = value;     list.set(index,value);
+=========== ========================  ========================
+
+Note that the ``ArrayList`` methods ``add`` and ``remove`` do not have a simple
+equivalent in arrays because they change the number of elements in the list and
+may shift the positions of other elements.
+
+#### 💻 In-Class Activity
+{:.no_toc}
+
+<div class="task" markdown="block">
+
+💬 **DISCUSS:** Why might an `ArrayList` be a more appropriate _data structure_ than an `array` for a **To Do list**?
+
+For each of the following tasks, rewrite the given code to use an `ArrayList` instead of an `array`.
+
+1. Create and populate the data structure:
+  ```java
+  String[] toDoList = new String[3];
+  toDoList[0] = "Do homework";
+  toDoList[1] = "Help make dinner";
+  toDoList[2] = "Call grandma";
+  ```
+2. Replace an element at a specified index:
+  ```java
+  toDoList[1] = "Order pizza";
+  ```
+3. Check the number of items:
+  ```java
+  System.out.println(toDoList.length + " things to do!");
+  ```
+5. Access a value at a specified index:
+  ```java
+  System.out.println("Here's the first thing to do: " + toDoList[0]);
+  ```
+4. Remove the first item and shift everything down:
+  ```java
+  toDoList[0] = toDoList[1];
+  toDoList[1] = toDoList[2];
+  toDoList[2] = "";
+  ```
+  > **HINT:** this can all be done in _one method call_ with ArrayList!
+
+</div>
 
 ---
 
