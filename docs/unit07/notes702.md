@@ -55,7 +55,7 @@ You can **add** values to an ``ArrayList`` using the method ``add(obj)``, which 
 
 <div class="task" markdown="block">
 
-Try the code below to see how the list **changes** as each object is added to the end. Notice that we added the same string to the list more than once. Lists can hold duplicate objects! 
+Try the code below to see how the list **changes** as each object is added to the end. 
 
 ```java
 ArrayList<String> nameList = new ArrayList<String>();
@@ -63,23 +63,71 @@ nameList.add("Diego");
 System.out.println(nameList);
 nameList.add("Grace");
 System.out.println(nameList);
-nameList.add("Diego");
-System.out.println(nameList);
 System.out.println(nameList.size());
 ```
 > Can you add your name to the list and then print out the list?
 
 </div>
 
+When adding Integers to a list, you can use the `Integer` object constructor like ``add(new Integer(5))``... but you can also just add the primitive `int` value directly, like ``add(5)``, and it will be changed into an ``Integer`` object automatically. 
+> 📦 This is called **autoboxing**. When you pull an ``int`` value out of a list of ``Integers``, that is called **unboxing**.
+
+{:.highlight}
+You can put any kind of **objects** into an ``ArrayList``. Even instances of a class that you wrote! 
+
+For example, here is an ``ArrayList`` of ``Creature``s:
+```java
+ArrayList<Creature> zoo = new ArrayList<Creature>();
+zoo.add(new Creature("Bella", "Unicorn", 15));
+zoo.add(new Creature("Bobby", "Bear", 8));
+```
+
 ### ``add(index,obj)``
 
 There are actually two different ``add`` methods in the ``ArrayList`` class:
-1. The ``add(obj)`` method adds the passed object to the _end_ of the list.
-2. The ``add(index,obj)`` method adds the passed object at the passed `index`, but first _moves over_ any existing values to higher indices to make room for the new object.
+1. The ``add(obj)`` method **adds** the passed object to the _end_ of the list.
+2. The ``add(index,obj)`` method **inserts** the passed object at the passed `index`, but first _shifts over_ any existing values to higher indices to make room for the new object.
 
+<div class="task" markdown="block">
 
+💬 **DISCUSS:** What will the code below print out? Try figuring it out before running it.
+> Remember that `ArrayList`s start at index 0 and that the `add(index,obj)` always takes the index as the first argument.
+
+```java
+ArrayList<Integer> list1 = new ArrayList<Integer>();
+list1.add(1);
+// adds the number 2 to the end of the list
+list1.add(2);
+// This will add the number 3 at index 1
+list1.add(1, 3);
+// This will add the number 4 at index 1
+list1.add(1, 4);
+System.out.println(list1);
+System.out.println(list1.size());
+```
+
+</div>
 
 ### ``remove(index)``
+
+You can also **remove** values from an ``ArrayList`` using the ``remove(index)`` method. It removes the item located at the specified _index_, which affects the underlying array in two ways: all of the other items after that index shift to a lower index, and the size of the ``ArrayList`` is decreased by 1.
+> Note that this method is **NON-VOID**: It also _returns_ the item that was removed... in case you need to see it (but usually you don't).
+
+<div class="task" markdown="block">
+
+💬 **DISCUSS:** What will the code below print out? Try figuring it out before running it.
+
+```java
+ArrayList<Integer> list2 = new ArrayList<Integer>();
+list2.add(1);
+list2.add(2);
+list2.add(3);
+list2.remove(1);
+System.out.println(list2);
+```
+> The ``remove(int index)`` method doesn't remove the object that matches the integer value given. In the example above it doesn't remove the value `1` – it removes the value `2` at **index** `1`.
+
+</div>
 
 ### ``get(index)`` and ``set(index, obj)``
 
