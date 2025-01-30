@@ -46,8 +46,9 @@ Here are some common **algorithms** that you should be familiar with for the AP 
 
 <div class="imp" markdown="block">
   
-🔁 Here are two common **array traversal loops** that can be used for these algorithms:
+🔁 There are two common **array traversal loops** that can be used for these algorithms.
 
+1. **Enhanced for** (for-each) loops visit _EVERY ITEM_ in sequential order:
   ```java
   for (int value : array) {
       if (value ....) {
@@ -55,8 +56,7 @@ Here are some common **algorithms** that you should be familiar with for the AP 
       }
   }
   ```
-  > **Enhanced for** (for-each) loops visit _EVERY ITEM_ in sequential order!
-
+2. **Standard for** loops keep track of the current _INDEX_ – offering more flexibility (modify values, traversing in different order, etc):
   ```java
   for (int i=0; i < array.length; i++) {
       if (array[i] ....) {
@@ -64,7 +64,7 @@ Here are some common **algorithms** that you should be familiar with for the AP 
       }
   }
   ```
-  > **Standard for** loops keep track of the current _INDEX_ – offering more flexibility (modify values, traversing in different order, etc).
+
 
 </div>
 
