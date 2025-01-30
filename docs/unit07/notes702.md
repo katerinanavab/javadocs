@@ -38,9 +38,7 @@ The following are the ``ArrayList`` methods that you need to know for the AP CSA
 
 ### ``size()``
 
-As we saw in the last lesson, you can get the number of items in a ``ArrayList``
-using its ``size()`` method. The ``ArrayList`` starts out empty with a size
-of 0.
+As we saw in the last lesson, you can get the **number of items** in a ``ArrayList`` using its ``size()`` method. The ``ArrayList`` starts out empty with a size of 0.
 
 ```java
 ArrayList<String> list = new ArrayList<String>();
@@ -53,7 +51,33 @@ With arrays, you use the ``length`` field to get the number of items in the arra
 
 ### ``add(obj)``
 
+You can **add** values to an ``ArrayList`` using the method ``add(obj)``, which will add the object to the _end_ of the list, just like you would join the end of the line to board a bus.
+
+<div class="task" markdown="block">
+
+Try the code below to see how the list **changes** as each object is added to the end. Notice that we added the same string to the list more than once. Lists can hold duplicate objects! 
+
+```java
+ArrayList<String> nameList = new ArrayList<String>();
+nameList.add("Diego");
+System.out.println(nameList);
+nameList.add("Grace");
+System.out.println(nameList);
+nameList.add("Diego");
+System.out.println(nameList);
+System.out.println(nameList.size());
+```
+> Can you add your name to the list and then print out the list?
+
+</div>
+
 ### ``add(index,obj)``
+
+There are actually two different ``add`` methods in the ``ArrayList`` class:
+1. The ``add(obj)`` method adds the passed object to the _end_ of the list.
+2. The ``add(index,obj)`` method adds the passed object at the passed `index`, but first _moves over_ any existing values to higher indices to make room for the new object.
+
+
 
 ### ``remove(index)``
 
