@@ -55,7 +55,8 @@ Here are some common **algorithms** that you should be familiar with for the AP 
       }
   }
   ```
-  > **Enhanced for** (for-each) loops visit _EVERY ITEM_!
+  > **Enhanced for** (for-each) loops visit _EVERY ITEM_ in sequential order!
+
   ```java
   for (int i=0; i < array.length; i++) {
       if (array[i] ....) {
@@ -63,7 +64,7 @@ Here are some common **algorithms** that you should be familiar with for the AP 
       }
   }
   ```
-  > **Standard for** loops offer more flexibility, and keep track of the _INDEX_.
+  > **Standard for** loops keep track of the current _INDEX_ – offering more flexibility (modify values, traversing in different order, etc).
 
 </div>
 
