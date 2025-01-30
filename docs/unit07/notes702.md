@@ -184,19 +184,14 @@ Here is a comparison of how to access and change elements in arrays and
 ``length`` property, and ``ArrayList``\ s use ``get``/``set`` methods instead of
 the index operator (``[]``).
 
-=========== ========================  ========================
-Operation   array                     ArrayList
-=========== ========================  ========================
-length/size array.length              list.size()
------------ ------------------------  ------------------------
-Access      value = array[index];     value = list.get(index);
------------ ------------------------  ------------------------
-Modify      array[index] = value;     list.set(index,value);
-=========== ========================  ========================
+| **Operation** | **array** | **ArrayList** |
+| Number of Items | `array.length` | `list.size()` |
+| Access | `value = array[index];` | `value = list.get(index);` |
+| Modify | `array[index] = value;` | `list.set(index,value)` |
 
 Note that the ``ArrayList`` methods ``add`` and ``remove`` do not have a simple
-equivalent in arrays because they change the number of elements in the list and
-may shift the positions of other elements.
+equivalent in arrays, because they change the total number of elements in the list and
+may also shift the positions of other elements.
 
 #### 💻 In-Class Activity
 {:.no_toc}
