@@ -131,6 +131,32 @@ System.out.println(list2);
 
 ### ``get(index)`` and ``set(index, obj)``
 
+You can **get** the object at an index using ``obj = listName.get(index)`` and **set**
+the object at an index using ``listName.set(index,obj)``. Both methods require
+that the index argument refer to an existing element of the list, i.e. the index
+must be greater than or equal to 0 and less than the ``size()`` of the list.
+
+{:.highlight}
+Notice that ``ArrayList``s use ``get`` and ``set`` **methods** instead of the `index` **operator** that we use with arrays: ``array[index]``. This is because ``ArrayList`` is an object **class** with *methods*, not a built in type with special support in the language like arrays are.
+
+<div class="task" markdown="block">
+  
+💬 **DISCUSS:** What will the code below print out? Try figuring it out before running it.
+
+```java
+ArrayList<String> nameList = new ArrayList<String>();
+nameList.add("Diego");
+nameList.add("Grace");
+nameList.add("Deja");
+System.out.println(nameList.get(0));
+System.out.println(nameList.get(1));
+nameList.set(1, "John");
+System.out.println(nameList);
+```
+> Can you get the _last_ element in the `nameList` to print it out? Can you set the _first_ element in the list to your name and print out the list?
+
+</div>
+
 ### Comparing Arrays and ArrayLists
 
 
