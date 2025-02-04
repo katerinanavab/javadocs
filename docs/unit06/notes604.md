@@ -68,7 +68,7 @@ Here are some common **algorithms** that you should be familiar with for the AP 
 
 </div>
 
-#### 💻 In-Class Activity: 
+#### 💻 In-Class Activity: Array Algorithms
 {:.no_toc}
 
 
