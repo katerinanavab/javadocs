@@ -21,15 +21,11 @@ nav_order: 3
 
 ## Traversing ArrayLists with Loops
 
-🔁 ``ArrayList``s can be **traversed** with ``while`` loops and both standard and
-enhanced ``for`` loops much the same way we use those constructs to loop over an
-array.
+🔁 ``ArrayList``s can be **traversed** with ``while`` loops and both standard and enhanced ``for`` loops much the same way we use those constructs to loop over an array.
 
 ### Enhanced For-Each Loop
 
-You can use a enhanced ``for`` loop to traverse _all of the items_ in an
-``ArrayList``, just like you do with an array when you only care about the
-**values** in the list and **not their indices**. 
+You can use a enhanced ``for`` loop to traverse _all of the items_ in an ``ArrayList``, just like you do with an array when you only care about the **values** in the list and **not their indices**. 
 
 An example is shown below:
 
@@ -60,13 +56,79 @@ Note however that you CANNOT use the enhanced ``for`` loop if you want to **add*
 
 ### Standard For Loop
 
+You can also use a ``while`` loop or a regular ``for`` loop to process list elements accessed using an index. ``ArrayList`` indices starts at 0 just like array indices, but instead of using the **index operator** ``[]`` to access elements, you use the ``get(index)`` **method** to get the value at the index and ``set(index,value)`` **method** to set the element at an index to a new value.
+
+{:.warning}
+🚨 If you try to use an index that is **outside of the range** of `0` to the number of `elements − 1` in an ArrayList, your code will throw an ``IndexOutOfBoundsException``, similar to the ``ArrayIndexOutOfBoundsException`` thrown with Arrays.
+
+```java
+for (int i = 0; i <= myList.size(); i++) {
+  total = total + myList.get(i);
+}
+System.out.println(total);
+```
+> 💬 **DISCUSS:** The code above will throw an ``IndexOutOfBoundsException``. Can you fix it?
+
 ### While Loop
+
+The example below demonstrates a ``while`` loop that removes a name from a list:
+
+```java
+ArrayList<String> nameList = new ArrayList<String>();
+nameList.add("Amun");
+nameList.add("Lily");
+nameList.add("Donnie");
+nameList.add("Lily");
+
+boolean found =   // true or false?
+int index = 0;
+while (index < nameList.size()) {
+  if ("Lily".equals(nameList.get(index))) {
+    nameList.remove(index);
+    found =    // true or false?
+  }
+  else {
+    index++;
+  }
+}
+```
+
+> Be careful when you **remove** items from a list while you **loop** through it! Notice how
+the method above only increments the `index` _if an item was not removed_ from the
+list. This is because removing an item from a list will shift the remaining
+items to the _left_ (lower index), so if you increment the index in all cases you will skip the
+elements immediately after each element you remove.
+
+#### 💻 In-Class Activity: FRQ Word Pairs
+{:.no_toc}
+
+<div class="task" markdown="block">
+
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit7-ArrayList/topic-7-3-arraylist-loops.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 7.3</button></a> 
+2. Make sure you **SIGN IN**!
+3. Complete the **Programming Challenge: FRQ Word Pairs** in groups.
+
+</div>
 
 ---
 
 ## ⭐️ Summary
 
+- ``ArrayList``s can be **traversed** with an enhanced ``for`` loop, a ``while``
+  loop, or a regular ``for`` loop using an index.
 
+- Deleting elements during a traversal of an ``ArrayList`` requires using
+  special techniques to avoid skipping elements, since ``remove`` moves all the
+  elements above the removed index down.
+
+- Since the indices for an ``ArrayList`` start at 0 and end at the number of
+  elements − 1, accessing an index value outside of this range will result in an
+  ``IndexOutOfBoundsException`` being thrown.
+
+- Changing the size of an ``ArrayList`` while traversing it using an enhanced
+  ``for`` loop can result in a ``ConcurrentModificationException`` being thrown.
+  Therefore, when using an enhanced ``for`` loop to traverse an ``ArrayList``,
+  you should not ``add`` or ``remove`` elements.
 
 ---
 
