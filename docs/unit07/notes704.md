@@ -24,18 +24,18 @@ nav_order: 4
 Like with arrays, there are standard `ArrayList` *algorithms* that utilize **traversals**.
 
 - 🔍 **Searching Algorithms:**
-  - Determine the _minimum_ value in an array
-  - Determine the _maximum_ value in an array
-  - Search for a _specific element_ in the array
+  - Determine the _minimum_ value in a list
+  - Determine the _maximum_ value in a list
+  - Search for a _specific element_ in the list
 - ➕ **Acculumator Patterns:**
-  - Compute a _sum_ of array elements
-  - Compute an _average_ of array elements
+  - Compute a _sum_ of list elements
+  - Compute an _average_ of list elements
   - Determine the _number of elements_ meeting specific _criteria_
 - 🧪 **Testing Properties:**
   - Determine if _at least one element_ has a particular _property_
   - Determine if _all elements_ have a particular _property_
   - Determine the presence (or absence) of _duplicate_ elements
-- ↔️ **Manipulating Array Order:**
+- ↔️ **Manipulating List Order:**
   - _Shift/Rotate_ elements to the left or right
   - _Reverse_ the order of the elements
 
