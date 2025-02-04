@@ -73,7 +73,7 @@ Like with arrays, there are standard `ArrayList` *algorithms* that utilize **tra
 
 1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit7-ArrayList/topic-7-4-arraylist-algorithms.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 7.4</button></a> 
 2. Make sure you **SIGN IN**!
-3. Complete all **Coding Exercises** in groups.
+3. Complete all **Coding Exercises** in groups. 
 
 </div>
 
