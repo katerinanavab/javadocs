@@ -37,9 +37,7 @@ Like with arrays, there are standard `ArrayList` *algorithms* that utilize **tra
   - Determine the presence (or absence) of _duplicate_ elements
 - ↔️ **Manipulating Array Order:**
   - _Shift/Rotate_ elements to the left or right
-    > Requires keeping track of the current **INDEX**!
   - _Reverse_ the order of the elements
-    > Requires keeping track of the current **INDEX**!
 
 <div class="imp" markdown="block">
   
