@@ -43,26 +43,23 @@ For the AP CSA exam you will need to know both **linear (sequential) search** an
 If it reaches the end of the array or list _without finding_ the value, the search method usually returns a `-1` to show that it didn't find the value in the array or list. 
 
 #### Array
+{:.no_toc}
 
 ```java
-      /**
-       * Finds the index of a value in an array of integers.
-       *
-       * @param elements an array containing the items to be searched.
-       * @param target the item to be found in elements.
-       * @return an index of target in elements if found; -1 otherwise.
-       */
-      public static int sequentialSearch(int[] elements, int target)
-      {
-          for (int j = 0; j < elements.length; j++)
-          {
-              if (elements[j] == target)
-              {
-                  return j;
-              }
-          }
-          return -1;
-      }
+/**
+ * Finds the index of a value in an array of integers.
+ * @param elements an array containing the items to be searched.
+ * @param target the item to be found in elements.
+ * @return an index of target in elements if found; -1 otherwise.
+*/
+public static int sequentialSearch(int[] elements, int target) {
+    for (int j = 0; j < elements.length; j++) {
+        if (elements[j] == target) {
+            return j;
+        }
+    }
+    return -1;
+}
 ```
 
 {:.highlight} 
@@ -73,25 +70,23 @@ Many of our examples will use arrays for simplicity since with arrays, we know _
 Below is the same search with an ``ArrayList`` **data structure** instead. The same algorithms can be used with arrays or ``ArrayList``s, but notice that ``size()`` and ``get(i)`` are used with ``ArrayList``s instead of ``length`` and ``[i]`` which are used in arrays. 
 
 #### ArrayList
+{:.no_toc}
+
 ```java
-        /**
-         * Finds the index of a value in an ArrayList of integers.
-         *
-         * @param elements an array containing the items to be searched.
-         * @param target the item to be found in elements.
-         * @return an index of target in elements if found; -1 otherwise.
-         */
-        public static int sequentialSearch(ArrayList<Integer> elements, int target)
-        {
-            for (int j = 0; j < elements.size(); j++)
-            {
-                if (elements.get(j) == target)
-                {
-                    return j;
-                }
-            }
-            return -1;
+/**
+ * Finds the index of a value in an ArrayList of integers.
+ * @param elements an array containing the items to be searched.
+ * @param target the item to be found in elements.
+ * @return an index of target in elements if found; -1 otherwise.
+*/
+public static int sequentialSearch(ArrayList<Integer> elements, int target) {
+    for (int j = 0; j < elements.size(); j++) {
+        if (elements.get(j) == target) {
+            return j;
         }
+    }
+    return -1;
+}
 ```
 
 ### Binary Search
