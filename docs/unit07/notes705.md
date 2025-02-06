@@ -91,15 +91,18 @@ public static int sequentialSearch(ArrayList<Integer> elements, int target) {
 
 ### Binary Search
 
-🔍↔️ How do you search for something in a phone book or dictionary that is in alphabetical or numerical order? If you're looking for something beginning with M or on page 100 in a 200 page book, you wouldn't want to start with page 1. You would probably start looking somewhere in the middle of the book. This is the idea behind **binary search**.
+🔍↔️ How do you search for something in a phone book or dictionary that is in alphabetical or numerical **order**? If you're looking for something beginning with M or on page 100 in a 200 page book, you wouldn't want to start with page 1. You would probably start looking somewhere in the _middle_ of the book. This is the idea behind **binary search**.
 
-If your array or list is already in order (sorted), binary search will on average find an element or determine that it is missing much more quickly than a linear search. But binary search can only be used if the data is sorted.
+{:.highlight}
+If your array or list is already in **order** (sorted), binary search will on average find an element or determine that it is missing _much more quickly_ than a linear search. But binary search can only be used if the data is sorted.
 
-Binary search keeps dividing the sorted search space into half. It compares a target value to the value in the middle of a range of indices.  If the value isn't found it looks again in either the left or right half of the current range. Each time through the loop it eliminates half the values in the search area until either the value is found or there is no more data to look at.  See the animation below from [AlvaroIsrael on Github](https://github.com/AlvaroIsrael/binary-search):
+Binary search keeps _dividing_ the sorted **search space** into half. It compares a `target` value to the value in the `middle` of a range of indices.  
+* If the value isn't found, it looks again in either the `left` or `right` half of the current range.
+* Each time through the loop it _eliminates half the values_ in the search area until either the value is found or there is no more data to look at.
+
+See the animation below from [Alvaro Israel on Github](https://github.com/AlvaroIsrael/binary-search):
 
 ![image](Figures/binary-search-small.gif)
-
-Binary search calculates the middle index as ``left + right / 2`` where left starts out at 0 and right starts out at the array length - 1 (the index of the last element). Remember that integer division gives an integer result so 2.5 becomes 2. It compares the value at the middle index with the target value (the value you are searching for).  If the target value is less than the value at the middle it sets right to middle minus one. If the target value is greater than the value at the middle it sets left to middle plus one. Otherwise the values match and it returns the middle index. It also stops when left is greater than right which indicates that the value wasn't found and it returns -1.
 
 The code for an _iterative_ ``binarySearch`` below is from the AP CSA course description: 
 
@@ -122,7 +125,12 @@ public static int binarySearch(int[] elements, int target) {
     return -1;
 }
 ```
-> A _recursive_ version of this algorithm will be covered in Unit 10.
+> * Binary search calculates the `middle` index as ``left + right / 2`` where `left` starts out at `0 and `right` starts out at the array `length - 1` (the index of the last element).
+> * Remember that _integer division gives an integer result_ so 2.5 becomes 2!
+> * It compares the value at the `middle` index with the `target` value (the value you are searching for).
+> * If the target value is _less_ than the value at the middle, it sets `right` to middle minus one.
+> * If the target value is _greater_ than the value at the middle, it sets `left` to middle plus one.
+> * Otherwise, the values match, so it **returns** the `middle` index. It also stops when left is greater than right which indicates that the value wasn't found and it **returns** `-1`.
 
 You can also use binary search with a ``String`` array.  But, when you look for a ``String``, be sure to use ``compareTo`` method rather than ``<`` or ``>`` which can only be used with primitive types.  Remember how the ``String`` method ``compareTo`` works:
 
@@ -150,11 +158,12 @@ public static int binarySearch(String[] elements, String target) {
 
 ### Runtimes
 
-How do we choose between two algorithms that solve the same problem? They usually have different characteristics and **runtimes** which measures how fast they run. For the searching problem, it depends on your data.
+How do we **choose** between two algorithms that solve the same problem? They usually have different characteristics and **runtimes** which measures how fast they run. For the searching problem, it depends on the _size_ of your data.
 
-Binary search is much faster than linear search, especially on large data sets, but it can only be used on sorted data. Often with runtimes, computer scientist think about the **worst case behavior**. With searching, the worst case is usually if you cannot find the item. With linear search, you would have to go through the whole array before realizing that it is not there, but binary search is much faster even in this case because it eliminates half the data set in each step. We can measure an informal runtime by just counting the number of steps.
+Binary search is much _faster_ than linear search, especially on large data sets, but it can only be used on _sorted_ data. Often with runtimes, computer scientist think about the **worst case behavior**. With searching, the worst case is usually if you cannot find the item. 
+> With linear search, you would have to go through the _whole array_ before realizing that it is not there, but binary search is much faster even in this case because it _eliminates half the data_ set in each step.
 
-Here is a table that compares the worst case runtime of each search algorithm given an array of n elements. The runtime here is measured as the number of times the loop runs in each algorithm or the number of elements we need to check in the worst case when we don't find the item we are looking for. Notice that with linear search, the worst case runtime is the size of the array n, because it has to look through the whole array. For the binary search runtime, we can calculate the number of times you can divide n in half until you get to 1. So, for example 8 elements can be divided in half to narrow down to 4 elements, which can be further divided in half to narrow down to 2 elements, which can be further divided in half to get down to 1 element, and then if that is wrong, to 0 elements, so that is 4 divisions or guesses to get the answer (8->4->2->1->0). In the table below, every time we double the size of N, we need at most one more guess or comparison with binary search. It's much faster than linear search!
+⏰ We can measure an informal runtime by just counting the number of steps. Here is a table that compares the **worst case runtime** of each search algorithm given an array of `n` elements:
 
 N | Linear Search | Binary Search
 --- | -------- | ------- |
@@ -164,7 +173,7 @@ N | Linear Search | Binary Search
 16 | 16          | 5
 100 | 100         | 7
 
-Runtimes can be described with mathematical functions. For an array of size n, linear search runtime is a linear function, and binary search runtime is a function of log base 2 of n (or log n + 1 comparisons). This is called the big-O runtime function in computer science, for example O(log n) vs. O(n). You can compare the growth of functions like n and log\ :sub:`2`\ n as n, the data size, grows and see that binary search runs much faster for any n.  You don't need to know the log n runtime growth function for the AP exam, but you should be able to calculate how many steps binary search takes for a given n by counting how many times you can divide it in half. Or you can start at 1 and keep a count of how many times you can double it with the powers of two (1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, etc.) until you reach a number that is slightly above n.
+> Runtimes can be described with [mathematical functions](https://en.wikipedia.org/wiki/Big_O_notation). You don't need to know the runtime growth functions for the AP exam, but you should be able to **calculate how many steps** binary search takes for a given `n` by counting how many times you can _divide it in half_. 
 
 #### 💻 In-Class Activity: Search Runtimes
 {:.no_toc}
