@@ -165,19 +165,13 @@ Binary search is much faster than linear search, especially on large data sets, 
 
 Here is a table that compares the worst case runtime of each search algorithm given an array of n elements. The runtime here is measured as the number of times the loop runs in each algorithm or the number of elements we need to check in the worst case when we don't find the item we are looking for. Notice that with linear search, the worst case runtime is the size of the array n, because it has to look through the whole array. For the binary search runtime, we can calculate the number of times you can divide n in half until you get to 1. So, for example 8 elements can be divided in half to narrow down to 4 elements, which can be further divided in half to narrow down to 2 elements, which can be further divided in half to get down to 1 element, and then if that is wrong, to 0 elements, so that is 4 divisions or guesses to get the answer (8->4->2->1->0). In the table below, every time we double the size of N, we need at most one more guess or comparison with binary search. It's much faster than linear search!
 
-==== ============== ==============
-N    Linear Search  Binary Search
-==== ============== ==============
-2    2 comparisons  2 comparisons
----- -------------- --------------
-4    4              3
----- -------------- --------------
-8    8              4
----- -------------- --------------
-16   16             5
----- -------------- --------------
-100  100            7
-==== ============== ==============
+N | Linear Search | Binary Search
+--- | -------- | ------- |
+2 | 2 comparisons | 2 comparisons
+4 | 4             | 3
+8 | 8            | 4
+16 | 16          | 5
+100 | 100         | 7
 
 Runtimes can be described with mathematical functions. For an array of size n, linear search runtime is a linear function, and binary search runtime is a function of log base 2 of n (or log n + 1 comparisons). This is called the big-O runtime function in computer science, for example O(log n) vs. O(n). You can compare the growth of functions like n and log\ :sub:`2`\ n as n, the data size, grows and see that binary search runs much faster for any n.  You don't need to know the log n runtime growth function for the AP exam, but you should be able to calculate how many steps binary search takes for a given n by counting how many times you can divide it in half. Or you can start at 1 and keep a count of how many times you can double it with the powers of two (1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, etc.) until you reach a number that is slightly above n.
 
