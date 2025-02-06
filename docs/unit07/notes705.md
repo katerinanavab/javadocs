@@ -101,60 +101,51 @@ Binary search keeps dividing the sorted search space into half. It compares a ta
 
 Binary search calculates the middle index as ``left + right / 2`` where left starts out at 0 and right starts out at the array length - 1 (the index of the last element). Remember that integer division gives an integer result so 2.5 becomes 2. It compares the value at the middle index with the target value (the value you are searching for).  If the target value is less than the value at the middle it sets right to middle minus one. If the target value is greater than the value at the middle it sets left to middle plus one. Otherwise the values match and it returns the middle index. It also stops when left is greater than right which indicates that the value wasn't found and it returns -1.
 
-The code for ``binarySearch`` below is from the AP CSA course description. A recursive version of this algorithm will be covered in Unit 10.
+The code for an _iterative_ ``binarySearch`` below is from the AP CSA course description: 
 
 ```java
-      public static int binarySearch(int[] elements, int target)
-      {
-          int left = 0;
-          int right = elements.length - 1;
-          while (left <= right)
-          {
-              int middle = (left + right) / 2;
-              if (target < elements[middle])
-              {
-                  right = middle - 1;
-              }
-              else if (target > elements[middle])
-              {
-                  left = middle + 1;
-              }
-              else
-              {
-                  return middle;
-              }
-          }
-          return -1;
-      }
+public static int binarySearch(int[] elements, int target) {
+    int left = 0;
+    int right = elements.length - 1;
+    while (left <= right) {
+        int middle = (left + right) / 2;
+        if (target < elements[middle]) {
+            right = middle - 1;
+        }
+        else if (target > elements[middle]) {
+            left = middle + 1;
+        }
+        else {
+            return middle;
+        }
+    }
+    return -1;
+}
 ```
+> A _recursive_ version of this algorithm will be covered in Unit 10.
 
 You can also use binary search with a ``String`` array.  But, when you look for a ``String``, be sure to use ``compareTo`` method rather than ``<`` or ``>`` which can only be used with primitive types.  Remember how the ``String`` method ``compareTo`` works:
 
    -  **int compareTo(String other)** returns a negative value if the current string is less than the ``other`` string, 0 if they have the same characters in the same order, and a positive value if the current string is greater than the ``other`` string.
 
 ```java
-public static int binarySearch(String[] elements, String target)
-      {
-          int left = 0;
-          int right = elements.length - 1;
-          while (left <= right)
-          {
-              int middle = (left + right) / 2;
-              if (target.compareTo(elements[middle]) < 0)
-              {
-                  right = middle - 1;
-              }
-              else if (target.compareTo(elements[middle]) > 0)
-              {
-                  left = middle + 1;
-              }
-              else
-              {
-                  return middle;
-              }
-          }
-          return -1;
-      }
+public static int binarySearch(String[] elements, String target) {
+    int left = 0;
+    int right = elements.length - 1;
+    while (left <= right) {
+        int middle = (left + right) / 2;
+        if (target.compareTo(elements[middle]) < 0) {
+            right = middle - 1;
+        }
+        else if (target.compareTo(elements[middle]) > 0) {
+            left = middle + 1;
+        }
+        else {
+            return middle;
+        }
+    }
+    return -1;
+}
 ```
 
 ### Runtimes
