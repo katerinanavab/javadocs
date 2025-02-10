@@ -93,8 +93,10 @@ When arrays are created, their contents are automatically **initialized** to `0`
 To explicitly **set a value** in a 2D array, you can use _assignment statements_ with the `name` of the array followed by the `row` index in square brackets followed by the `column` index in square brackets, and then an ``=`` followed by a value:
 
 ```java
-int[][] ticketInfo = new int[2][3];
-ticketInfo[0][0] = 15;
+// 
+int[][] data = new int[2][3];
+// 
+data[0][0] = 15;
 ```
 
 </div>
