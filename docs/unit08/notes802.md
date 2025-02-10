@@ -21,11 +21,11 @@ nav_order: 2
 
 ## Traversing 2D Arrays with Nested Loops
 
-Since 2D arrays are really arrays of arrays, you can use a _nested_ **enhanced for-each loop** to loop through all elements in an array. 
+Since 2D arrays are really arrays of arrays, you can use **nested loops** to iterate through all elements in an array. We first loop through each of the rows (the "_inner arrays_"), and then loop through all the values inside each inner array.
 
 ### Enhanced For-Each Loops
 
-We loop through each of the inner arrays and loop through all the values in each inner array. Notice the type of the outer loop array variable - it is an array that will hold each row, `String[]` in the example below for a 2D String array. The `type` of the variables in the for-each loops must match the type of the array. 
+An **enhanced for-each** loop "visits" each item in an array sequentially. Notice the type of the outer loop array variable - it is an array that will hold each row, `String[]` in the example below for a 2D String array. The `type` of the variables in the for-each loops must match the type of the array. 
 
 ```java
 String[][] data;
