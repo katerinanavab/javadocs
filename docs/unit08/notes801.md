@@ -93,9 +93,9 @@ When arrays are created, their contents are automatically **initialized** to `0`
 To explicitly **set a value** in a 2D array, you can use _assignment statements_ with the `name` of the array followed by the `row` index in square brackets followed by the `column` index in square brackets, and then an ``=`` followed by a value:
 
 ```java
-// 
+// Initialize the 2D array
 int[][] data = new int[2][3];
-// 
+// Set value of the first item
 data[0][0] = 15;
 ```
 
@@ -118,6 +118,16 @@ String[][] seatingInfo = { {"Jamal", "Maria"}, {"Jake", "Suzy"}, {"Emma", "Luke"
 > 💬 **DISCUSS:** What is the value at ``seatingInfo[2][1]`` after the code above executes?
 
 ### Get a Value from a 2D Array
+
+To **get** the value in a 2D array give the `name` of the array followed by the `row` and `column` indices in square brackets. 
+
+```java
+int[][] ticketInfo = { {25,20,25}, {25,20,25} };
+String[][] seatingInfo = { {"Jamal", "Maria"}, {"Jake", "Suzy"}, {"Emma", "Luke"} };
+int value = ticketInfo[1][0];
+String name = seatingInfo[0][1];
+```
+> The code above will get the `int` value at row index 1 and column index 0 from ``ticketInfo``. It will also get the `String` value at row index 0 and column index 1 from ``seatingChart``.
 
 #### 💻 In-Class Activity: ASCII Art
 {:.no_toc}
