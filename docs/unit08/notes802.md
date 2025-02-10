@@ -23,6 +23,8 @@ nav_order: 2
 
 Since 2D arrays are really arrays of arrays you can also use a _nested_ **enhanced for-each loop** to loop through all elements in an array. We loop through each of the inner arrays and loop through all the values in each inner array. Notice the type of the outer loop array variable - it is an array that will hold each row, `String[]` in the example below for a 2D String array. The `type` of the variables in the for-each loops must match the type of the array. For-each loops are much simpler since you don't have to use the indices and the `[]`'s, but you can only use them if you are not going to change the values in an array of primitive types since the variable val below will not change the original array.
 
+### Enhanced For-Each Loops
+
 ```java
 String[][] data;
 // Nested For-Each loops to traverse a 2D String array
@@ -32,13 +34,28 @@ for (String[] rowArray : data) {
   }
 }
 ```
-> In this case the ``for (String[] rowArray : array)`` means to loop through each element of the _outer_ array (`data`) which will set the current ``rowArray`` to the current array of columns. Then you can loop through the values (`colValue`) inside the array of columns.
+> In this case the ``for (String[] rowArray : array)`` means to loop through each element of the _outer_ array (`data`) which will set the current ``rowArray`` to the current array of columns. Then the _inner_ loop iterates through the _inner_ array (the current "column"), printing each of the values (`colValue`).
+
+### Standard For Loops
+
+You can loop through a _subset_ (smaller portion) of a 2D array as long as you use a **standard for loop**. You can change the starting value and ending value to loop through a subset of a 2D array:
+
+```java
+int[][] matrix = { {3, 2, 3}, {4, 3, 6}, {8, 9, 3}, {10, 3, 3}};
+
+for (int row = 1; row < 3; row++) {
+  for (int col = 0; col <= 2; col++) {
+    System.out.println(matrix[row][col]);
+  }
+}
+```
+> 💬 **DISCUSS:** What do you think the above code will print out? Which part of the `matrix` 2D array?
 
 ### 2D Array Algorithms
 
-All of the array **algorithms** can be applied to 2D arrays too. For example, 🧮 **counting** and 🔍 **searching** algorithms work very similarly. 
+All of the array **algorithms** can be applied to 2D arrays too. For example, *counting* and *searching* algorithms work very similarly. 
 
-#### Counting
+#### 🧮 Counting/Accumulating
 {:.no_toc}
 
 What will the following code print out? Can you complete the  method called ``getTotalForCol`` that gets the total for a column? To do this, you must loop through the rows. The array's length will tell you how many rows you have since it is an array of arrays, while the length of the array's first element will tell you how many columns.
@@ -73,38 +90,7 @@ public static int getTotalForRow(int row, int[][] a)
        }
 ```
 
-#### Iterate through a Subset
-{:.no_toc}
-
-You can loop through a smaller part of a 2D array as long as you use a **standard for loop**. You can change the starting value and ending value to loop through a subset of a 2D array.
-
-```java
-       public static int countValues(int value, int[][] a, int rowStart, 
-                                  int rowEnd, int colStart, int colEnd)
-       {
-           int count = 0;
-           for (int row = rowStart; row <= rowEnd; row++)
-           {
-               for (int col = colStart; col <= colEnd; col++)
-               {
-                   if (a[row][col] == value)
-                   {
-                        count++;
-                   }
-               }
-           }
-           return count;
-       }
-```
-```java
-       public static void main(String[] args)
-       {
-           int[][] matrix = { {3, 2, 3}, {4, 3, 6}, {8, 9, 3}, {10, 3, 3}};
-           System.out.println(countValues(3, matrix, 0, 2, 0, 2));
-       }
-```
-
-#### Linear Search
+#### 🔍 Linear Search
 {:.no_toc}
 
 What will the following code print? Can you change the code to work for a String 2D array instead of an int array? Note that the indices row and col will still be ints.
