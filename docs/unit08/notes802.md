@@ -87,15 +87,7 @@ All of the array **algorithms** can be applied to 2D arrays too. For example, *c
 #### 🧮 Counting/Accumulating
 {:.no_toc}
 
-What will the following code print out? Can you complete the method called ``getTotalForCol`` that gets the total for a column? To do this, you must loop through the rows. The array's length will tell you how many rows you have since it is an array of arrays, while the length of the array's first element will tell you how many columns.
-
-```java
-public static void main(String[] args) {
-  int[][] matrix = { {1, 2, 3}, {4, 5, 6}};
-  System.out.println(getTotalForRow(0, matrix));
-  System.out.println(getTotalForCol(0, matrix));
-}
-```
+**Method Definition:**
 ```java
 public static int getTotalForRow(int row, int[][] a) {
   int total = 0;
@@ -105,8 +97,19 @@ public static int getTotalForRow(int row, int[][] a) {
   return total;
 }
 ```
+**Method Call (in `main`):**
 ```java
-// Complete the method getTotalForCol below
+public static void main(String[] args) {
+  int[][] matrix = { {1, 2, 3}, {4, 5, 6}};
+  System.out.println(getTotalForRow(0, matrix));
+}
+```
+
+<div class="task" markdown="block">
+
+💻 Can you complete the method called ``getTotalForCol`` that computes the total for a column? To do this, you must loop through the `row`s. The array's `length` will tell you how many _rows_ you have, while the length of the array's first element will tell you how many _columns_.
+
+```java
 public static int getTotalForCol(int col, int[][] a) {
   int total = 0;
   // Add a loop here to total a column col
@@ -115,11 +118,14 @@ public static int getTotalForCol(int col, int[][] a) {
 }
 ```
 
+</div>
+
 #### 🔍 Linear Search
 {:.no_toc}
 
-What will the following code print? Can you change the code to work for a String 2D array instead of an int array? Note that the indices row and col will still be ints.
+The **linear (sequential) search algorithm** for a 2D array iterates through all of the _rows_ and _columns_ until either the **target** value is found, or the entire 2D array has been traversed without finding the target. 
 
+**Method Definition:**
 ```java
 public static boolean search(int[][] array, int value) {
   boolean found = false;
@@ -133,17 +139,26 @@ public static boolean search(int[][] array, int value) {
   return found;
 }
 ```
+**Method Call (in `main`):**
 ```java
 public static void main(String[] args) {
   int[][] matrix = { {3, 2, 3}, {4, 3, 6}, {8, 9, 3}, {10, 3, 3}};
   System.out.println(search(matrix, 10));
   System.out.println(search(matrix, 11));
-
-  // Comment out the code above, and try these:
-  // String[][] matrix2 = { {"a","b","c"},{"d","e","f"} };
-  // System.out.println(search(matrix2, "b"));
 }
 ```
+
+<div class="task" markdown="block">
+
+💻 Can you change the method's code to work for a `String` 2D array instead of an `int` array? Note that the **indices** `row` and `col` will still be integers.
+
+```java
+// In the MAIN method, try these:
+String[][] matrix2 = { {"a","b","c"},{"d","e","f"} };
+System.out.println(search(matrix2, "b"));
+```
+
+</div>
 
 
 #### 2D Arrays Practice Game
@@ -152,11 +167,12 @@ public static void main(String[] args) {
 <div class="task" markdown="block">
 
 🎲 Try the game below to practice! Click on `Arrays` and then check on `2D`. To play, click on the element of the `*` array that would be printed out by the given code. 
-> If you're stuck, check on `Labels` to see the indices. 
+> If you're stuck, check on `Labels` to see the column indices.
+
+</div>
 
 <iframe height="600px" width="100%" style="margin-left:10%;max-width:80%" src="https://csa-games.netlify.app/"></iframe>
 
-</div>
 
 ---
 
