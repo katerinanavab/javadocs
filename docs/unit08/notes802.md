@@ -75,36 +75,32 @@ All of the array **algorithms** can be applied to 2D arrays too. For example, *c
 #### 🧮 Counting/Accumulating
 {:.no_toc}
 
-What will the following code print out? Can you complete the  method called ``getTotalForCol`` that gets the total for a column? To do this, you must loop through the rows. The array's length will tell you how many rows you have since it is an array of arrays, while the length of the array's first element will tell you how many columns.
-  
-```java
-public static int getTotalForRow(int row, int[][] a)
-       {
-           int total = 0;
-           for (int col = 0; col < a[0].length; col++)
-           {
-               total = total + a[row][col];
-           }
-           return total;
-       }
-```
-```java
-       // Complete the method getTotalForCol below
-       public static int getTotalForCol(int col, int[][] a)
-       {
-           int total = 0;
-           // Add a loop here to total a column col
+What will the following code print out? Can you complete the method called ``getTotalForCol`` that gets the total for a column? To do this, you must loop through the rows. The array's length will tell you how many rows you have since it is an array of arrays, while the length of the array's first element will tell you how many columns.
 
-           return total;
-       }
+```java
+public static void main(String[] args) {
+  int[][] matrix = { {1, 2, 3}, {4, 5, 6}};
+  System.out.println(getTotalForRow(0, matrix));
+  System.out.println(getTotalForCol(0, matrix));
+}
 ```
 ```java
-       public static void main(String[] args)
-       {
-           int[][] matrix = { {1, 2, 3}, {4, 5, 6}};
-           System.out.println(getTotalForRow(0, matrix));
-           System.out.println(getTotalForCol(0, matrix));
-       }
+public static int getTotalForRow(int row, int[][] a) {
+  int total = 0;
+  for (int col = 0; col < a[0].length; col++) {
+    total = total + a[row][col];
+  }
+  return total;
+}
+```
+```java
+// Complete the method getTotalForCol below
+public static int getTotalForCol(int col, int[][] a) {
+  int total = 0;
+  // Add a loop here to total a column col
+
+  return total;
+}
 ```
 
 #### 🔍 Linear Search
