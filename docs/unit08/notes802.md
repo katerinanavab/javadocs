@@ -26,13 +26,13 @@ Since 2D arrays are really arrays of arrays you can also use a _nested_ **enhanc
 ```java
 String[][] data;
 // Nested For-Each loops to traverse a 2D String array
-for (String[] row : data) {
-  for (String col : row) {
-    System.out.println(col);
+for (String[] rowArray : data) {
+  for (String colValue : rowArray) {
+    System.out.println(colValue);
   }
 }
 ```
-> In this case the ``for (String[] row : array)`` means to loop through each element of the _outer_ array (`data`) which will set the current ``row`` to the current array of columns. Then you can loop through the values (`col`) in the column array.
+> In this case the ``for (String[] rowArray : array)`` means to loop through each element of the _outer_ array (`data`) which will set the current ``rowArray`` to the current array of columns. Then you can loop through the values (`colValue`) inside the array of columns.
 
 ### 2D Array Algorithms
 
