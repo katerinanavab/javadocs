@@ -41,6 +41,12 @@ for (String[] rowArray : data) {
 ```
 > In this case the ``for (String[] rowArray : array)`` means to loop through each element of the _outer_ array (`data`) which will set the current ``rowArray`` to the current array of columns. Then the _inner_ loop iterates through the _inner_ array (the current "column"), printing each of the values (`colValue`).
 
+<div class="imp" markdown="block">
+
+_**DATA TYPES:**_ To traverse with enhanced for-each loops, the variable of the _outer_ loop must be the `type` of each **row** - which is a 1D `array`. The _inner_ enhanced for loop variable must be the same `type` as the **elements** stored in the array.
+
+</div>
+
 ### Standard For Loops
 
 When writing **nested loops** to traverse a 2D array, **for-each** loops like above are much simpler since you don't have to use the indices and the `[]`'s, but you can only use them if you are NOT going to **modify the values** in an array. 
@@ -160,20 +166,6 @@ System.out.println(search(matrix2, "b"));
 
 </div>
 
-
-#### 2D Arrays Practice Game
-{:.no_toc}
-
-<div class="task" markdown="block">
-
-🎲 Try the game below to practice! Click on `Arrays` and then check on `2D`. To play, click on the element of the `*` array that would be printed out by the given code. 
-> If you're stuck, check on `Labels` to see the column indices.
-
-</div>
-
-<iframe height="600px" width="100%" style="margin-left:10%;max-width:80%" src="https://csa-games.netlify.app/"></iframe>
-
-
 ---
 
 ## ⭐️ Summary 
@@ -186,11 +178,22 @@ System.out.println(search(matrix2, "b"));
 
 - Nested iteration statements can be written to traverse the 2D array in "row-major order" or "column-major order."
 
-- In an enhanced for each loop, the variable of the outer loop must be the type of each row, which is a 1D array. The inner enhanced for loop variable must be the same type as the elements stored in the array.
+- In an **enhanced for-each** loop, the variable of the outer loop must be the type of each row, which is a 1D array. The inner enhanced for loop variable must be the same type as the elements stored in the array.
 
 - All standard 1D array algorithms can be applied to 2D array objects.
+  - When applying **sequential/linear search algorithms** to 2D arrays, each row must be accessed, then sequential/linear search applied to each row of a 2D array.
 
-- When applying sequential/linear search algorithms to 2D arrays, each row must be accessed then sequential/linear search applied to each row of a 2D array.
+#### 2D Arrays Practice Game
+{:.no_toc}
+
+<div class="task" markdown="block">
+
+🎲 Try the game below to practice! Click on `Arrays` and then check on `2D`. To play, click on the element of the `*` array that would be printed out by the given code. 
+> If you're stuck, check on `Labels` to see the column indices.
+
+<iframe height="600px" width="100%" style="margin-left:10%;max-width:80%" src="https://csa-games.netlify.app/"></iframe>
+
+</div>
 
 
 ---
