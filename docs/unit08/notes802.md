@@ -43,7 +43,9 @@ for (String[] rowArray : data) {
 
 ### Standard For Loops
 
-When writing **nested loops** to traverse a 2D array, **for-each** loops like above are much simpler since you don't have to use the indices and the `[]`'s, but you can only use them if you are not going to modify the values in an array. If you do need to change values, keep track of the index for another reason, stick to a **standard (indexed) for** loop.
+When writing **nested loops** to traverse a 2D array, **for-each** loops like above are much simpler since you don't have to use the indices and the `[]`'s, but you can only use them if you are not going to **modify the values** in an array. 
+
+If you _do_ need to change values, or keep track of the index for another reason, stick to a **standard (indexed) for** loop:
 
 ```java
 // STANDARD/INDEXED FOR nested loops to traverse 2D array
@@ -119,32 +121,27 @@ public static int getTotalForCol(int col, int[][] a) {
 What will the following code print? Can you change the code to work for a String 2D array instead of an int array? Note that the indices row and col will still be ints.
 
 ```java
-       public static boolean search(int[][] array, int value)
-       {
-           boolean found = false;
-           for (int row = 0; row < array.length; row++)
-           {
-               for (int col = 0; col < array[0].length; col++)
-               {
-                   if (array[row][col] == value)
-                   {
-                        found = true;
-                   }
-               }
-           }
-           return found;
-       }
+public static boolean search(int[][] array, int value) {
+  boolean found = false;
+  for (int row = 0; row < array.length; row++) {
+    for (int col = 0; col < array[0].length; col++) {
+      if (array[row][col] == value) {
+        found = true;
+      }
+    }
+  }
+  return found;
+}
 ```
 ```java
 public static void main(String[] args) {
-           int[][] matrix = { {3, 2, 3}, {4, 3, 6}, {8, 9, 3}, {10, 3, 3}};
-           System.out.println(search(matrix, 10));
-           System.out.println(search(matrix, 11));
+  int[][] matrix = { {3, 2, 3}, {4, 3, 6}, {8, 9, 3}, {10, 3, 3}};
+  System.out.println(search(matrix, 10));
+  System.out.println(search(matrix, 11));
 
-           // Comment out the code above, and try these:
-           // String[][] matrix2 = { {"a","b","c"},{"d","e","f"} };
-           // System.out.println(search(matrix2, "b"));
-
+  // Comment out the code above, and try these:
+  // String[][] matrix2 = { {"a","b","c"},{"d","e","f"} };
+  // System.out.println(search(matrix2, "b"));
 }
 ```
 
