@@ -59,7 +59,7 @@ Java actually stores a two-dimensional array as an _array of arrays_. Each eleme
 {:.highlight}
 The **outer** array can be thought of as the *rows* and the **inner** arrays as the *columns*.
 
-![image](igures/ArrayRowsAndCols.png)
+![image](Figures/ArrayRowsAndCols.png)
 
 > The picture above shows a 2D array that has 3 *rows* and 7 *columns*. Notice that the array indices start at `0` and end at the `length - 1`.
 
