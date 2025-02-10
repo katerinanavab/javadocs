@@ -43,7 +43,7 @@ for (String[] rowArray : data) {
 
 ### Standard For Loops
 
-When writing **nested loops** to traverse a 2D array, **for-each** loops like above are much simpler since you don't have to use the indices and the `[]`'s, but you can only use them if you are not going to **modify the values** in an array. 
+When writing **nested loops** to traverse a 2D array, **for-each** loops like above are much simpler since you don't have to use the indices and the `[]`'s, but you can only use them if you are NOT going to **modify the values** in an array. 
 
 If you _do_ need to change values, or keep track of the index for another reason, stick to a **standard (indexed) for** loop:
 
@@ -60,14 +60,14 @@ for (int row = 0; row < data.length; row++) {
 
 * `array.length` provides the number of **rows** in a 2D array
 * `array[0].length` provides the number of **columns**
-  > The length of the _inner_ array (the first _row_)
+  > The length of the _inner_ array (`array[0]` is the first _row_)
 
 </div>
 
 #### Looping through a Subset
 {:.no_toc}
 
-You can loop through a _subset_ (smaller portion) of a 2D array as long as you use a **standard for loop**. You can change the starting value and ending value to loop through a subset of a 2D array:
+You can loop through a _subset_ (smaller portion) of a 2D array as long as you use a **standard for loop**. You just change the _starting_ and _ending_ bounds for your loops: 
 
 ```java
 int[][] matrix = { {3, 2, 3}, {4, 3, 6}, {8, 9, 3}, {10, 3, 3}};
