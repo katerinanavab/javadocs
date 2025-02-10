@@ -53,7 +53,8 @@ public static int getTotalForRow(int row, int[][] a)
            }
            return total;
        }
-
+```
+```java
        // Complete the method getTotalForCol below
        public static int getTotalForCol(int col, int[][] a)
        {
@@ -62,7 +63,8 @@ public static int getTotalForRow(int row, int[][] a)
 
            return total;
        }
-
+```
+```java
        public static void main(String[] args)
        {
            int[][] matrix = { {1, 2, 3}, {4, 5, 6}};
@@ -93,7 +95,8 @@ You can loop through a smaller part of a 2D array as long as you use a **standar
            }
            return count;
        }
-
+```
+```java
        public static void main(String[] args)
        {
            int[][] matrix = { {3, 2, 3}, {4, 3, 6}, {8, 9, 3}, {10, 3, 3}};
@@ -122,7 +125,8 @@ What will the following code print? Can you change the code to work for a String
            }
            return found;
        }
-
+```
+```java
        public static void main(String[] args)
        {
            int[][] matrix = { {3, 2, 3}, {4, 3, 6}, {8, 9, 3}, {10, 3, 3}};
@@ -144,9 +148,9 @@ What will the following code print? Can you change the code to work for a String
 
 🎲 Try the game below to practice! Click on **Arrays** and then check on **2D** and click on the elements of the `*` array that would be printed out by the given code. If you're stuck, check on `Labels` to see the indices. We encourage you to work in pairs and see how high a score you can get.
 
-</div>
-
 <iframe height="700px" width="100%" style="margin-left:10%;max-width:80%" src="https://csa-games.netlify.app/"></iframe>
+
+</div>
 
 ---
 
