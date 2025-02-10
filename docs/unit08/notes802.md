@@ -21,13 +21,16 @@ nav_order: 2
 
 ## Traversing 2D Arrays with Nested Loops
 
-Since 2D arrays are really arrays of arrays you can also use a _nested_ **enhanced for-each loop** to loop through all elements in an array. We loop through each of the inner arrays and loop through all the values in each inner array. Notice the type of the outer loop array variable - it is an array that will hold each row, `String[]` in the example below for a 2D String array. The `type` of the variables in the for-each loops must match the type of the array. For-each loops are much simpler since you don't have to use the indices and the `[]`'s, but you can only use them if you are not going to change the values in an array of primitive types since the variable val below will not change the original array.
+Since 2D arrays are really arrays of arrays, you can use a _nested_ **enhanced for-each loop** to loop through all elements in an array. 
 
 ### Enhanced For-Each Loops
 
+We loop through each of the inner arrays and loop through all the values in each inner array. Notice the type of the outer loop array variable - it is an array that will hold each row, `String[]` in the example below for a 2D String array. The `type` of the variables in the for-each loops must match the type of the array. 
+
 ```java
 String[][] data;
-// Enhanced For-Each loops to traverse a 2D String array
+
+// ENHANCED FOR-EACH nested loops to traverse 2D array
 for (String[] rowArray : data) {
   for (String colValue : rowArray) {
     System.out.println(colValue);
@@ -38,11 +41,10 @@ for (String[] rowArray : data) {
 
 ### Standard For Loops
 
-INDEX!!!
+When writing **nested loops** to traverse a 2D array, **for-each** loops like above are much simpler since you don't have to use the indices and the `[]`'s, but you can only use them if you are not going to modify the values in an array. If you do need to change values, keep track of the index for another reason, stick to a **standard (indexed) for** loop.
 
 ```java
-String[][] data;
-// Standard For loops to traverse a 2D String array
+// STANDARD/INDEXED FOR nested loops to traverse 2D array
 for (int row = 0; row < data.length; row++) {
   for (int col = 0; col < data[row].length; col++) {
     System.out.println(data[row][col]);
@@ -128,8 +130,7 @@ What will the following code print? Can you change the code to work for a String
        }
 ```
 ```java
-       public static void main(String[] args)
-       {
+public static void main(String[] args) {
            int[][] matrix = { {3, 2, 3}, {4, 3, 6}, {8, 9, 3}, {10, 3, 3}};
            System.out.println(search(matrix, 10));
            System.out.println(search(matrix, 11));
@@ -138,18 +139,19 @@ What will the following code print? Can you change the code to work for a String
            // String[][] matrix2 = { {"a","b","c"},{"d","e","f"} };
            // System.out.println(search(matrix2, "b"));
 
-       }
+}
 ```
 
 
-#### 2D Arrays Game
+#### 2D Arrays Practice Game
 {:.no_toc}
 
 <div class="task" markdown="block">
 
-🎲 Try the game below to practice! Click on **Arrays** and then check on **2D** and click on the elements of the `*` array that would be printed out by the given code. If you're stuck, check on `Labels` to see the indices. We encourage you to work in pairs and see how high a score you can get.
+🎲 Try the game below to practice! Click on `Arrays` and then check on `2D`. To play, click on the element of the `*` array that would be printed out by the given code. 
+> If you're stuck, check on `Labels` to see the indices. 
 
-<iframe height="700px" width="100%" style="margin-left:10%;max-width:80%" src="https://csa-games.netlify.app/"></iframe>
+<iframe height="600px" width="100%" style="margin-left:10%;max-width:80%" src="https://csa-games.netlify.app/"></iframe>
 
 </div>
 
