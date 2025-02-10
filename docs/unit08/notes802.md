@@ -23,6 +23,8 @@ nav_order: 2
 
 Since 2D arrays are really arrays of arrays, you can use **nested loops** to iterate through all elements in an array. We first loop through each of the rows (the "_inner arrays_"), and then loop through all the values inside each inner array.
 
+![image](Figures/ArrayRowsAndCols.png)
+
 ### Enhanced For-Each Loops
 
 An **enhanced for-each** loop "visits" each item in an array sequentially. Notice the type of the outer loop array variable - it is an array that will hold each row, `String[]` in the example below for a 2D String array. The `type` of the variables in the for-each loops must match the type of the array. 
@@ -51,6 +53,14 @@ for (int row = 0; row < data.length; row++) {
   }
 }
 ```
+
+<div class="imp" markdown="block">
+
+* `array.length` provides the number of **rows** in a 2D array
+* `array[0].length` provides the number of **columns**
+  > The length of the _inner_ array (the first _row_)
+
+</div>
 
 #### Looping through a Subset
 {:.no_toc}
