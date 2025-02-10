@@ -41,7 +41,7 @@ for (String[] rowArray : data) {
 ```
 > In this case the ``for (String[] rowArray : array)`` means to loop through each element of the _outer_ array (`data`) which will set the current ``rowArray`` to the current array of columns. Then the _inner_ loop iterates through the _inner_ array (the current "column"), printing each of the values (`colValue`).
 
-<div class="imp" markdown="block">
+<div class="warn" markdown="block">
 
 _**DATA TYPES:**_ To traverse with enhanced for-each loops, the variable of the _outer_ loop must be the `type` of each **row** - which is a 1D `array`. The _inner_ enhanced for loop variable must be the same `type` as the **elements** stored in the array.
 
