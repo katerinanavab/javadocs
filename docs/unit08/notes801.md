@@ -37,6 +37,10 @@ nav_order: 1
 
 ## Two-Dimensional (2D) Arrays
 
+We have only worked with one-dimensional arrays so far, which have a single row of elements. But in the real world, data is often represented in a **two-dimensional table** with **rows** and **columns**. Programming languages can also represent arrays this way with multiple dimensions. A `two-dimensional (2D) array` has _rows_ and _columns_. 
+> A 2D array in Java is actually _an array of arrays_!
+
+
 
 ---
 
