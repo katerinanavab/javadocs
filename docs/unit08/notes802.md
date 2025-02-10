@@ -27,7 +27,7 @@ Since 2D arrays are really arrays of arrays you can also use a _nested_ **enhanc
 
 ```java
 String[][] data;
-// Nested For-Each loops to traverse a 2D String array
+// Enhanced For-Each loops to traverse a 2D String array
 for (String[] rowArray : data) {
   for (String colValue : rowArray) {
     System.out.println(colValue);
@@ -37,6 +37,21 @@ for (String[] rowArray : data) {
 > In this case the ``for (String[] rowArray : array)`` means to loop through each element of the _outer_ array (`data`) which will set the current ``rowArray`` to the current array of columns. Then the _inner_ loop iterates through the _inner_ array (the current "column"), printing each of the values (`colValue`).
 
 ### Standard For Loops
+
+INDEX!!!
+
+```java
+String[][] data;
+// Standard For loops to traverse a 2D String array
+for (int row = 0; row < data.length; row++) {
+  for (int col = 0; col < data[row].length; col++) {
+    System.out.println(data[row][col]);
+  }
+}
+```
+
+#### Looping through a Subset
+{:.no_toc}
 
 You can loop through a _subset_ (smaller portion) of a 2D array as long as you use a **standard for loop**. You can change the starting value and ending value to loop through a subset of a 2D array:
 
