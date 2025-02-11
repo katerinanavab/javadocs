@@ -8,14 +8,19 @@ nav_order: 5
 
 ### Overview & Setup
 
-You will design and implement a **grid-based game** in Java using **2D arrays**. Your game should use a **10×10 grid (or another size of your choice)** to store and update game state. You can model classic games (e.g., Battleship, Minesweeper, Tic-Tac-Toe) or create your own!
+🎲🃏🧩 You will design and implement a **grid-based game** in Java using **2D arrays**. Your game should use a **10×10 grid** (_or another size of your choice_) `object` to store and update game state. You can model classic games (_e.g., Battleship, Minesweeper, Tic-Tac-Toe_) or create your own!
 
 This project will strengthen your understanding of:
-- **Declaring and initializing 2D arrays**
-- **Accessing and modifying elements in a 2D array**
-- **Iterating through 2D arrays using loops**
-- **Handling user input**
-- **Displaying a 2D grid in the console**
+- **Declaring & initializing** 2D arrays
+- **Accessing & modifying** elements in a 2D array
+- **Iterating** through 2D arrays using **nested loops**
+
+#### Brainstorming Prompts
+🧠 Not sure where to start? Here are some ideas:
+- **Classic Grid Games:** Tic-Tac-Toe, Battleship, Minesweeper, Connect Four
+- **Memory Game:** Flip tiles to match pairs.
+- **Dungeon Crawler:** A player moves through a grid avoiding traps and collecting items.
+- **Snake Game:** A randomly-placed snake grows as it eats food, avoiding walls and itself.
 
 <div class="setup" markdown="block">
 
@@ -29,25 +34,18 @@ This project will strengthen your understanding of:
 
 ---
 
-### Brainstorming Prompts
-Not sure where to start? Here are some ideas:
-- **Classic Grid Games:** Tic-Tac-Toe, Battleship, Minesweeper, Connect Four
-- **Memory Game:** Flip tiles to match pairs.
-- **Dungeon Crawler:** A player moves through a grid avoiding traps and collecting items.
-- **Snake Game:** A randomly-placed snake grows as it eats food, avoiding walls and itself.
-
 ### Project Requirements
 Your program should:
-✅ Use a **2D array** to store the game board.  
-✅ Implement **at least one method** that modifies the grid.  
-✅ Allow **player input** to update the grid (e.g., move a character, place a symbol).  
-✅ Display the **updated grid** after each move.  
-✅ Implement **win/lose conditions** (if applicable).  
+- ✅ Use a **2D array** to store the game board.  
+- ✅ Implement **at least one method** that modifies the grid.  
+- ✅ Allow **player input** to update the grid (_e.g., move a character, place a symbol_).  
+- ✅ Display the **updated grid** after each move.  
+- ✅ Implement **win/lose conditions** (_if applicable_).  
 
 #### Bonus Features (Optional)
 🌟 Use **randomized elements** (e.g., randomly place enemies or obstacles).  
 🌟 Implement **multiple players or an AI opponent**.  
-🌟 Add **a graphical user interface (GUI) using Java Swing**.
+🌟 Add **a graphical user interface (GUI)** using Java Swing.
 
 ---
 
@@ -188,10 +186,10 @@ public void aiMove() {
 </div>
 
 ### Extensions
-🎲 **Want randomness?** Randomize enemy placement or obstacles using `Math.random()`.
-🎨 **Want graphics?** Try using Java Swing GUI for a visual game.
+- 🎲 **Want randomness?** Randomize enemy placement or obstacles using `Math.random()`.
+- 🎨 **Want graphics?** Try using Java Swing GUI for a visual game.
   > See my `Java Swing` demo: [GitHub Swing GUI](https://github.com/katerinanavab/JavaGUI-Demo). 
-🤖 **Want a better AI?** Implement a simple _minimax_ algorithm for Tic-Tac-Toe.
+- 🤖 **Want a better AI?** Implement a simple _minimax_ algorithm for Tic-Tac-Toe.
   > Refer to [Minimax Algorithm in Game Theory](https://www.geeksforgeeks.org/minimax-algorithm-in-game-theory-set-1-introduction/).
 
 
