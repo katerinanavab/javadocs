@@ -49,7 +49,7 @@ Your program should:
 
 ---
 
-### Instructions
+### Instructions & Guidelines
 
 #### 1. Set Up Your Grid
 
