@@ -40,12 +40,12 @@ Your program should:
 - ✅ Implement **at least one method** that modifies the grid.  
 - ✅ Allow **player input** to update the grid (_e.g., move a character, place a symbol_).  
 - ✅ Display the **updated grid** after each move.  
-- ✅ Implement **win/lose conditions** (_if applicable_).  
+- ✅ Implement **win/lose conditions**.  
 
 #### Bonus Features (Optional)
-🌟 Use **randomized elements** (e.g., randomly place enemies or obstacles).  
-🌟 Implement **multiple players or an AI opponent**.  
-🌟 Add **a graphical user interface (GUI)** using Java Swing.
+- 🌟 Use **randomized elements** (e.g., randomly place enemies or obstacles).  
+- 🌟 Implement **multiple players or an AI opponent**.  
+- 🌟 Add **a graphical user interface (GUI)** using Java Swing.
 
 ---
 
@@ -103,6 +103,7 @@ public class GridGame {
 - Prevent **invalid moves** (e.g., out-of-bounds positions or occupied spaces).
 
 _EXAMPLE:_ Use **if statements** to check if a move is legal before updating the grid.
+
 ```java
 // 3x3 Tic-Tac-Toe Example
 public void playerMove(int row, int col) {
@@ -114,7 +115,9 @@ public void playerMove(int row, int col) {
   }
 }
 ```
-Gameplay loop in the `Main.java` file's `main` method:
+> Write any gameplay **method definitions** like the one above in the `GridGame.java` class.
+
+Handle the **gameplay loop** in the `Main.java` class' `main` method:
 ```java
 while (true) {
   game.displayGrid();
