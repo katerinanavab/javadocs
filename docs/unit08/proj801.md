@@ -134,12 +134,10 @@ while (true) {
 <div class="task" markdown="block">
 
 - Decide on your game's **rules and objectives**.
-- Implement **winning conditions** if needed (e.g., three in a row for Tic-Tac-Toe).
-- Consider adding **random events** (e.g., hidden traps or treasure).
+- Implement **winning conditions** if needed (_e.g., three in a row for Tic-Tac-Toe_).
+- Consider adding **random events** (_e.g., hidden traps or treasure_).
 
-**Hint:**  
-For Tic-Tac-Toe, check **rows, columns, and diagonals** for three matching symbols.
-
+*EXAMPLE:* For Tic-Tac-Toe, check **rows, columns, and diagonals** for three matching symbols.
 ```java
 // 3x3 Tic-Tac-Toe example
 public boolean checkWin(char symbol) {
@@ -168,7 +166,7 @@ public boolean checkWin(char symbol) {
 - Use **emojis or ASCII art** to make the grid look better in the console.
 - Add a **score counter** or a **turn limit**.
 - Make the game **multi-round** or **multiplayer**.
-  > *Hint:* Use **loops and conditionals** to track rounds and game progress.
+  > *HINT:* Use **loops and conditionals** to track rounds and game progress.
 - Make an AI that plays **random moves** in an empty spot like in the example below.
 
 ```java
