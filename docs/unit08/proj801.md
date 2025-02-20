@@ -15,12 +15,18 @@ This project will strengthen your understanding of:
 - **Accessing & modifying** elements in a 2D array
 - **Iterating** through 2D arrays using **nested loops**
 
-#### Brainstorming Prompts
-🧠 Not sure where to start? Here are some ideas:
-- **Classic Grid Games:** Tic-Tac-Toe, Battleship, Minesweeper, Connect Four
-- **Memory Game:** Flip tiles to match pairs.
+#### 🧠 Brainstorming Ideas
+Not sure where to start? Look into these examples:
+- **Classic Grid Games:** Tic-Tac-Toe, Battleship, Minesweeper, Connect Four, Checkers
 - **Dungeon Crawler:** A player moves through a grid avoiding traps and collecting items.
 - **Snake Game:** A randomly-placed snake grows as it eats food, avoiding walls and itself.
+
+#### 💡 Planning Prompts
+In your `README.md` file, answer the following questions about your chosen game:
+1. What is the _structure_ of the grid? What _data type_ would be appropriate for the individual **grid cells**? (`char` for single symbols, `String` for words, `int` or `double` for 
+  > Consider using **two** same-size 2D arrays if you need to "hide" the full board from the player, like in Battleship.
+2. How does a _round of gameplay_ look? What _actions_ can the player take?
+3. How does _scorekeeping_ look? What is the criteria for a win?
 
 <div class="setup" markdown="block">
 
