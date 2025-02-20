@@ -23,7 +23,7 @@ Not sure where to start? Look into these examples:
 
 #### 💡 Planning Prompts
 In your `README.md` file, answer the following questions about your chosen game:
-1. What is the _structure_ of the grid? What _data type_ would be appropriate for the individual **grid cells**? (`char` for single symbols, `String` for words, `int` or `double` for 
+1. What is the _structure_ of the grid? What _data type_ would be appropriate for the individual **grid cells**? (`char` for single symbols, `String` for words, `int` or `double` for numerical values)
   > Consider using **two** same-size 2D arrays if you need to "hide" the full board from the player, like in Battleship.
 2. How does a _round of gameplay_ look? What _actions_ can the player take?
 3. How does _scorekeeping_ look? What is the criteria for a win?
