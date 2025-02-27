@@ -15,21 +15,21 @@ nav_order: 4
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 9.4]() 
+📖 This page is a condensed version of [CSAwesome Topic 9.4](https://runestone.academy/ns/books/published/csawesome/Unit9-Inheritance/topic-9-4-super.html) 
 
 ---
 
-## Class Inheritance
+## The `super` Keyword
 
-#### 💻 In-Class Activity
+#### 💻 In-Class Activity: Customer Info
 {:.no_toc}
 
 
 <div class="task" markdown="block">
     
-1. Go to <a href=""><button type="button" name="button" class="btn">CSAwesome Topic 9.4</button></a> 
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit9-Inheritance/topic-9-4-super.html"><button type="button" name="button" class="btn">CSAwesome Topic 9.4</button></a> 
 2. Make sure you **SIGN IN**!
-3. Complete the **Programming Challenge: ** activity in pairs.
+3. Complete the **Programming Challenge: Customer Info** activity in pairs.
 
 </div>
 
