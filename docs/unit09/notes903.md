@@ -15,21 +15,21 @@ nav_order: 3
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 9.3]() 
+📖 This page is a condensed version of [CSAwesome Topic 9.3](https://runestone.academy/ns/books/published/csawesome/Unit9-Inheritance/topic-9-3-overriding.html) 
 
 ---
 
-## Class Inheritance
+## Overriding Inherited Methods
 
-#### 💻 In-Class Activity
+#### 💻 In-Class Activity: Pet Sounds
 {:.no_toc}
 
 
 <div class="task" markdown="block">
     
-1. Go to <a href=""><button type="button" name="button" class="btn">CSAwesome Topic 9.3</button></a> 
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit9-Inheritance/topic-9-3-overriding.html"><button type="button" name="button" class="btn">CSAwesome Topic 9.3</button></a> 
 2. Make sure you **SIGN IN**!
-3. Complete the **Programming Challenge: ** activity in pairs.
+3. Complete the **Programming Challenge: Pet Sounds** activity in pairs.
 
 </div>
 
