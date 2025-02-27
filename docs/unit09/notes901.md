@@ -15,7 +15,7 @@ nav_order: 1
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 9.1]() 
+📖 This page is a condensed version of [CSAwesome Topic 9.1](https://runestone.academy/ns/books/published/csawesome/Unit9-Inheritance/topic-9-1-inheritance.html?mode=browsing) 
 
 #### Using a GitHub Template for class notes 
 {:.no_toc}
@@ -37,15 +37,24 @@ nav_order: 1
 
 ## Class Inheritance
 
-#### 💻 In-Class Activity
+### Subclass `extends` Superclass
+
+#### Why Use Inheritance?
+{:.no_toc}
+
+### IS-A vs. HAS-A Relationships
+
+#### is-a Substitution Test
+
+#### 💻 In-Class Activity: Online Store
 {:.no_toc}
 
 
 <div class="task" markdown="block">
     
-1. Go to <a href=""><button type="button" name="button" class="btn">CSAwesome Topic 9.1</button></a> 
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit9-Inheritance/topic-9-1-inheritance.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 9.1</button></a> 
 2. Make sure you **SIGN IN**!
-3. Complete the **Programming Challenge: ** activity in pairs.
+3. Complete the **Programming Challenge: Online Store** activity in pairs.
 
 </div>
 
