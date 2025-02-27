@@ -37,10 +37,64 @@ nav_order: 1
 
 ## Class Inheritance
 
+One of the really useful features of Object-Oriented programming is **inheritance**.  You may have heard of someone coming into an inheritance, which often means they were left something from a relative who died.  Or, you might hear someone say that they have inherited musical ability from a parent.  In Java all classes can **inherit** attributes (instance variables) and behaviors (methods) from another class.  The class being inherited from is called the **parent class** or **superclass**.  The class that is inheriting is called the **child class** or **subclass**.
+
+When one class inherits from another, we can say that it is the *same kind of thing* as the **parent class** (the class it inherits from).  For example, a car is a kind of vehicle.  This is sometimes called the *is-a* relationship, but more accurately it's a *is-a kind of* relationship.  A motorcycle is another kind of vehicle.  All vehicles have a make, model, and year that they were created.  All vehicles can go forward, backward, turn left and turn right.
+
+![image](Figures/vehicle.png)
+
+A **UML (Unified Modeling Language) class diagram** shows classes and the relationships between the classes as seen above.  An open triangle points to the **parent** class.  
+> The parent class for ``Car`` and ``Motorcycle`` is ``Vehicle``. The ``Vehicle`` class has two child classes or subclasses: ``Car`` and ``Motorcycle``.
+
 ### Subclass `extends` Superclass
+
+To make a subclass inherit from a superclass, use the Java keyword `extends` with the superclass name when creating a new subclass as shown below.
+
+```java
+public class Car extends Vehicle {}
+public class Motorcycle extends Vehicle {}
+```
+
+{:.highlight}
+While a human can have two parents, a Java class **can only inherit from _ONE_ parent class**. If you leave off the `extends` keyword when you declare a class, then the class will inherit from the ``Object`` class that is already defined in Java.
 
 #### Why Use Inheritance?
 {:.no_toc}
+
+Inheritance allows you to **reuse data and behavior** from the parent class.  If you notice that several classes share the same data and/or behavior,  you can pull that out into a parent class.  This is called **generalization**. 
+> For example, `Customers` and `Employees` are both people, so it makes sense use the general `Person` class as seen below.
+
+Inheritance is also useful for **specialization** which is when you want most of the behavior of a parent class, but want to do at least one thing differently and/or add more data.  The example below can also be seen as specialization.  An employee is a person but also has a unique id.  A customer is a person, but also has a credit card.
+
+![image](Figures/person.png)
+
+The `Student` class can also **inherit** from the class `Person` just like `Employee` and `Customer` because a `Student` ***is a** type of* `Person`.
+
+<div class="task" markdown="block">
+
+* 💻 **FIX CODE:** What do you need to add to the `Student` class declaration below to make it **inherit** from type `Person`? 
+    > When you fix the code below, the `instanceof` operator would return `true` that `Student s` _is an **instance** of_ both the `Student` and the `Person` class. 
+
+```java
+public class Person {
+    private String name;
+}
+```
+```java
+public class Student {
+    private int id;
+
+    public static void main(String[] args) {
+        Student s = new Student();
+        System.out.println(s instanceof Student);
+        System.out.println(s instanceof Person);
+    }
+}
+```
+
+* 💬 **DISCUSS:** What other private instance variables could you add to `Person` and `Student`? In which class would you put an _address_ attribute? Where would you put _GPA_?
+
+</div>
 
 ### IS-A vs. HAS-A Relationships
 
