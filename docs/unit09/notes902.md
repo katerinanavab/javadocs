@@ -15,21 +15,21 @@ nav_order: 2
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 9.2]() 
+📖 This page is a condensed version of [CSAwesome Topic 9.2](https://runestone.academy/ns/books/published/csawesome/Unit9-Inheritance/topic-9-2-constructors.html) 
 
 ---
 
-## Class Inheritance
+## Inheritance and Constructors
 
-#### 💻 In-Class Activity
+#### 💻 In-Class Activity: Square is-a Rectangle
 {:.no_toc}
 
 
 <div class="task" markdown="block">
     
-1. Go to <a href=""><button type="button" name="button" class="btn">CSAwesome Topic 9.2</button></a> 
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit9-Inheritance/topic-9-2-constructors.html"><button type="button" name="button" class="btn">CSAwesome Topic 9.2</button></a> 
 2. Make sure you **SIGN IN**!
-3. Complete the **Programming Challenge: ** activity in pairs.
+3. Complete the **Programming Challenge: Square is-a Rectangle** activity in pairs.
 
 </div>
 
