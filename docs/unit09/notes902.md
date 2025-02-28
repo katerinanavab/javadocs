@@ -21,7 +21,10 @@ nav_order: 2
 
 ## Inheritance and Constructors
 
-Subclasses inherit ``public`` **methods** from the superclass that they extend, but they cannot access the ``private`` **instance variables** of the superclass directly. And subclasses do NOT inherit **constructors** from the superclass. 
+Subclasses inherit ``public`` **methods** from the superclass that they extend, but they cannot access the ``private`` **instance variables** of the superclass directly. 
+
+{:.important}
+🚫🏗️ Subclasses do _NOT_ inherit **constructors** from the superclass! 
 
 But inherited instance variables need to be _properly initialized_ or none of the inherited methods are likely to work properly, so how can a subclass initialize
 the superclass's ``private`` variables?
