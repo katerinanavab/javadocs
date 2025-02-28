@@ -197,7 +197,18 @@ to meet a more complex set of requirements in order to be useful.
 
 ## ⭐️ Summary
 
+- The ``Object`` class is the superclass of all other classes in Java and a part of the built-in ``java.lang`` package.
 
+- The following ``Object`` class methods are part of the Java Quick Reference:
+
+  - ``String toString()``
+  - ``boolean equals(Object other)``
+
+- Subclasses of Object often override the ``toString`` and ``equals`` methods
+  with class-specific implementations.
+
+- When overriding ``equals``, it’s important to satisfy all the requirements of
+  a correct implementation.
 
 ---
 
