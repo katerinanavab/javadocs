@@ -98,7 +98,37 @@ public class Student {
 
 ### IS-A vs. HAS-A Relationships
 
+Another type of relationship between classes is the **has-a** relationship or **association** relationship.  Use this when the object of one class contains a reference to one or more of another class.  For example, a course can have many course periods associated with it as shown below.  The ``1`` near the ``Course`` means that ``1`` course object is associated with the number shown near the other class.  In this case it is ``*`` which means 0 to many.  So one course is associated with 0 to many course periods.
+
+![image](Figures/assoc.png)
+
+In the code, the ``Course`` class **has** an array or ArrayList of ``CoursePeriod`` objects as an attribute inside it.
+
+```java
+public class Course {
+    private ArrayList<CoursePeriod> periodList;
+}
+```
+
+Alternatively, we could say that a CoursePeriod  has a Course attribute inside it to hold the information about the Course. It is up to the programmer how to design these two classes depending on which type of association would be more useful in the program.
+
+```java
+public class CoursePeriod {
+    private Course courseInfo;
+    private int period;
+}
+```
+
+Here is another example. Consider the classes Student, Course, and  APcourse. An APcourse is a special type of Course. Students are in Courses. What are the relationships between these classes? The UML diagram below shows the inherits (is-a) relationship between Course and APcourse and the associate (has-a) relationship between Course and Students.
+
+![image](Figures/APcourseUML.png)
+
 #### is-a Substitution Test
+
+If you aren't sure if a class should inherit from another class ask yourself if you can substitute the subclass type for the superclass type. For example, if you have a ``Book`` class and it has a subclass of ``ComicBook`` does that make sense?  Is a comic book a kind of book?  Yes, a comic book **is a kind of** book so inheritance makes sense.  If it doesn't make sense use *association* or the *has-a* relationship instead.
+
+{:.highlight}
+Only use **inheritance** (_is-a_) when the child class is truly a **type of** the parent class, otherwise use **association** (_has-a_).
 
 #### 💻 In-Class Activity: Online Store
 {:.no_toc}
@@ -116,6 +146,12 @@ public class Student {
 
 ## ⭐️ Summary
 
+- A class hierarchy can be developed by putting common attributes and behaviors of related classes into a single class called a **superclass**.
+
+- Classes that extend a superclass, called **subclasses**, can draw upon the existing attributes and behaviors of the superclass without repeating these in the code.
+
+- The keyword **extends** is used to establish an **inheritance** relationship between a **subclass** and a **superclass**.  A class can extend only one superclass.
+    - Extending a subclass from a superclass creates an **is-a relationship** from the subclass to the superclass.
 
 
 <div class="warn" markdown="block">
