@@ -21,40 +21,22 @@ nav_order: 2
 
 ## Inheritance and Constructors
 
-Subclasses inherit ``public`` methods from the superclass that they extend, but
-they cannot access the ``private`` instance variables of the superclass
-directly. And subclasses do not inherit constructors from the superclass. But
-inherited instance variables need to be properly initialized or none of the
-inherited methods are likely to work properly, so how can a subclass initialize
-the superclass's ``private`` variables?
+Subclasses inherit ``public`` **methods** from the superclass that they extend, but they cannot access the ``private`` **instance variables** of the superclass directly. And subclasses do NOT inherit **constructors** from the superclass. 
 
-If the super class provides ``public`` setter methods for those variables the
-subclass could use those. But that won't always be the case. And sometimes
-constructors do more complex initialization than just setting variables.
+But inherited instance variables need to be _properly initialized_ or none of the inherited methods are likely to work properly, so how can a subclass initialize
+the superclass's ``private`` variables?
+> If the super class provides ``public`` setter methods for those variables the subclass could use those. But that won't always be the case! And sometimes constructors do more complex initialization than just setting variables...
 
 ### The `super` Keyword
 
-The way out is provided by the keyword ``super``. When used like the name of a
-method, i.e. when followed with parentheses and arguments, ``super`` provides a
-way to call the code in a superclass constructor, passing whatever arguments it
-needs. But unlike when we call a constructor with ``new``, a call to ``super``
-doesn't create a new object. Instead it runs the constructor’s code in the
-context of the object currently being constructed. This lets the superclass
-constructor initialize the instance variables declared in the superclass
-including ``private`` variables the subclass can’t directly access.
+The way out is provided by the keyword ``super``. When used like the name of a method, i.e. when followed with **parentheses** and **arguments**, ``super`` provides a way to call the code in a **superclass constructor**, passing whatever arguments it needs. 
 
-It’s critical that all the instance variables in an object be properly
-initialized before the object is used, including by code in the rest of the
-constructor. To ensure that, if the constructor doesn’t start with a call to
-``super`` Java will automatically insert a call to ``super`` with no arguments.
-(That means if the superclass does not have a no-argument constructor that the
-subclasses will have to explicitly call ``super`` with the appropriate arguments
-for some constructor that does exist. This ensures that instances of the
-subclass are properly initialized.)
+But unlike when we call a constructor with ``new``, a call to ``super`` doesn't create a new object. Instead it runs the constructor’s code in the _context of the object currently being constructed_. This lets the superclass constructor initialize the instance variables declared in the superclass including ``private`` variables the subclass can’t directly access.
 
-For example the call to ``super(theName)`` in ``Employee`` below runs the code
-in the ``Person`` constructor that takes a ``String`` argument which presumably
-initializes an instance variable in the ``Person`` class to hold the name.
+It’s critical that all the instance variables in an object be properly initialized before the object is used, including by code in the rest of the constructor. To ensure that, if the constructor doesn’t start with a call to ``super`` Java will automatically insert a call to ``super`` with no arguments.
+> That means if the superclass does not have a no-argument constructor, that the subclasses will have to explicitly call ``super`` with the appropriate arguments for some constructor that does exist. This ensures that instances of the subclass are **properly initialized**.
+
+For example the call to ``super(theName)`` in ``Employee`` below runs the code in the ``Person`` constructor that takes a ``String`` argument which presumably initializes an instance variable in the ``Person`` class to hold the name.
 
 ```java
 public class Employee extends Person {
@@ -66,27 +48,16 @@ public class Employee extends Person {
 
 ### Chain of Initialization
 
-As you may recall from Unit 5, if you do not write a constructor your class will
-automatically get a default no-argument constructor. In addition to initializing
-all instance variables to the default value for their type, the default
-no-argument constructor calls the superclass's no-argument constructor.
+As you may recall from Unit 5, if you do not write a constructor your class will _automatically_ get a **default no-argument constructor**. What does this mean for classes with **inheritance** realtionships?
+* In addition to _initializing_ all instance variables to the default value for their type, the default no-argument constructor of a **subclass** calls the **superclass**'s no-argument constructor.
+* This means you can only write a class with a default no-argument constructor if its **superclass** has a no-argument constructor.
+    * If you are extending a class _without_ a no-argument constructor, but you want your **subclass** to have a no-argument constructor, you will need to _explicitly_ write one and use ``super`` to call an *existing constructor* on the superclass with appropriate **arguments**.
 
-This means you can only write a class with a default no-argument constructor if
-its superclass has a no-argument constructor. If you are extending a class
-without a no-argument constructor but you want your class to have a no-argument
-constructor you will need to explicitly write one and use ``super`` to call an
-existing constructor on the superclass with appropriate arguments.
-
-However it is created, explicitly or implicitly, the chain of ``super`` calls
-from each subclass to its superclass ends in the no-argument constructor of
-``java.lang.Object``. This is a special class defined in Java which is the superclass
-of any class that doesn’t explicitly ``extend`` some other class and the only
-class with no superclass and thus no ``super`` constructor that needs to be
-called.
+🛑 However it is created, explicitly or implicitly, the **chain** of ``super`` calls from each subclass to its superclass **ends** in the no-argument constructor of ``java.lang.Object``. 
+> `Object` is a special class defined in Java which is the **superclass** of any class that doesn’t explicitly ``extend`` some other class. `Object` is the only class with **no superclass** above it, and thus no ``super`` constructor that needs to be called.
 
 #### 💻 In-Class Activity: Square is-a Rectangle
 {:.no_toc}
-
 
 <div class="task" markdown="block">
     
