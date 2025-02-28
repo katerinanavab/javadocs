@@ -37,9 +37,14 @@ nav_order: 1
 
 ## Class Inheritance
 
-One of the really useful features of Object-Oriented programming is **inheritance**.  You may have heard of someone coming into an inheritance, which often means they were left something from a relative who died.  Or, you might hear someone say that they have inherited musical ability from a parent.  In Java all classes can **inherit** attributes (instance variables) and behaviors (methods) from another class.  The class being inherited from is called the **parent class** or **superclass**.  The class that is inheriting is called the **child class** or **subclass**.
+One of the really useful features of Object-Oriented programming is **inheritance**.  
+> You may have heard of someone coming into an inheritance, which often means they were left something from a relative. Or, you might hear someone say that they have _inherited_ musical ability from a parent.  
 
-When one class inherits from another, we can say that it is the *same kind of thing* as the **parent class** (the class it inherits from).  For example, a car is a kind of vehicle.  This is sometimes called the *is-a* relationship, but more accurately it's a *is-a kind of* relationship.  A motorcycle is another kind of vehicle.  All vehicles have a make, model, and year that they were created.  All vehicles can go forward, backward, turn left and turn right.
+{:.important}
+In Java all classes can **inherit** _attributes_ (instance variables) and _behaviors_ (methods) from another class. The class being _inherited from_ is called the **parent class** or **superclass**.  The class that is _inheriting_ is called the **child class** or **subclass**.
+
+When one class inherits from another, we can say that it is the *same kind of thing* as the **parent class** (the class it inherits from).  
+> For example, a car **is a specific kind of** vehicle.  This is sometimes called the *is-a* relationship, but more accurately it's a *is-a kind of* relationship.  A motorcycle is another kind of vehicle.  All vehicles have a `make`, `model`, and `year` that they were created.  All vehicles can go `forward`, `backward`, `turnLeft` and `turnRight`.
 
 ![image](Figures/vehicle.png)
 
@@ -48,7 +53,7 @@ A **UML (Unified Modeling Language) class diagram** shows classes and the relati
 
 ### Subclass `extends` Superclass
 
-To make a subclass inherit from a superclass, use the Java keyword `extends` with the superclass name when creating a new subclass as shown below.
+To make a subclass inherit from a superclass, use the Java keyword `extends` with the **superclass** name when creating a new subclass as shown below:
 
 ```java
 public class Car extends Vehicle {}
