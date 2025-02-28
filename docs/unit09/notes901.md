@@ -98,11 +98,14 @@ public class Student {
 
 ### IS-A vs. HAS-A Relationships
 
-Another type of relationship between classes is the **has-a** relationship or **association** relationship.  Use this when the object of one class contains a reference to one or more of another class.  For example, a course can have many course periods associated with it as shown below.  The ``1`` near the ``Course`` means that ``1`` course object is associated with the number shown near the other class.  In this case it is ``*`` which means 0 to many.  So one course is associated with 0 to many course periods.
+Another type of _relationship between classes_ is the **association** relationship, or "**HAS-A**" relationship. Use this when the object of one class contains a _reference_ to one or more of another class. 
+
+For example, a course can have many course periods associated with it as shown below:  
 
 ![image](Figures/assoc.png)
+> The ``1`` near the ``Course`` means that ``1`` course object is associated with the number shown near the other class. In this case it is ``*``, which means "0 to many". So one course is associated with *0 to many* course periods.
 
-In the code, the ``Course`` class **has** an array or ArrayList of ``CoursePeriod`` objects as an attribute inside it.
+In the code, the ``Course`` class **has** an array or ArrayList of ``CoursePeriod`` objects as an _attribute_ (instance variable inside it:
 
 ```java
 public class Course {
@@ -110,7 +113,8 @@ public class Course {
 }
 ```
 
-Alternatively, we could say that a CoursePeriod  has a Course attribute inside it to hold the information about the Course. It is up to the programmer how to design these two classes depending on which type of association would be more useful in the program.
+Alternatively, we could say that a `CoursePeriod` **has-a** `Course` attribute inside it to hold the information about the course. 
+> It is up to the programmer how to design these two classes depending on which type of association would be more useful in the program.
 
 ```java
 public class CoursePeriod {
@@ -119,13 +123,19 @@ public class CoursePeriod {
 }
 ```
 
-Here is another example. Consider the classes Student, Course, and  APcourse. An APcourse is a special type of Course. Students are in Courses. What are the relationships between these classes? The UML diagram below shows the inherits (is-a) relationship between Course and APcourse and the associate (has-a) relationship between Course and Students.
+Here is another example. Consider the classes `Student`, `Course`, and `APcourse`. An `APcourse` is a specialized **type of** `Course`. _Students_ register for _Courses_. So what are the relationships between these classes? 
 
 ![image](Figures/APcourseUML.png)
 
+> The UML diagram above shows:
+> * The **inherits** (**IS-A**) relationship between `Course` and `APcourse`
+> * The **associate** (**HAS-A**) relationship between `Course` and `Student`s.
+
 #### is-a Substitution Test
 
-If you aren't sure if a class should inherit from another class ask yourself if you can substitute the subclass type for the superclass type. For example, if you have a ``Book`` class and it has a subclass of ``ComicBook`` does that make sense?  Is a comic book a kind of book?  Yes, a comic book **is a kind of** book so inheritance makes sense.  If it doesn't make sense use *association* or the *has-a* relationship instead.
+If you aren't sure if a class should inherit from another class ask yourself **if you can substitute** the subclass type for the superclass type. 
+
+For example, if you have a ``Book`` class and it has a subclass of ``ComicBook`` does that make sense?  Is a comic book a kind of book?  Yes, a comic book **is a kind of** book so _inheritance_ makes sense.  If it doesn't make sense use *association* or the **has-a** relationship instead.
 
 {:.highlight}
 Only use **inheritance** (_is-a_) when the child class is truly a **type of** the parent class, otherwise use **association** (_has-a_).
