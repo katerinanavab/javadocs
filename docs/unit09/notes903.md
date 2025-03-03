@@ -35,13 +35,6 @@ public class Greeter {
    public String greet() {
       return "Hi";
    }
-
-   public static void main(String[] args) {
-      Greeter g1 = new Greeter();
-      System.out.println(g1.greet());
-      Greeter g2 = new MeanGreeter();
-      System.out.println(g2.greet());
-   }
 }
 ```
 ```java
@@ -51,10 +44,20 @@ public class MeanGreeter extends Greeter {
    }
 }
 ```
-> 💻 **TRY IT OUT:** Add another subclass called `SpanishGreeter` (or another language that you know) that extends `Greeter` and override the `greet()` method to return ``Hola!`` (or hi in another language) instead of ``Hi!``. Then in a `main` method, create an _object_ to test it out.
+> 💻 **TRY IT OUT:** Add another subclass called `SpanishGreeter` (or another language that you know) that extends `Greeter` and override the `greet()` method to return ``Hola!`` (or hi in another language) instead of ``Hi!``.
 
+Then a `main` method, you can create an _object_ instance of each class to test out **overriding behavior**: 
 
-You may see the `@Override` annotation above a method. This is optional but it provides an _extra compiler check_ that you have matched the method signature exactly.
+```java
+   public static void main(String[] args) {
+      Greeter g1 = new Greeter();
+      System.out.println(g1.greet());
+      Greeter g2 = new MeanGreeter();
+      System.out.println(g2.greet());
+   }
+```
+
+Sometimes, you may see the `@Override` annotation above a method. This is optional but it provides an _extra compiler check_ that you have matched the method signature exactly.
 
 ```java
 @Override
