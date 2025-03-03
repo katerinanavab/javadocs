@@ -17,8 +17,9 @@ nav_order: 1
 {:.note}
 📖 This page is a condensed version of [CSAwesome Topic 9.1](https://runestone.academy/ns/books/published/csawesome/Unit9-Inheritance/topic-9-1-inheritance.html?mode=browsing) 
 
-#### Using a GitHub Template for class notes 
-{:.no_toc}
+<html>
+<details>
+<summary>📓<strong>DEMO PROGRAM SETUP INSTRUCTIONS</strong></summary>
 
 <div class="setup" markdown="block">
 
@@ -32,6 +33,8 @@ nav_order: 1
 7. 📝 Take notes in this Codespace during class, coding along with the instructor.
 
 </div>
+</details>
+</html>
 
 ---
 
