@@ -21,9 +21,9 @@ nav_order: 3
 
 ## Overriding Inherited Methods
 
-A subclass inherits all public methods from its superclass, and these methods remain public in the subclass. But, we also usually add more methods or instance variables to the subclass. Sometimes, we want to modify existing inherited methods. This is called **overriding** methods.
+A subclass **inherits all public methods** from its superclass, and these methods remain `public` in the subclass as well. But, we also usually _add more_ methods or instance variables to the subclass. Sometimes, we want to _modify_ existing inherited methods – this is called **overriding** methods.
 
-**Overriding** an inherited method means providing a public method in a subclass with the same **method signature** (method name, parameter type list and return type) as a public method in the superclass.  The method in the subclass will be called *instead of* the method in the superclass. One method that is frequently overridden is the ``toString`` method. 
+**Overriding** an inherited method means providing a public method in a _subclass_ with the exact same **method signature** (method name, parameter type list, and return type) as a public method in the _superclass_. The method in the subclass will be called *instead of* the method in the superclass. One method that is frequently overridden in child classes is the ``toString`` method! 
 
 {:.important}
 To **OVERRIDE** an inherited method, the method in the _child class_ must have the **same signature** (_name_, _parameter list_, and _return type_) as the _parent method_. 
@@ -53,7 +53,7 @@ Then a `main` method, you can create an _object_ instance of each class to test 
       Greeter g1 = new Greeter();
       System.out.println(g1.greet());
       Greeter g2 = new MeanGreeter();
-      System.out.println(g2.greet());
+      System.out.println(g2.greet()); // same method, different behavior!
    }
 ```
 
