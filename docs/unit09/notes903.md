@@ -21,41 +21,38 @@ nav_order: 3
 
 ## Overriding Inherited Methods
 
-A subclass inherits all public methods from its superclass, and these methods remain public in the subclass. But, we also usually add more methods or instance variables to the subclass. Sometimes, we want to modify existing inherited methods. This is called **overriding**  methods.
+A subclass inherits all public methods from its superclass, and these methods remain public in the subclass. But, we also usually add more methods or instance variables to the subclass. Sometimes, we want to modify existing inherited methods. This is called **overriding** methods.
 
 **Overriding** an inherited method means providing a public method in a subclass with the same **method signature** (method name, parameter type list and return type) as a public method in the superclass.  The method in the subclass will be called *instead of* the method in the superclass. One method that is frequently overridden is the ``toString`` method. 
+
+{:.important}
+To **OVERRIDE** an inherited method, the method in the _child class_ must have the **same signature** (_name_, _parameter list_, and _return type_) as the _parent method_. 
 
 In the following example the ``MeanGreeter`` inherits the ``greet()`` method from ``Greeter``, but then overrides it.
 
 ```java
-   public class Greeter
-   {
-       public String greet()
-       {
-           return "Hi";
-       }
+public class Greeter {
+   public String greet() {
+      return "Hi";
+   }
 
-       public static void main(String[] args)
-       {
-           Greeter g1 = new Greeter();
-           System.out.println(g1.greet());
-           Greeter g2 = new MeanGreeter();
-           System.out.println(g2.greet());
-       }
+   public static void main(String[] args) {
+      Greeter g1 = new Greeter();
+      System.out.println(g1.greet());
+      Greeter g2 = new MeanGreeter();
+      System.out.println(g2.greet());
    }
-   class MeanGreeter extends Greeter
-   {
-       public String greet()
-       {
-           return "Go Away";
-       }
-   }
+}
 ```
-> Add another subclass called `SpanishGreeter` (or another language that you know) that extends `Greeter` and override the `greet()` method to return ``Hola!`` (or hi in another language) instead of ``Hi!``. Create an object to test it out.
+```java
+public class MeanGreeter extends Greeter {
+   public String greet() {
+      return "Go Away";
+   }
+}
+```
+> 💻 **TRY IT OUT:** Add another subclass called `SpanishGreeter` (or another language that you know) that extends `Greeter` and override the `greet()` method to return ``Hola!`` (or hi in another language) instead of ``Hi!``. Then in a `main` method, create an _object_ to test it out.
 
-
-{:.important}
-To override an inherited method, the method in the child class must have the same name, parameter list, and return type (or a subclass of the return type) as the parent method. Any method that is called must be defined within its own class or its superclass.
 
 You may see the `@Override` annotation above a method. This is optional but it provides an _extra compiler check_ that you have matched the method signature exactly.
 
