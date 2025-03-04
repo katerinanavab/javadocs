@@ -79,7 +79,7 @@ g1.greet("Sam"); // This calls an OVERLOADED greet method
 ```
 
 {:.highlight}
-To overload a method the method must have the same name, but the parameter list must be different in some way. It can have a different number of parameters, different types of parameters, and/or a different order for the parameter types. The return type can also be different but you can't have two methods that differ only in their return type.
+To **overload** a method the method must have the _same name_, but the _parameter list must be different_ in some way. It can have a different number of parameters, different types of parameters, and/or a different order for the parameter types. The return type can also be different but you can't have two methods that differ only in their return type.
 
 ### Inherited Get/Set Methods
 
