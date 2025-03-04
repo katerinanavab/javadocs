@@ -162,8 +162,8 @@ shapeList.add(new Square());
 
 - Declaring **references of superclass type** T, when S is a subclass of T, is useful in the declaring of:
     - Formal **method parameters** of type T
-    - **Arrays** of type T[]
-    - `ArrayList<T>` of type T
+    - **Arrays** of type T
+    - **ArrayList** of type T
 ---
 
 #### Acknowledgement
