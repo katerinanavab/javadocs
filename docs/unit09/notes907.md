@@ -21,11 +21,9 @@ nav_order: 7
 
 ## Object Superclass
 
-The ``Object`` class is the **superclass** of ALL other classes in Java and a part
-of the built-in ``java.lang`` package. 
+The ``Object`` class is the **superclass** of ALL other classes in Java and a part of the built-in ``java.lang`` package. 
 
-If a parent class isn’t specified using the ``extends`` keyword, the class will inherit from the ``Object`` class. What
-does a class inherit from the ``Object`` class? 
+If a parent class isn’t specified using the ``extends`` keyword, the class will _inherit_ from the ``Object`` class. But what exactly does a class inherit from the ``Object`` class? 
 
 The [AP CSA Reference Sheet](https://apstudents.collegeboard.org/ap/pdf/ap-computer-science-a-java-quick-reference_0.pdf) lists the two main methods that are most frequently used:
 
@@ -40,103 +38,51 @@ to print out the attributes of an object. It is a good idea to write your own
 superclass ``toString()`` method using ``super.toString()`` and then add on its
 own attributes.
 
-In the following code, the ``Person`` class overrides the ``toString`` method
-from ``Object`` method and the ``Student`` class then overrides it again. In
-each class the new ``toString`` method adds the new attributes from that class.
+In the following code, the ``Person`` class overrides the ``toString`` method from ``Object`` method and the ``Student`` class then overrides it again. In each class the new ``toString`` method adds the new attributes from that class.
 
 ```java
-  public class Person
-  {
-      private String name;
-
-      public Person(String name)
-      {
-          this.name = name;
-      }
-
-      public String toString()
-      {
-          return name;
-      }
-
-      public static void main(String[] args)
-      {
-          Person p = new Person("Sila");
-          Student s = new Student("Tully", 1001);
-          System.out.println(p); // call Person toString
-          System.out.println(s); // call Student toString
-          // Uncomment the code below to test the APStudent class
-          /*
-          APStudent ap = new APStudent("Ayanna", 1002, 5);
-          System.out.println(ap);
-          */
-      }
+public class Person {
+  ...
+  public String toString() {
+    return name;
   }
-
-  class Student extends Person
-  {
-      private int id;
-
-      public Student(String name, int id)
-      {
-          super(name);
-          this.id = id;
-      }
-
-      public String toString()
-      {
-          return super.toString() + " " + id;
-      }
-  }
-
-  class APStudent extends Student
-  {
-      private int score;
-
-      public APStudent(String name, int id, int score)
-      {
-          super(name, id);
-          this.score = score;
-      }
-      // Add a toString() method here that calls the super class toString
-
-  }
+}
 ```
-> After trying the code below, complete the subclass called ``APStudent`` that extends ``Student`` with a new attribute called ``APscore`` and override the ``toString()`` method to call the superclass method and then add on the ``APscore``. Uncomment the ``APStudent`` object in the main method to test it.
-
+```java
+class Student extends Person {
+  ...
+  public String toString() {
+    return super.toString() + " " + this.id;
+  }
+}
+```
 
 ### ``equals`` Method
 
-One of the important methods inherited from ``Object`` is the ``equals(Object
-obj)`` method. This method is used to test if the **current object** and the passed
-object called ``obj`` are equal. But what does that mean?
+One of the important methods inherited from ``Object`` is the ``equals(Object obj)`` method. This method is used to test if the **current object** and the passed object called ``obj`` are equal. But what does that mean?
 
-As you can see if you run the code below, the ``equals`` method inherited from
-``Object`` only returns ``true`` if the two objects references refer to the same
-object. In other words it is does the same test as ``==``.
+As you can see if you run the code below, the ``equals`` method inherited from ``Object`` only returns ``true`` if the two objects references refer to the same object.
+> In other words, it does the same test as the **equality operator** ``==``.
 
 ```java
-   public class Person
-   {
-       private String name;
+public class Person {
+  private String name;
 
-       public Person(String theName)
-       {
-           this.name = theName;
-       }
+  public Person(String theName) {
+    this.name = theName;
+  }
 
-       public static void main(String[] args)
-       {
-           Person p1 = new Person("Kairen");
-           Person p2 = new Person("Jewel");
-           Person p3 = new Person("Kairen");
-           Person p4 = p3;
-           System.out.println(p1.equals(p2));
-           System.out.println(p2.equals(p3));
-           System.out.println(p1.equals(p3));
-           System.out.println(p3.equals(p4));
-       }
-   }
+  public static void main(String[] args) {
+    Person p1 = new Person("Kairen");
+    Person p2 = new Person("Jewel");
+    Person p3 = new Person("Kairen");
+    Person p4 = p3;
+    System.out.println(p1.equals(p2));
+    System.out.println(p2.equals(p3));
+    System.out.println(p1.equals(p3));
+    System.out.println(p3.equals(p4));
+  }
+}
 ```
 
 ![image](Figures/equalsEx.png)
@@ -161,23 +107,15 @@ objects with ``equals`` that new method will be called instead of the inherited
 one.
 
 ```java
-   public class StringTest
-   {
-       public static void main(String[] args)
-       {
-           String s1 = "hi";
-           String s2 = "Hi";
-           String s3 = new String("hi");
-           System.out.println(s1.equals(s2));
-           System.out.println(s2.equals(s3));
-           System.out.println(s1.equals(s3));
-       }
-   }
+String s1 = "hi";
+String s2 = "Hi";
+String s3 = new String("hi");
+System.out.println(s1.equals(s2));
+System.out.println(s2.equals(s3));
+System.out.println(s1.equals(s3));
 ```
 
-However, overriding ``equals`` is a bit more involved than overriding
-``toString``. While the ``toString`` method is only required to produce a
-reasonable human-readable ``String`` representation of an object, ``equals`` has
+However, overriding ``equals`` is a bit more involved than overriding ``toString``. While the ``toString`` method is only required to produce a reasonable human-readable ``String`` representation of an object, ``equals`` has
 to meet a more complex set of requirements in order to be useful.
 
 
@@ -197,7 +135,7 @@ to meet a more complex set of requirements in order to be useful.
 
 ## ⭐️ Summary
 
-- The ``Object`` class is the superclass of all other classes in Java and a part of the built-in ``java.lang`` package.
+- The ``Object`` class is the **superclass** of all other classes in Java and a part of the built-in ``java.lang`` package.
 
 - The following ``Object`` class methods are part of the Java Quick Reference:
 
